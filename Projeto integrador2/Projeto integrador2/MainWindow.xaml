@@ -7,6 +7,34 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="220" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Background="#FFAB4C08">
+            <TextBlock Text="Cafeteria Coffe House"
+                       Foreground="White"
+                       FontSize="22"
+                       Margin="20"/>
+            <Button Content="Home" Height="40" 
+                    Margin="10" Click="BtnHome_Click"/>
+
+
+            <Button Content="Cadastrar produto" Height="40" 
+                    Margin="10" Click="BtnCadastrarProduto_Click"/>
+
+        </StackPanel>
+
+        <Frame x:Name="MainFrame" Grid.Column="1"
+               NavigationUIVisibility="Hidden"/>
+
+
+
+
 
     </Grid>
 </Window>
+
+
+

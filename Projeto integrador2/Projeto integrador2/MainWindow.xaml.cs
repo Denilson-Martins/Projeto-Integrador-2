@@ -20,5 +20,15 @@ namespace Projeto_integrador2
         {
             InitializeComponent();
         }
+
+        private void BtnHome_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnCadastrarProduto_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
