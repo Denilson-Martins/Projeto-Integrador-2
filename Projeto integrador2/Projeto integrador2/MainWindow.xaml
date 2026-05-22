@@ -6,43 +6,7 @@
         xmlns:local="clr-namespace:Projeto_integrador2"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-<<<<<<< HEAD
-    <Grid Background="White">
 
-        <Grid.ColumnDefinitions>
-
-            <ColumnDefinition Width="220"/>
-            <ColumnDefinition Width="*"/>
-
-        </Grid.ColumnDefinitions>
-
-        <!---Menu-->
-        <StackPanel Background="#FF337880">
-
-            <TextBlock Text="Cafeteria"
-                    Foreground="Cornsilk"
-                    FontSize="22"
-                    Margin="20"/>
-
-            <Button Content="HOME" Height="40" Margin="10" Click="BtnHome_Click"/>
-            <Button Content="CADASTRO DE PRODUTOS" Height="40" Margin="10" Click="BtnCadastroProdutos_Click"/>
-
-
-
-
-
-
-        </StackPanel>
-
-
-
-        <!--Conteudo-->
-        <Frame x:Name="MainFrame" Grid.Column="1" NavigationUIVisibility="Hidden">
-
-
-
-        </Frame>
-=======
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="220" />
@@ -65,12 +29,6 @@
 
         <Frame x:Name="MainFrame" Grid.Column="1"
                NavigationUIVisibility="Hidden"/>
-
-
-
-
->>>>>>> e2f480de3a4c13146db57ac317adf2fd3b2a1f13
-
     </Grid>
 </Window>
 
