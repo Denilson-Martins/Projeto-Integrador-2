@@ -13,7 +13,7 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-        <StackPanel Background="#FFAB4C08">
+        <StackPanel Background="#FFE0D80E">
             <TextBlock Text="Coffee House"
                        Foreground="White"
                        FontSize="22"
