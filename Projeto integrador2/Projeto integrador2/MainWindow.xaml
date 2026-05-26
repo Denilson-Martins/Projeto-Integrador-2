@@ -14,7 +14,7 @@
         </Grid.ColumnDefinitions>
 
         <StackPanel Background="#FFAB4C08">
-            <TextBlock Text="Cafeteria Coffe House"
+            <TextBlock Text="Coffee House"
                        Foreground="White"
                        FontSize="22"
                        Margin="20"/>
