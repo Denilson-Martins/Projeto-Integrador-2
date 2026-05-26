@@ -14,20 +14,13 @@ using System.Windows.Shapes;
 namespace Projeto_integrador2
 {
     /// <summary>
-    /// Interação lógica para CADASTRO.xam
+    /// Interação lógica para CadastroDeProdutos.xam
     /// </summary>
-    public partial class CADASTRO : Page
+    public partial class CadastroDeProdutos : Page
     {
-        public CADASTRO()
+        public CadastroDeProdutos()
         {
             InitializeComponent();
-        }
-
-        private void BtnCadastrarClick(object sender, RoutedEventArgs e)
-        {
-
-            
-
         }
     }
 }
