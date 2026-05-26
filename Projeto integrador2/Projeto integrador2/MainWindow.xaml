@@ -29,6 +29,42 @@
 
         <Frame x:Name="MainFrame" Grid.Column="1"
                NavigationUIVisibility="Hidden"/>
+        <Button Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="30,44,0,0" VerticalAlignment="Top" Height="70" Width="100" Click="Button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/WhatsApp Image 2026-05-26 at 20.10.07.jpeg"/>
+            </Button.Background>
+        </Button>
+        <Button Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="155,44,0,0" VerticalAlignment="Top" Height="70" Width="100" Click="Button_Click_1">
+            <Button.Background>
+                <ImageBrush ImageSource="/WhatsApp Image 2026-05-26 at 20.10.53.jpeg"/>
+            </Button.Background>
+        </Button>
+        <Button Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="275,44,0,0" VerticalAlignment="Top" Height="70" Width="100" Click="Button_Click_1">
+            <Button.Background>
+                <ImageBrush ImageSource="/WhatsApp Image 2026-05-26 at 20.11.21.jpeg"/>
+            </Button.Background>
+        </Button>
+        <Button Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="395,44,0,0" VerticalAlignment="Top" Height="70" Width="100" Click="Button_Click_1">
+            <Button.Background>
+                <ImageBrush ImageSource="/WhatsApp Image 2026-05-26 at 20.11.57.jpeg"/>
+            </Button.Background>
+        </Button>
+        <Button Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="30,159,0,0" VerticalAlignment="Top" Height="70" Width="100" Click="Button_Click_1">
+            <Button.Background>
+                <ImageBrush ImageSource="/WhatsApp Image 2026-05-26 at 20.12.11.jpeg"/>
+            </Button.Background>
+        </Button>
+        <Label Grid.Column="1" Content="Expresso" HorizontalAlignment="Left" Margin="52,114,0,0" VerticalAlignment="Top"/>
+        <Label Grid.Column="1" Content="Cappuchino" HorizontalAlignment="Left" Margin="168,114,0,0" VerticalAlignment="Top"/>
+        <Label Grid.Column="1" Content="Latte" HorizontalAlignment="Left" Margin="307,114,0,0" VerticalAlignment="Top"/>
+        <Label Grid.Column="1" Content="Americano" HorizontalAlignment="Left" Margin="412,114,0,0" VerticalAlignment="Top"/>
+        <Label Grid.Column="1" Content="Moccha" HorizontalAlignment="Left" Margin="52,234,0,0" VerticalAlignment="Top"/>
+        <Label Grid.Column="1" Content="R$:4,99" HorizontalAlignment="Left" Margin="52,133,0,0" VerticalAlignment="Top"/>
+        <Label Grid.Column="1" Content="R$:4,99" HorizontalAlignment="Left" Margin="52,133,0,0" VerticalAlignment="Top"/>
+        <Label Grid.Column="1" Content="R$:4,99" HorizontalAlignment="Left" Margin="181,133,0,0" VerticalAlignment="Top"/>
+        <Label Grid.Column="1" Content="R$:4,99" HorizontalAlignment="Left" Margin="301,133,0,0" VerticalAlignment="Top"/>
+        <Label Grid.Column="1" Content="R$:4,99" HorizontalAlignment="Left" Margin="52,260,0,0" VerticalAlignment="Top"/>
+        <Label Grid.Column="1" Content="R$:4,99" HorizontalAlignment="Left" Margin="421,133,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
 
