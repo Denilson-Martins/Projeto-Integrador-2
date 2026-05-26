@@ -22,5 +22,10 @@ namespace Projeto_integrador2
         {
             InitializeComponent();
         }
+
+        private void AddProd(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
