@@ -8,26 +8,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Projeto_integrador2
 {
     /// <summary>
-    /// Interação lógica para CADASTRO.xam
+    /// Lógica interna para tela_de_inicio.xaml
     /// </summary>
-    public partial class CADASTRO : Page
+    public partial class tela_de_inicio : Window
     {
-        public CADASTRO()
+        public tela_de_inicio()
         {
             InitializeComponent();
-        }
-
-        private void BtnCadastrarClick(object sender, RoutedEventArgs e)
-        {
-
-            
-
         }
     }
 }
