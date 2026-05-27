@@ -9,6 +9,13 @@
       Title="CadastroDeProdutos">
 
     <Grid Background="White">
-        
+        <Button Content="Adicionar Produto" HorizontalAlignment="Center" Margin="0,382,0,0" VerticalAlignment="Top"/>
+        <Label Content="Cadastrar Produto" HorizontalAlignment="Left" Margin="154,10,0,0" VerticalAlignment="Top" Width="155" Height="35" FontSize="18"/>
+        <Label Content="Nome do Produto:" HorizontalAlignment="Left" Margin="154,86,0,0" VerticalAlignment="Top" Height="30" Width="130" FontSize="14"/>
+        <TextBox HorizontalAlignment="Left" Margin="258,116,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="206"/>
+        <Label Content="Descrição do produto:" HorizontalAlignment="Left" Margin="154,144,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox HorizontalAlignment="Left" Margin="258,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206"/>
+        <Label Content="Categoria do Produto:" HorizontalAlignment="Left" Margin="154,0,0,0" VerticalAlignment="Center" FontSize="14"/>
+        <TextBox HorizontalAlignment="Left" Margin="258,244,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206" Text="                                                      " TextChanged="TextBox_TextChanged"/>
     </Grid>
 </Page>
