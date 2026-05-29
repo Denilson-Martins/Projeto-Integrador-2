@@ -14,21 +14,16 @@ using System.Windows.Shapes;
 namespace Projeto_integrador2
 {
     /// <summary>
-    /// Interação lógica para Descrição_do_produto.xam
+    /// Interação lógica para SelecaoDeBebidas.xam
     /// </summary>
-    public partial class Descrição_do_produto : Page
+    public partial class SelecaoDeBebidas : Page
     {
-        public Descrição_do_produto()
+        public SelecaoDeBebidas()
         {
             InitializeComponent();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void ButtonCappuccino(object sender, RoutedEventArgs e)
         {
 
         }

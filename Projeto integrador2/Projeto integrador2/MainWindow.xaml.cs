@@ -21,33 +21,6 @@ namespace Projeto_integrador2
             InitializeComponent();
             ConnectBD banco = new ConnectBD();
             banco.Conectar();
-
-            MainFrame.Navigate(new CADASTRO());
-
-        }
-
-        private void BtnHome_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void BtnCadastroProdutos_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-        private void BtnCadastrarProduto_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
