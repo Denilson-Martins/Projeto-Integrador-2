@@ -10,6 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="top-view-coffee-tamper-with-copy-space.jpg" />
     <None Remove="WhatsApp Image 2026-05-26 at 20.10.07.jpeg" />
     <None Remove="WhatsApp Image 2026-05-26 at 20.10.53.jpeg" />
     <None Remove="WhatsApp Image 2026-05-26 at 20.11.21.jpeg" />
@@ -22,6 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="top-view-coffee-tamper-with-copy-space.jpg" />
     <Resource Include="WhatsApp Image 2026-05-26 at 20.10.07.jpeg" />
     <Resource Include="WhatsApp Image 2026-05-26 at 20.10.53.jpeg" />
     <Resource Include="WhatsApp Image 2026-05-26 at 20.11.21.jpeg" />
