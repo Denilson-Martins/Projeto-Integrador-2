@@ -49,5 +49,10 @@ namespace Projeto_integrador2
         {
 
         }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
