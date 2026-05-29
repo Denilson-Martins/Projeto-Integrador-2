@@ -49,10 +49,5 @@ namespace Projeto_integrador2
         {
 
         }
-
-        private void MainFrame_Navigated(object sender, NavigationEventArgs e)
-        {
-
-        }
     }
 }

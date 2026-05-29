@@ -6,23 +6,28 @@
         xmlns:local="clr-namespace:Projeto_integrador2"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.Background>
+        <ImageBrush ImageSource="/top-view-coffee-tamper-with-copy-space.jpg"/>
+    </Window.Background>
 
     <Grid>
+       
+        
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="220" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
+
+        <Frame x:Name="MainFrame" Grid.Column="1"
+NavigationUIVisibility="Hidden"/>
 
         <StackPanel Background="#FFE0D80E">
             <TextBlock Text="Coffee House"
                        Foreground="White"
                        FontSize="22"
                        Margin="20"/>
-
         </StackPanel>
-
-        <Frame x:Name="MainFrame" Grid.Column="1"
-               NavigationUIVisibility="Hidden" Navigated="MainFrame_Navigated"/>
+        
         <Button Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="30,44,0,0" VerticalAlignment="Top" Height="70" Width="100" Click="Button_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/WhatsApp Image 2026-05-26 at 20.10.07.jpeg"/>
@@ -43,7 +48,7 @@
                 <ImageBrush ImageSource="/WhatsApp Image 2026-05-26 at 20.11.57.jpeg"/>
             </Button.Background>
         </Button>
-        <Button Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="30,159,0,0" VerticalAlignment="Top" Height="70" Width="100" Click="Button_Click_1">
+        <Button Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="30,164,0,0" VerticalAlignment="Top" Height="79" Width="100" Click="Button_Click_1">
             <Button.Background>
                 <ImageBrush ImageSource="/WhatsApp Image 2026-05-26 at 20.12.11.jpeg"/>
             </Button.Background>
@@ -59,6 +64,26 @@
         <Label Grid.Column="1" Content="R$:4,99" HorizontalAlignment="Left" Margin="301,133,0,0" VerticalAlignment="Top"/>
         <Label Grid.Column="1" Content="R$:4,99" HorizontalAlignment="Left" Margin="52,260,0,0" VerticalAlignment="Top"/>
         <Label Grid.Column="1" Content="R$:4,99" HorizontalAlignment="Left" Margin="421,133,0,0" VerticalAlignment="Top"/>
+        <Label Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="180,181,0,0" VerticalAlignment="Top"/>
+        <Image Margin="155,159,325,191" Source="/Image1.png" Stretch="Fill" Grid.Column="1"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="173,247,0,0" TextWrapping="Wrap" Text="Ice Latte" VerticalAlignment="Top" Width="56" BorderBrush="White"/>
+        <Image Margin="275,159,205,196" Source="/Image2.png" Stretch="Fill" Grid.Column="1"/>
+        <Image Margin="399,160,81,197" Source="/Image3.png" Stretch="Fill" Grid.Column="1" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.075"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Margin="30,291,450,54" Source="/Image4.png" Stretch="Fill" Grid.Column="1"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="287,248,0,0" TextWrapping="Wrap" Text="Frappuccino" VerticalAlignment="Top"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="421,248,0,0" TextWrapping="Wrap" Text="Cold Brew" VerticalAlignment="Top" Width="63" BorderBrush="White"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="36,385,0,0" TextWrapping="Wrap" Text="Iced Mocha" VerticalAlignment="Top" Width="88" BorderBrush="White"/>
+        <Image Margin="155,291,325,54" Source="/Image5.png" Stretch="Fill" Grid.Column="1"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="149,385,0,0" TextWrapping="Wrap" Text="creamy iced coffee" VerticalAlignment="Top" Width="111" BorderBrush="White"/>
     </Grid>
 </Window>
 

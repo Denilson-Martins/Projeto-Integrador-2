@@ -11,14 +11,13 @@
             <ColumnDefinition Width="721*"/>
             <ColumnDefinition Width="79*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="button" Content="ENTRAR" HorizontalAlignment="Left" Margin="311,320,0,0" VerticalAlignment="Top" Height="74" Width="204" Foreground="#FF0D19D4" FontFamily="Franklin Gothic Heavy" FontSize="36" FontWeight="Bold" FontStyle="Italic" BorderBrush="#FF24379E" OpacityMask="{DynamicResource {x:Static SystemColors.GradientInactiveCaptionBrushKey}}" Background="{x:Null}">
+        <Button x:Name="button" Content="ENTRAR" HorizontalAlignment="Left" Margin="317,350,0,0" VerticalAlignment="Top" Height="74" Width="204" Foreground="#FF0A1188" FontFamily="Franklin Gothic Heavy" FontSize="36" FontWeight="Bold" FontStyle="Italic" BorderBrush="#FF24379E" OpacityMask="{DynamicResource {x:Static SystemColors.GradientInactiveCaptionBrushKey}}" Background="{x:Null}" Click="button_Click">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
-        <Image Margin="311,21,196,200" Source="/7478dbd1-6335-4cc6-9549-6fa2db4e2ccc.png" Stretch="Fill"/>
+        <Image Margin="256,0,131,89" Source="/7478dbd1-6335-4cc6-9549-6fa2db4e2ccc.png" Stretch="Fill"/>
         <Grid Grid.ColumnSpan="2" Margin="40,-196,40,196"/>
-        <TextBox HorizontalAlignment="Left" Margin="319,248,0,0" TextWrapping="Wrap" Text="Bem Vindo" VerticalAlignment="Top" Width="196" Background="#FFDEC20E" Foreground="#FF1A33BD" FontSize="36" FontWeight="Bold" BorderBrush="{DynamicResource {x:Static SystemColors.AccentColorDark3BrushKey}}" Height="47"/>
 
     </Grid>
 </Window>
