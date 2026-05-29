@@ -23,9 +23,6 @@ namespace Projeto_integrador2
             InitializeComponent();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
+       
     }
 }

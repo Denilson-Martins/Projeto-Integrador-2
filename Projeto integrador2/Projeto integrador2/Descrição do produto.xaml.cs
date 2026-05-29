@@ -8,21 +8,22 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Projeto_integrador2
 {
     /// <summary>
-    /// Lógica interna para tela_de_inicio.xaml
+    /// Interação lógica para Descrição_do_produto.xam
     /// </summary>
-    public partial class tela_de_inicio : Window
+    public partial class Descrição_do_produto : Page
     {
-        public tela_de_inicio()
+        public Descrição_do_produto()
         {
             InitializeComponent();
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }

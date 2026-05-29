@@ -13,7 +13,7 @@
         <Label Content="Senha" HorizontalAlignment="Left" Margin="559,176,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txbUser" HorizontalAlignment="Left" Margin="617,149,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txbSenha" HorizontalAlignment="Left" Margin="617,180,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Button Click="BtnCadastrarClick" Content="Cadastro" HorizontalAlignment="Center" Margin="0,375,0,0" VerticalAlignment="Top" Height="55" Width="132"/>
+        <Button Content="Cadastro" HorizontalAlignment="Center" Margin="0,375,0,0" VerticalAlignment="Top" Height="55" Width="132"/>
         <Label Content="Label" HorizontalAlignment="Left" Height="0" Margin="215,106,0,0" VerticalAlignment="Top" Width="13"/>
         <Label Content="email" HorizontalAlignment="Left" Margin="561,202,0,0" VerticalAlignment="Top"/>
         <TextBox HorizontalAlignment="Left" Margin="617,206,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
