@@ -14,15 +14,18 @@ using System.Windows.Shapes;
 namespace Projeto_integrador2
 {
     /// <summary>
-    /// Interação lógica para CadastroDeProdutos.xam
+    /// Interação lógica para Descrição_do_produto.xam
     /// </summary>
-    public partial class CadastroDeProdutos : Page
+    public partial class Descrição_do_produto : Page
     {
-        public CadastroDeProdutos()
+        public Descrição_do_produto()
         {
             InitializeComponent();
         }
 
-       
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
