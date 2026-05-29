@@ -1,4 +1,6 @@
-﻿using System.Text;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -12,15 +14,18 @@ using System.Windows.Shapes;
 namespace Projeto_integrador2
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interação lógica para SelecaoDeBebidas.xam
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class SelecaoDeBebidas : Page
     {
-        public MainWindow()
+        public SelecaoDeBebidas()
         {
             InitializeComponent();
-            ConnectBD banco = new ConnectBD();
-            banco.Conectar();
+        }
+
+        private void ButtonCappuccino(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

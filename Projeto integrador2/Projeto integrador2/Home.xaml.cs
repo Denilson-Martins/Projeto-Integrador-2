@@ -8,23 +8,24 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Projeto_integrador2
 {
     /// <summary>
-    /// Lógica interna para tela_de_inicio.xaml
+    /// Interação lógica para Home.xam
     /// </summary>
-    public partial class tela_de_inicio : Window
+    public partial class Home : Page
     {
-        public tela_de_inicio()
+        public Home()
         {
             InitializeComponent();
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
+        private void Entrar(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new SelecaoDeBebidas());
         }
     }
 }
