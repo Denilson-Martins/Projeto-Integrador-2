@@ -41,7 +41,7 @@
         <Label  Content="" HorizontalAlignment="Left" Margin="180,181,0,0" VerticalAlignment="Top"/>
         <Image Margin="155,159,325,191" Source="/Image1.png" />
         <TextBox  HorizontalAlignment="Left" Margin="173,247,0,0" TextWrapping="Wrap" Text="Ice Latte" VerticalAlignment="Top" Width="56" BorderBrush="White"/>
-        <Image Margin="275,159,205,196" Source="/Image2.png"  />
+        <Image Margin="289,169,191,185" Source="/Image2.png"  />
         <Image Margin="569,137,81,197" Source="/Image3.png"   RenderTransformOrigin="0.5,0.5"/>
 
         <Image Margin="10,323,0,0" Source="/Image1.png" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="100" />

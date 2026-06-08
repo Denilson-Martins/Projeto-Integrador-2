@@ -8,15 +8,19 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Home">
+    <Page.Background>
+        <ImageBrush ImageSource="/graos cafe.jpg"/>
+    </Page.Background>
+    <Grid>
 
-    <Grid Background="#FFFFC90B">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="721*"/>
-            <ColumnDefinition Width="79*"/>
-        </Grid.ColumnDefinitions>
-        <Image Source="/graos cafe.jpg" Stretch="Fill" Grid.ColumnSpan="2"/>
-        <Image Margin="251,34,136,104" Source="/LOGO CAFE.png" Stretch="Fill"/>
-        <Button Content="ENTRAR" HorizontalAlignment="Left" Margin="344,367,0,0" VerticalAlignment="Top" Height="56" Width="148" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="Red" Background="{x:Null}" Click="btnEntrar_CLick" x:Name="btnEntrar"  BorderBrush="#FFF10000"/>
+        <Canvas Margin="270,25,240,140">
+            <Canvas.Background>
+                <ImageBrush ImageSource="/LOGO CAFE.png"/>
+            </Canvas.Background>
 
+            <Button Content="ENTRAR" HorizontalAlignment="Left" VerticalAlignment="Top" Height="56" Width="148" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="Red" Background="{x:Null}" Click="btnEntrar_CLick" x:Name="btnEntrar"  BorderBrush="#FFF10000" Canvas.Left="77" Canvas.Top="324"/>
+            <Image Height="100" Canvas.Left="400" Canvas.Top="170" Width="100"/>
+        </Canvas>
     </Grid>
+
 </Page>
