@@ -14,19 +14,13 @@ using System.Windows.Shapes;
 namespace Projeto_integrador2
 {
     /// <summary>
-    /// Interação lógica para Lanches.xam
+    /// Interação lógica para DescriçãoDeLanche.xam
     /// </summary>
-    public partial class Lanches : Page
+    public partial class DescriçãoDeLanche : Page
     {
-        public Lanches()
+        public DescriçãoDeLanche()
         {
             InitializeComponent();
-        }
-
-        private void BtnCoxinha(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new DescriçãoDeLanche());
-
         }
     }
 }

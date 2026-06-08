@@ -8,7 +8,37 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Lanches">
 
-    <Grid>
-        
+    <Grid Background="White">
+        <Button Content="" HorizontalAlignment="Left" Margin="73,25,0,0" VerticalAlignment="Top" Height="116" Width="127" >
+            <Button.Background>
+                <ImageBrush ImageSource="/Receita de Risoles E Versões Diferentes Macias Com Massa Mais Que Especial.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="475,206,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.683,6.908" Height="156" Width="210">
+            <Button.Background>
+                <ImageBrush ImageSource="/empada.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="202,304,0,0" VerticalAlignment="Top" Height="89" Width="96" RenderTransformOrigin="1.769,-0.538">
+            <Button.Background>
+                <ImageBrush ImageSource="/croquete.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="475,18,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.512,6.546" Height="114" Width="130">
+            <Button.Background>
+                <ImageBrush ImageSource="/croissant.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="265,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.428,10.816" Height="131" Width="115" Click="BtnCoxinha">
+            <Button.Background>
+                <ImageBrush ImageSource="/b4f3f5aedd8597e83587ea9b1fb00c67.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="96,262,0,0" VerticalAlignment="Top" Height="121" Width="84">
+            <Button.Background>
+                <ImageBrush ImageSource="/sanduiche.jpg"/>
+            </Button.Background>
+        </Button>
+
     </Grid>
 </Page>

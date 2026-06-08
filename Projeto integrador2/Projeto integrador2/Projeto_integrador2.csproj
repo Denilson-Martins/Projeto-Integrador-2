@@ -10,6 +10,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="b4f3f5aedd8597e83587ea9b1fb00c67.jpg" />
+    <None Remove="croissant.jpg" />
+    <None Remove="croquete.jpg" />
+    <None Remove="empada.jpg" />
+    <None Remove="Receita de Risoles E Versões Diferentes Macias Com Massa Mais Que Especial.jpg" />
+    <None Remove="sanduiche.jpg" />
     <None Remove="top-view-coffee-tamper-with-copy-space.jpg" />
     <None Remove="WhatsApp Image 2026-05-26 at 20.10.07.jpeg" />
     <None Remove="WhatsApp Image 2026-05-26 at 20.10.53.jpeg" />
@@ -23,6 +29,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="b4f3f5aedd8597e83587ea9b1fb00c67.jpg" />
+    <Resource Include="croissant.jpg" />
+    <Resource Include="croquete.jpg" />
+    <Resource Include="empada.jpg" />
+    <Resource Include="Receita de Risoles E Versões Diferentes Macias Com Massa Mais Que Especial.jpg" />
+    <Resource Include="sanduiche.jpg" />
     <Resource Include="top-view-coffee-tamper-with-copy-space.jpg" />
     <Resource Include="WhatsApp Image 2026-05-26 at 20.10.07.jpeg" />
     <Resource Include="WhatsApp Image 2026-05-26 at 20.10.53.jpeg" />

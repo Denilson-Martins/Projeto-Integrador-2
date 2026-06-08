@@ -53,7 +53,7 @@
         <Image Margin="155,159,325,191" Source="/Image1.png" />
         <TextBox  HorizontalAlignment="Left" Margin="173,247,0,0" TextWrapping="Wrap" Text="Ice Latte" VerticalAlignment="Top" Width="56" BorderBrush="White"/>
         <Image Margin="275,159,205,196" Source="/Image2.png"  />
-        <Image Margin="399,160,81,197" Source="/Image3.png"   RenderTransformOrigin="0.5,0.5">
+        <Image Margin="569,137,81,197" Source="/Image3.png"   RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>

@@ -1,0 +1,23 @@
+﻿<Page x:Class="Projeto_integrador2.DescriçãoDeLanche"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Projeto_integrador2"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="DescriçãoDeLanche">
+
+    <Grid Background="White">
+        <Label Content="Coxinha" HorizontalAlignment="Left" Margin="400,28,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="Ingredientes" HorizontalAlignment="Left" Margin="400,229,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <TextBox HorizontalAlignment="Left" Margin="400,292,0,0" TextWrapping="Wrap" Text="Caldo de frango&#xA;Leite&#xA;Manteiga&#xA;Sal&#xA;Farinha de trigo&#xD;&#xA;Frango (Recheio)" VerticalAlignment="Top" Width="390" FontSize="16"/>
+        <Label Content="Preço" HorizontalAlignment="Left" Margin="182,225,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="R$ 5,50" HorizontalAlignment="Left" Margin="120,256,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="R$ 9,00" HorizontalAlignment="Left" Margin="231,256,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Button Content="Média" HorizontalAlignment="Left" Margin="127,292,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Button Content="Grande" HorizontalAlignment="Left" Margin="243,292,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Image Margin="115,46,498,272" Source="/b4f3f5aedd8597e83587ea9b1fb00c67.jpg" Stretch="Fill"/>
+        <TextBox HorizontalAlignment="Left" Margin="400,70,0,0" TextWrapping="Wrap" Text="Uma deliciosa coxinha de massa leve e dourada, recheada com frango desfiado temperado e cremoso. Crocante por fora e macia por dentro, é o acompanhamento perfeito para um café, cappuccino ou outras bebidas da cafeteria. Preparada com ingredientes selecionados para garantir sabor e qualidade em cada mordida." VerticalAlignment="Top" Width="390" FontSize="16"/>
+    </Grid>
+</Page>
