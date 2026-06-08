@@ -28,19 +28,11 @@ namespace Projeto_integrador2
             NavigationService.Navigate(new SelecaoDeBebidas());
         }
 
-        private void btnEntrar(object sender, RoutedEventArgs e)
-        {
-            
-        }
+        
 
         private void btnEntrar_CLick(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
+            NavigationService.Navigate(new SelecaoDeBebidas());
         }
     }
 }
