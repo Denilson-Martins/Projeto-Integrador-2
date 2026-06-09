@@ -9,10 +9,10 @@
       Title="Escolher">
 
     <Grid Background="White">
-        <Label Content="Seleção de bebidas" HorizontalAlignment="Left" Margin="148,56,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Label Content="Seleção de Lanches" HorizontalAlignment="Left" Margin="576,69,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="186,192,0,0" VerticalAlignment="Top" FontSize="20"  />
-        <Button Content="Button" HorizontalAlignment="Left" Margin="614,192,0,0" VerticalAlignment="Top" FontSize="20"  />
+        <Label Content="Seleção de bebidas" HorizontalAlignment="Left" Margin="38,10,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="Seleção de Lanches" HorizontalAlignment="Left" Margin="575,10,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="65,322,0,0" VerticalAlignment="Top" FontSize="20" Click="BtnBebidas"  />
+        <Button Content="Button" HorizontalAlignment="Left" Margin="634,337,0,0" VerticalAlignment="Top" FontSize="20" Click="BtnLanches"  />
 
     </Grid>
 </Page>

@@ -23,7 +23,12 @@ namespace Projeto_integrador2
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void BtnBebidas(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnLanches(object sender, RoutedEventArgs e)
         {
 
         }

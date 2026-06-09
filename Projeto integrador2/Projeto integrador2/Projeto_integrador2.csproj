@@ -14,6 +14,8 @@
     <None Remove="croissant.jpg" />
     <None Remove="croquete.jpg" />
     <None Remove="empada.jpg" />
+    <None Remove="graos cafe.jpg" />
+    <None Remove="LOGO CAFE.png" />
     <None Remove="Receita de Risoles E Versões Diferentes Macias Com Massa Mais Que Especial.jpg" />
     <None Remove="sanduiche.jpg" />
     <None Remove="top-view-coffee-tamper-with-copy-space.jpg" />
@@ -33,6 +35,8 @@
     <Resource Include="croissant.jpg" />
     <Resource Include="croquete.jpg" />
     <Resource Include="empada.jpg" />
+    <Resource Include="graos cafe.jpg" />
+    <Resource Include="LOGO CAFE.png" />
     <Resource Include="Receita de Risoles E Versões Diferentes Macias Com Massa Mais Que Especial.jpg" />
     <Resource Include="sanduiche.jpg" />
     <Resource Include="top-view-coffee-tamper-with-copy-space.jpg" />
