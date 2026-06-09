@@ -19,5 +19,7 @@
         <Button Content="Grande" HorizontalAlignment="Left" Margin="243,292,0,0" VerticalAlignment="Top" FontSize="16"/>
         <Image Margin="115,46,498,272" Source="/b4f3f5aedd8597e83587ea9b1fb00c67.jpg" Stretch="Fill"/>
         <TextBox HorizontalAlignment="Left" Margin="400,70,0,0" TextWrapping="Wrap" Text="Uma deliciosa coxinha de massa leve e dourada, recheada com frango desfiado temperado e cremoso. Crocante por fora e macia por dentro, é o acompanhamento perfeito para um café, cappuccino ou outras bebidas da cafeteria. Preparada com ingredientes selecionados para garantir sabor e qualidade em cada mordida." VerticalAlignment="Top" Width="390" FontSize="16"/>
+        <Button Content="Voltar" HorizontalAlignment="Left" VerticalAlignment="Top" Height="56" Width="148" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="DarkRed" Background="{x:Null}" Click="btnVoltar_CLick" BorderBrush="DarkRed" Canvas.Left="77" Canvas.Top="324" RenderTransformOrigin="0.507,3.393" Margin="0,394,0,0"/>
+
     </Grid>
 </Page>

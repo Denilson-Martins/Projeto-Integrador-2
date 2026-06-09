@@ -22,5 +22,11 @@ namespace Projeto_integrador2
         {
             InitializeComponent();
         }
+
+        private void btnVoltar_CLick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Lanches());
+
+        }
     }
 }
