@@ -23,18 +23,12 @@ namespace Projeto_integrador2
             InitializeComponent();
         }
 
-        private void BtnEntrar(object sender, RoutedEventArgs e)
+        private void btnEntrar_CLick(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new Escolher());
         }
 
         private void btnlogar_CLick(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new CADASTRO());
-
-        }
-
-        private void btnEntrar_CLick(object sender, RoutedEventArgs e)
         {
 
         }

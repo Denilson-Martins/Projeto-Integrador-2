@@ -25,12 +25,12 @@ namespace Projeto_integrador2
 
         private void BtnBebidas(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new SelecaoDeBebidas());
         }
 
         private void BtnLanches(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new Lanches());
         }
     }
 }
