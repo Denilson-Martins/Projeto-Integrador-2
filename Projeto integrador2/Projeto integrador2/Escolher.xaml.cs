@@ -8,21 +8,22 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Projeto_integrador2
 {
     /// <summary>
-    /// Lógica interna para tela_de_inicio.xaml
+    /// Interação lógica para Escolher.xam
     /// </summary>
-    public partial class telaDeInicio : Window
+    public partial class Escolher : Page
     {
-        public telaDeInicio()
+        public Escolher()
         {
             InitializeComponent();
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
 
         }

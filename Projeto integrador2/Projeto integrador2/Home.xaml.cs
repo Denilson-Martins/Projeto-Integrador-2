@@ -23,16 +23,9 @@ namespace Projeto_integrador2
             InitializeComponent();
         }
 
-        private void Entrar(object sender, RoutedEventArgs e)
+        private void BtnEntrar(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new SelecaoDeBebidas());
-        }
-
-        
-
-        private void btnEntrar_CLick(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new SelecaoDeBebidas());
+            NavigationService.Navigate(new Escolher());
         }
     }
 }

@@ -24,7 +24,7 @@
                 <ImageBrush ImageSource="/croquete.jpg"/>
             </Button.Background>
         </Button>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="475,18,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.512,6.546" Height="114" Width="130">
+        <Button Content="" HorizontalAlignment="Left" Margin="475,18,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.512,6.546" Height="114" Width="130">
             <Button.Background>
                 <ImageBrush ImageSource="/croissant.jpg"/>
             </Button.Background>
