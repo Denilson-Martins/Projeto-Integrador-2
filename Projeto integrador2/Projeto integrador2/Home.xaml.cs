@@ -33,5 +33,10 @@ namespace Projeto_integrador2
             NavigationService.Navigate(new CADASTRO());
 
         }
+
+        private void btnEntrar_CLick(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
