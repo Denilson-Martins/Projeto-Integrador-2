@@ -22,10 +22,5 @@ namespace Projeto_integrador2
             ConnectBD banco = new ConnectBD();
             banco.Conectar();
         }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
     }
 }

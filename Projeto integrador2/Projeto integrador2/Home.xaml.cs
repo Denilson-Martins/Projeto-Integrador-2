@@ -34,5 +34,11 @@ namespace Projeto_integrador2
         {
             NavigationService.Navigate(new SelecaoDeBebidas());
         }
+
+        private void btnlogar_CLick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new CADASTRO());
+
+        }
     }
 }

@@ -27,5 +27,16 @@ namespace Projeto_integrador2
         {
 
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnVoltar_CLick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Home());
+
+        }
     }
 }
