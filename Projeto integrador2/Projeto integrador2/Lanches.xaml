@@ -22,7 +22,7 @@
             </Button>
             <Button Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="120" Width="120" Margin="10">
                 <Button.Background>
-                    <ImageBrush ImageSource="/sanduiche.jpg"/>
+                    <ImageBrush ImageSource="/sand4.jpg"/>
                 </Button.Background>
             </Button>
             <Button Content="" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="-0.428,10.816" Height="120" Width="120" Click="BtnCoxinha" Margin="10">

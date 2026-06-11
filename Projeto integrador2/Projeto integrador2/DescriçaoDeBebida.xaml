@@ -11,14 +11,14 @@
     <Grid Background="White">
         <Image Margin="69,28,455,239" Source="/WhatsApp Image 2026-05-26 at 20.10.53.jpeg" Stretch="Fill"/>
         <Label Content="Cappuccino" HorizontalAlignment="Left" Margin="400,28,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <TextBox HorizontalAlignment="Left" Margin="400,81,0,0" TextWrapping="Wrap" Text="Uma combinação equilibrada de café espresso encorpado, leite vaporizado e uma camada cremosa de espuma de leite. Finalizado com um toque de chocolate ou canela, oferece aroma marcante, textura aveludada e sabor suave, perfeito para qualquer momento do dia." VerticalAlignment="Top" Width="390" TextChanged="TextBox_TextChanged" FontSize="16"/>
+        <TextBox HorizontalAlignment="Left" Margin="400,81,0,0" TextWrapping="Wrap" Text="Uma combinação equilibrada de café espresso encorpado, leite vaporizado e uma camada cremosa de espuma de leite. Finalizado com um toque de chocolate ou canela, oferece aroma marcante, textura aveludada e sabor suave, perfeito para qualquer momento do dia." VerticalAlignment="Top" Width="390" FontSize="16"/>
         <Label Content="Ingredientes" HorizontalAlignment="Left" Margin="400,211,0,0" VerticalAlignment="Top" FontSize="20"/>
         <TextBox HorizontalAlignment="Left" Margin="400,260,0,0" TextWrapping="Wrap" Text="leite em pó &#xD;&#xA;café solúvel &#xD;&#xA;achocolatado em pó&#xD;&#xA;açúcar &#xD;&#xA;canela em pó &#xD;&#xA;bicarbonato de sódio" VerticalAlignment="Top" Width="390" FontSize="16"/>
         <Label Content="Preço" HorizontalAlignment="Left" Margin="182,225,0,0" VerticalAlignment="Top" FontSize="16"/>
         <Label Content="R$ 6,00" HorizontalAlignment="Left" Margin="120,256,0,0" VerticalAlignment="Top" FontSize="16"/>
         <Label Content="R$ 12,00" HorizontalAlignment="Left" Margin="231,256,0,0" VerticalAlignment="Top" FontSize="16"/>
         <Button Content="100ml" HorizontalAlignment="Left" Margin="127,292,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <Button Content="200ml" HorizontalAlignment="Left" Margin="243,292,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Button Content="200ml" HorizontalAlignment="Left" Margin="243,292,0,0" VerticalAlignment="Top" FontSize="16" Click="Btn200ml"/>
 
     </Grid>
 </Page>
