@@ -33,5 +33,10 @@ namespace Projeto_integrador2
             NavigationService.Navigate(new Escolher());
 
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

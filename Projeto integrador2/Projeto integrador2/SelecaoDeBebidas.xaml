@@ -15,7 +15,7 @@
         
         <WrapPanel Margin="10,10,230,10">
 
-            <Button Content="" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="100" Width="100"  Margin="10,5,0,50"  >
+            <Button Content="" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="100" Width="100"  Margin="10,5,0,50" Click="Button_Click"  >
                 <Button.Background>
                     <ImageBrush ImageSource="/WhatsApp Image 2026-05-26 at 20.10.07.jpeg"/>
                 </Button.Background>

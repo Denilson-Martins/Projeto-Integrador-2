@@ -27,5 +27,11 @@ namespace Projeto_integrador2
         {
 
         }
+
+        private void btnVoltar_CLick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new SelecaoDeBebidas());
+
+        }
     }
 }

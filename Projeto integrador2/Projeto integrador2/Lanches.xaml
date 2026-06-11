@@ -14,7 +14,7 @@
             <RowDefinition Height="71*"/>
         </Grid.RowDefinitions>
 
-        <WrapPanel Margin="180,70,180,70" Grid.RowSpan="2">
+        <WrapPanel Margin="180,35,120,70" Grid.RowSpan="2">
             <Button Content="" HorizontalAlignment="Left" Margin="10" VerticalAlignment="Top" RenderTransformOrigin="1.512,6.546" Height="120" Width="120">
                 <Button.Background>
                     <ImageBrush ImageSource="/croissant.jpg"/>
@@ -45,6 +45,8 @@
                     <ImageBrush ImageSource="/croquete.jpg"/>
                 </Button.Background>
             </Button>
+            <Button Content="Voltar" HorizontalAlignment="Center" VerticalAlignment="Center" Height="56" Width="148" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="DarkRed" Background="{x:Null}" Click="btnVoltar_CLick" BorderBrush="DarkRed"/>
+
         </WrapPanel>
 
 
