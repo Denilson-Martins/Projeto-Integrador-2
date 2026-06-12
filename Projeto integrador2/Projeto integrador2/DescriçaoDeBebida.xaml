@@ -24,12 +24,10 @@
         <Button Content="100ml" HorizontalAlignment="Left" Margin="127,292,0,0" VerticalAlignment="Top" FontSize="16" Grid.RowSpan="2"/>
         <Button Content="200ml" HorizontalAlignment="Left" Margin="243,292,0,0" VerticalAlignment="Top" FontSize="16" Click="Btn200ml" Grid.RowSpan="2"/>
         <Button Content="200ml" HorizontalAlignment="Left" Margin="243,292,0,0" VerticalAlignment="Top" FontSize="16" Grid.RowSpan="2"/>
-        <Button Content="Voltar" HorizontalAlignment="Left" VerticalAlignment="Top" Height="56" Width="148" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="DarkRed" Background="{x:Null}" Click="btnVoltar_CLick" BorderBrush="DarkRed" Margin="0,97,0,0" Grid.Row="1"/>
         <Button Content="100ml" HorizontalAlignment="Left" Margin="127,292,0,0" VerticalAlignment="Top" FontSize="16"/>
 
         <Button Content="200ml" HorizontalAlignment="Left" Margin="243,292,0,0" VerticalAlignment="Top" FontSize="16" Click="Btn200ml"/>
         <Button Content="200ml" HorizontalAlignment="Left" Margin="243,292,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <Button Content="Voltar" HorizontalAlignment="Left" VerticalAlignment="Top" Height="56" Width="148" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="DarkRed" Background="{x:Null}" Click="btnVoltar_CLick" BorderBrush="DarkRed" Canvas.Left="77" Canvas.Top="324" Margin="0,394,0,0"/>
-
+        <Button Content="Voltar" HorizontalAlignment="Left" VerticalAlignment="Top" Height="56" Width="148" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="#FFFF5D00" Background="{x:Null}" Click="btnEntrar_CLick" BorderBrush="#FFF10000" Canvas.Left="69" Canvas.Top="338" Margin="0,97,0,0" Grid.Row="1"/>
     </Grid>
 </Page>

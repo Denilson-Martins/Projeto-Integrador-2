@@ -16,9 +16,9 @@ namespace Projeto_integrador2
     /// <summary>
     /// Interação lógica para Lanches.xam
     /// </summary>
-    public partial class Lanches : Page
+    public partial class SelecaoDeLanches : Page
     {
-        public Lanches()
+        public SelecaoDeLanches()
         {
             InitializeComponent();
         }

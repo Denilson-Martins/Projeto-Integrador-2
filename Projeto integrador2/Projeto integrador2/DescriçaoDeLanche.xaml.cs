@@ -23,12 +23,14 @@ namespace Projeto_integrador2
             InitializeComponent();
         }
 
-        private void btnVoltar_CLick(object sender, RoutedEventArgs e)
+        private void btnEntrar_CLick(object sender, RoutedEventArgs e)
         {
-            NavigationService.GoBack();
 
         }
 
-        
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.GoBack();
+        }
     }
 }
