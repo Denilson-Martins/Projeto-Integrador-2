@@ -9,6 +9,13 @@
       Title="Pedido">
 
     <Grid Background="White">
-        
+        <DataGrid x:Name="DgPedido" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                
+            <DataGridTextColumn Header="Nome" Binding="{Binding Nome}"/>
+            <DataGridTextColumn Header="Tamanho" Binding="{Binding Tamanho}"/>
+            <DataGridTextColumn Header="Valor" Binding="{Binding Valor}"/>
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Page>

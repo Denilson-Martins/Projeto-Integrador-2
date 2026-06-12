@@ -9,6 +9,7 @@ namespace Projeto_integrador2
     /// </summary>
     public partial class App : Application
     {
+        public List<Bebidas> ListaBebidas = new List <Bebidas> ();
     }
 
 }

@@ -21,6 +21,7 @@ namespace Projeto_integrador2
         public Pedido()
         {
             InitializeComponent();
+            DgPedido.ItemsSource = ((App)Application.Current).ListaBebidas;
         }
     }
 }

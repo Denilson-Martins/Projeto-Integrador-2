@@ -25,7 +25,7 @@
                     <ImageBrush ImageSource="/croissant.jpg"/>
                 </Button.Background>
             </Button>
-            <Button Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="120" Width="120" Margin="10">
+            <Button Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="120" Width="130">
                 <Button.Background>
                     <ImageBrush ImageSource="/sand4.jpg"/>
                 </Button.Background>

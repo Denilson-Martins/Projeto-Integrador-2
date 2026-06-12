@@ -29,6 +29,9 @@ namespace Projeto_integrador2
 
         }
 
-        
+        private void BtnTamanho(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
