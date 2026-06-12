@@ -30,7 +30,7 @@ namespace Projeto_integrador2
 
         private void BtnLanches(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Lanches());
+            NavigationService.Navigate(new SelecaoDeLanches());
         }
 
         private void BtnVoltar(object sender, RoutedEventArgs e)
