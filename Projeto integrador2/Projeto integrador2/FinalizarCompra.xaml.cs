@@ -14,21 +14,13 @@ using System.Windows.Shapes;
 namespace Projeto_integrador2
 {
     /// <summary>
-    /// Interação lógica para DescriçãoDeLanche.xam
+    /// Interação lógica para FinalizarCompra.xam
     /// </summary>
-    public partial class DescriçãoDeLanche : Page
+    public partial class FinalizarCompra : Page
     {
-        public DescriçãoDeLanche()
+        public FinalizarCompra()
         {
             InitializeComponent();
         }
-
-        private void btnVoltar_CLick(object sender, RoutedEventArgs e)
-        {
-            NavigationService.GoBack();
-
-        }
-
-        
     }
 }
