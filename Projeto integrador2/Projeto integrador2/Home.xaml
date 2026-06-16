@@ -14,12 +14,13 @@
             <ImageBrush ImageSource="/ChatGPT Image 11 de jun. de 2026, 19_52_56.png"/>
         </Grid.Background>
 
-        <Button Content="ENTRAR" HorizontalAlignment="Center" VerticalAlignment="Top" Height="56" Width="148" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="Red" Background="{x:Null}" Click="btnEntrar_CLick" BorderBrush="#FFF10000" Canvas.Left="69" Canvas.Top="338" Margin="0,371,0,0"/>
-        <Button Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Height="128" Width="161" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI Black" Click="BtnLogAdm" Canvas.Left="-161" Canvas.Top="21" Margin="10,32,0,0">
+        <Button Content="ENTRAR" HorizontalAlignment="Center" VerticalAlignment="Top" Height="56" Width="148" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="#FFFF5D00" Background="{x:Null}" Click="btnEntrar_CLick" BorderBrush="#FFF10000" Canvas.Left="69" Canvas.Top="338" Margin="0,371,0,0"/>
+        <Button Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Height="164" Width="157" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI Black" Click="BtnLogAdm" Canvas.Left="-161" Canvas.Top="21" BorderBrush="#00000000">
             <Button.Background>
-                <ImageBrush ImageSource="/ChatGPT Image 11 de jun. de 2026, 20_12_56.png"/>
+                <ImageBrush ImageSource="/ChatGPT Image 11 de jun. de 2026, 20_24_10.png"/>
             </Button.Background>
         </Button>
+        <Image Margin="588,0,0,286" Source="/ChatGPT Image 11 de jun. de 2026, 20_28_20.png" Stretch="Fill"/>
 
     </Grid>
 </Page>

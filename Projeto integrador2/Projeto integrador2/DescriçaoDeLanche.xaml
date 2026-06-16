@@ -9,17 +9,19 @@
       Title="DescriçãoDeLanche">
 
     <Grid Background="White">
-        <Label Content="Coxinha" HorizontalAlignment="Left" Margin="400,28,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Label Content="Ingredientes" HorizontalAlignment="Left" Margin="400,229,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <TextBox HorizontalAlignment="Left" Margin="400,292,0,0" TextWrapping="Wrap" Text="Caldo de frango&#xA;Leite&#xA;Manteiga&#xA;Sal&#xA;Farinha de trigo&#xD;&#xA;Frango (Recheio)" VerticalAlignment="Top" Width="390" FontSize="16"/>
-        <Label Content="Preço" HorizontalAlignment="Left" Margin="182,225,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <Label Content="R$ 5,50" HorizontalAlignment="Left" Margin="120,256,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <Label Content="R$ 9,00" HorizontalAlignment="Left" Margin="231,256,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <Button Content="Média" HorizontalAlignment="Left" Margin="127,292,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <Button Content="Grande" HorizontalAlignment="Left" Margin="243,292,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <Image Margin="115,46,498,272" Source="/b4f3f5aedd8597e83587ea9b1fb00c67.jpg" Stretch="Fill"/>
-        <TextBox HorizontalAlignment="Left" Margin="400,70,0,0" TextWrapping="Wrap" Text="Uma deliciosa coxinha de massa leve e dourada, recheada com frango desfiado temperado e cremoso. Crocante por fora e macia por dentro, é o acompanhamento perfeito para um café, cappuccino ou outras bebidas da cafeteria. Preparada com ingredientes selecionados para garantir sabor e qualidade em cada mordida." VerticalAlignment="Top" Width="390" FontSize="16"/>
-        <Button Content="Voltar" HorizontalAlignment="Left" VerticalAlignment="Top" Height="56" Width="148" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="DarkRed" Background="{x:Null}" Click="btnVoltar_CLick" BorderBrush="DarkRed" Canvas.Left="77" Canvas.Top="324" RenderTransformOrigin="0.507,3.393" Margin="0,394,0,0"/>
 
+        <Label Content="Coxinha" HorizontalAlignment="Left" Margin="364,33,0,0" VerticalAlignment="Top" FontSize="20" RenderTransformOrigin="2.83,0.589"/>
+        <Label Content="Ingredientes" HorizontalAlignment="Left" Margin="364,263,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <TextBox HorizontalAlignment="Left" Margin="364,305,0,0" TextWrapping="Wrap" Text="Caldo de frango&#xA;Leite&#xA;Manteiga&#xA;Sal&#xA;Farinha de trigo&#xD;&#xA;Frango (Recheio)" VerticalAlignment="Top" Width="390" FontSize="16"/>
+        <Label Content="Preço" HorizontalAlignment="Left" Margin="126,220,0,0" VerticalAlignment="Top" FontSize="16" RenderTransformOrigin="0.442,1.58"/>
+        <Label Content="R$ 5,50" HorizontalAlignment="Left" Margin="182,251,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="R$ 9,00" HorizontalAlignment="Left" Margin="74,251,0,0" VerticalAlignment="Top" FontSize="16"/>
+
+        <Button Tag="Coxinha" Content="Média" HorizontalAlignment="Left" Margin="182,298,0,0" VerticalAlignment="Top" FontSize="16" Click="BtnTamanho"/>
+        <Button Tag="Coxinha" Content="Grande" HorizontalAlignment="Left" Margin="74,298,0,0" VerticalAlignment="Top" FontSize="16" Click="BtnTamanho"/>
+
+        <Image Margin="57,39,556,279" Source="/b4f3f5aedd8597e83587ea9b1fb00c67.jpg" Stretch="Fill"/>
+        <TextBox HorizontalAlignment="Left" Margin="364,96,0,0" TextWrapping="Wrap" Text="Uma deliciosa coxinha de massa leve e dourada, recheada com frango desfiado temperado e cremoso. Crocante por fora e macia por dentro, é o acompanhamento perfeito para um café, cappuccino ou outras bebidas da cafeteria. Preparada com ingredientes selecionados para garantir sabor e qualidade em cada mordida." VerticalAlignment="Top" Width="390" FontSize="16"/>
+        <Button Content="Voltar" HorizontalAlignment="Left" VerticalAlignment="Top" Height="56" Width="148" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="#FFFF5D00" Background="{x:Null}" BorderBrush="#FFF10000" Canvas.Left="69" Canvas.Top="338" Margin="0,394,0,0"/>
     </Grid>
 </Page>

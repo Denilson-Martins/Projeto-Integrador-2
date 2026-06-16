@@ -14,26 +14,14 @@ using System.Windows.Shapes;
 namespace Projeto_integrador2
 {
     /// <summary>
-    /// Interação lógica para SelecaoDeBebidas.xam
+    /// Interação lógica para Pedido.xam
     /// </summary>
-    public partial class SelecaoDeBebidas : Page
+    public partial class Pedido : Page
     {
-        public SelecaoDeBebidas()
+        public Pedido()
         {
             InitializeComponent();
+            DgPedido.ItemsSource = ((App)Application.Current).ListaBebidas;
         }
-
-        private void ButtonCappuccino(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Descrição_do_produto());
-        }
-                
-        private void btnVoltar_CLick(object sender, RoutedEventArgs e)
-        {
-            NavigationService.GoBack();
-
-        }
-
-       
     }
 }

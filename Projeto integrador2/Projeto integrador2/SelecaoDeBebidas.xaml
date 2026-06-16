@@ -12,9 +12,10 @@
         <Grid.Background>
             <ImageBrush ImageSource="/top-view-coffee-tamper-with-copy-space.jpg"/>
         </Grid.Background>
-        
+
         <WrapPanel Margin="10,10,230,10">
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <Button Content="" HorizontalAlignment="Left" Margin="10,170,0,0" VerticalAlignment="Top" Height="100" Width="100" >
@@ -52,14 +53,17 @@
 =======
             <Button Content="" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="100" Width="100"  Margin="10,5,0,50" Click="Button_Click"  >
 >>>>>>> b7030b6fbdd6f6301e05ea81fa32ccb2f9f6102d
+=======
+            <Button HorizontalAlignment="Left"  VerticalAlignment="Top" Height="100" Width="100"  Margin="10,5,0,50"  >
+>>>>>>> 7e84fde72791874a2c9953894350bcd0115a703f
                 <Button.Background>
                     <ImageBrush ImageSource="/WhatsApp Image 2026-05-26 at 20.10.07.jpeg"/>
                 </Button.Background>
-            </Button>
-            <Button  Content="" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="100" Width="100" Click="ButtonCappuccino"  Margin="10,5,0,50" >
-                <Button.Background>
-                    <ImageBrush ImageSource="/WhatsApp Image 2026-05-26 at 20.10.53.jpeg"/>
-                </Button.Background>
+                <Button  Content="" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="100" Width="100" Click="ButtonCappuccino" >
+                    <Button.Background>
+                        <ImageBrush ImageSource="/WhatsApp Image 2026-05-26 at 20.10.53.jpeg"/>
+                    </Button.Background>
+                </Button>
             </Button>
             <Button  Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Height="100" Width="100" Margin="10,5,0,50">
                 <Button.Background>
@@ -103,8 +107,7 @@
                     <ImageBrush ImageSource="/Cold Brew.jpeg"/>
                 </Button.Background>
             </Button>
-
-            <Button Content="Voltar" HorizontalAlignment="Left" VerticalAlignment="Top" Height="56" Width="148" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="AliceBlue" Background="{x:Null}" Click="btnVoltar_CLick" x:Name="btnEntrar"  BorderBrush="AliceBlue" Canvas.Left="77" Canvas.Top="324"/>
+            <Button Content="Voltar" HorizontalAlignment="Center" VerticalAlignment="Center" Height="56" Width="148" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="#FFFF5D00" Background="{x:Null}" Click="btnVoltar_CLick" x:Name="btnEntrar"  BorderBrush="#FFFF5D00"/>
 
         </WrapPanel>
     </Grid>

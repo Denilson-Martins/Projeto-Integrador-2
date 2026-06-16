@@ -14,26 +14,13 @@ using System.Windows.Shapes;
 namespace Projeto_integrador2
 {
     /// <summary>
-    /// Interação lógica para SelecaoDeBebidas.xam
+    /// Interação lógica para FinalizarCompra.xam
     /// </summary>
-    public partial class SelecaoDeBebidas : Page
+    public partial class FinalizarCompra : Page
     {
-        public SelecaoDeBebidas()
+        public FinalizarCompra()
         {
             InitializeComponent();
         }
-
-        private void ButtonCappuccino(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Descrição_do_produto());
-        }
-                
-        private void btnVoltar_CLick(object sender, RoutedEventArgs e)
-        {
-            NavigationService.GoBack();
-
-        }
-
-       
     }
 }

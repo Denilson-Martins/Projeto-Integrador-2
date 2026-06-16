@@ -10,75 +10,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="2.png" />
-    <None Remove="7478dbd1-6335-4cc6-9549-6fa2db4e2ccc.png" />
-    <None Remove="b4f3f5aedd8597e83587ea9b1fb00c67.jpg" />
-    <None Remove="ChatGPT Image 11 de jun. de 2026, 19_40_37.png" />
-    <None Remove="ChatGPT Image 11 de jun. de 2026, 19_46_51.png" />
-    <None Remove="ChatGPT Image 11 de jun. de 2026, 19_52_56.png" />
-    <None Remove="ChatGPT Image 11 de jun. de 2026, 20_12_56.png" />
-    <None Remove="ChatGPT Image 8 de jun. de 2026, 19_48_30.png" />
-    <None Remove="ChatGPT Image 8 de jun. de 2026, 19_52_52.png" />
-    <None Remove="Cold Brew.jpeg" />
-    <None Remove="croissant.jpg" />
-    <None Remove="croquete.jpg" />
-    <None Remove="empada.jpg" />
-    <None Remove="Frappuchino.jpeg" />
-    <None Remove="graos cafe.jpg" />
-    <None Remove="iced latte.jpeg" />
-    <None Remove="Iced Moccha.jpeg" />
-    <None Remove="Image5.png" />
-    <None Remove="LOGO CAFE.png" />
-    <None Remove="Receita de Risoles E Versões Diferentes Macias Com Massa Mais Que Especial.jpg" />
-    <None Remove="sand4.jpg" />
-    <None Remove="sanduiche.jpg" />
-    <None Remove="sanduiche2.webp" />
-    <None Remove="sanduiche3.jpg" />
-    <None Remove="top-view-coffee-tamper-with-copy-space.jpg" />
-    <None Remove="WhatsApp Image 2026-05-26 at 20.10.07.jpeg" />
-    <None Remove="WhatsApp Image 2026-05-26 at 20.10.53.jpeg" />
-    <None Remove="WhatsApp Image 2026-05-26 at 20.11.21.jpeg" />
-    <None Remove="WhatsApp Image 2026-05-26 at 20.11.57.jpeg" />
-    <None Remove="WhatsApp Image 2026-05-26 at 20.12.11.jpeg" />
-    <None Remove="WhatsApp Image 2026-05-26 at 20.21.54.jpeg" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="MySql.Data" Version="9.7.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="2.png" />
-    <Resource Include="7478dbd1-6335-4cc6-9549-6fa2db4e2ccc.png" />
-    <Resource Include="b4f3f5aedd8597e83587ea9b1fb00c67.jpg" />
-    <Resource Include="ChatGPT Image 11 de jun. de 2026, 19_40_37.png" />
-    <Resource Include="ChatGPT Image 11 de jun. de 2026, 19_46_51.png" />
-    <Resource Include="ChatGPT Image 11 de jun. de 2026, 19_52_56.png" />
-    <Resource Include="ChatGPT Image 11 de jun. de 2026, 20_12_56.png" />
-    <Resource Include="ChatGPT Image 8 de jun. de 2026, 19_48_30.png" />
-    <Resource Include="ChatGPT Image 8 de jun. de 2026, 19_52_52.png" />
-    <Resource Include="Cold Brew.jpeg" />
-    <Resource Include="croissant.jpg" />
-    <Resource Include="croquete.jpg" />
-    <Resource Include="empada.jpg" />
-    <Resource Include="Frappuchino.jpeg" />
-    <Resource Include="graos cafe.jpg" />
-    <Resource Include="iced latte.jpeg" />
-    <Resource Include="Iced Moccha.jpeg" />
-    <Resource Include="Image5.png" />
-    <Resource Include="LOGO CAFE.png" />
-    <Resource Include="Receita de Risoles E Versões Diferentes Macias Com Massa Mais Que Especial.jpg" />
-    <Resource Include="sand4.jpg" />
-    <Resource Include="sanduiche.jpg" />
-    <Resource Include="sanduiche2.webp" />
-    <Resource Include="sanduiche3.jpg" />
-    <Resource Include="top-view-coffee-tamper-with-copy-space.jpg" />
-    <Resource Include="WhatsApp Image 2026-05-26 at 20.10.07.jpeg" />
-    <Resource Include="WhatsApp Image 2026-05-26 at 20.10.53.jpeg" />
-    <Resource Include="WhatsApp Image 2026-05-26 at 20.11.21.jpeg" />
-    <Resource Include="WhatsApp Image 2026-05-26 at 20.11.57.jpeg" />
-    <Resource Include="WhatsApp Image 2026-05-26 at 20.12.11.jpeg" />
-    <Resource Include="WhatsApp Image 2026-05-26 at 20.21.54.jpeg" />
+    <Folder Include="Img\" />
   </ItemGroup>
 
 </Project>

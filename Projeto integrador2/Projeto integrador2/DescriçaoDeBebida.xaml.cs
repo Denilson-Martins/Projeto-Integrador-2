@@ -22,16 +22,23 @@ namespace Projeto_integrador2
         {
             InitializeComponent();
         }
-               
-        private void Btn200ml(object sender, RoutedEventArgs e)
-        {
 
+
+        private void btnEntrar_CLick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.GoBack();
         }
 
-        private void btnVoltar_CLick(object sender, RoutedEventArgs e)
+        private void BtnCapMl(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new SelecaoDeBebidas());
-
+            if (sender is Button btn)
+            {
+                var valor = btn.Content.ToString() == "100ml" ? 6f : 12f;
+                ((App)Application.Current).ListaBebidas.Add(new Bebidas(btn.Tag.ToString(), btn.Content.ToString(), valor));
+                NavigationService.Navigate(new Pedido());
+            }
         }
+
+
     }
 }
