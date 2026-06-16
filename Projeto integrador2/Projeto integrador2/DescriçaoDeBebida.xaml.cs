@@ -22,14 +22,15 @@ namespace Projeto_integrador2
         {
             InitializeComponent();
         }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+               
+        private void Btn200ml(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void btnVoltar_CLick(object sender, RoutedEventArgs e)
         {
+            NavigationService.Navigate(new SelecaoDeBebidas());
 
         }
     }

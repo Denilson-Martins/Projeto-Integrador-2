@@ -8,21 +8,18 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Home">
-    <Page.Background>
-        <ImageBrush ImageSource="/graos cafe.jpg"/>
-    </Page.Background>
+
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/ChatGPT Image 11 de jun. de 2026, 19_52_56.png"/>
+        </Grid.Background>
 
-        <Canvas Margin="270,25,240,140">
-            <Canvas.Background>
-                <ImageBrush ImageSource="/LOGO CAFE.png"/>
-            </Canvas.Background>
+        <Button Content="ENTRAR" HorizontalAlignment="Center" VerticalAlignment="Top" Height="56" Width="148" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="Red" Background="{x:Null}" Click="btnEntrar_CLick" BorderBrush="#FFF10000" Canvas.Left="69" Canvas.Top="338" Margin="0,371,0,0"/>
+        <Button Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Height="128" Width="161" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI Black" Click="BtnLogAdm" Canvas.Left="-161" Canvas.Top="21" Margin="10,32,0,0">
+            <Button.Background>
+                <ImageBrush ImageSource="/ChatGPT Image 11 de jun. de 2026, 20_12_56.png"/>
+            </Button.Background>
+        </Button>
 
-            <Button Content="ENTRAR" HorizontalAlignment="Center" VerticalAlignment="Top" Height="56" Width="148" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="Red" Background="{x:Null}" Click="btnEntrar_CLick" x:Name="btnEntrar"  BorderBrush="#FFF10000" Canvas.Left="65" Canvas.Top="290"/>
-            <Button Content="LOGAR" HorizontalAlignment="Center" VerticalAlignment="Top" Height="56" Width="148" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="Red" Background="{x:Null}" Click="btnlogar_CLick" x:Name="btnLogar"  BorderBrush="#FFF10000" Canvas.Left="65" Canvas.Top="351"/>
-
-            <Image Height="100" Canvas.Left="400" Canvas.Top="170" Width="100"/>
-        </Canvas>
     </Grid>
-
 </Page>

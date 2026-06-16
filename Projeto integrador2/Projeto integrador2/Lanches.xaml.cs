@@ -28,5 +28,11 @@ namespace Projeto_integrador2
             NavigationService.Navigate(new DescriçãoDeLanche());
 
         }
+
+        private void btnVoltar_CLick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Escolher());
+
+        }
     }
 }
