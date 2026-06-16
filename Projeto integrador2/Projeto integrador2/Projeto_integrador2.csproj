@@ -10,11 +10,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="walpaper de descrição de bebida e lanche.png" />
+    <None Remove="walpaper descr bebida e lanche.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MySql.Data" Version="9.7.0" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Img\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="walpaper de descrição de bebida e lanche.png" />
+    <Resource Include="walpaper descr bebida e lanche.png" />
   </ItemGroup>
 
 </Project>
