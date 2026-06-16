@@ -17,32 +17,32 @@
         <WrapPanel Margin="150,52,150,52" Grid.RowSpan="2">
             <Button Content="" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="-0.428,10.816" Height="120" Width="120" Click="BtnCoxinha">
                 <Button.Background>
-                    <ImageBrush ImageSource="/b4f3f5aedd8597e83587ea9b1fb00c67.jpg"/>
+                    <ImageBrush ImageSource="Img/b4f3f5aedd8597e83587ea9b1fb00c67.jpg"/>
                 </Button.Background>
             </Button>
             <Button Content="" HorizontalAlignment="Left" Margin="10" VerticalAlignment="Top" RenderTransformOrigin="1.512,6.546" Height="120" Width="120">
                 <Button.Background>
-                    <ImageBrush ImageSource="/croissant.jpg"/>
+                    <ImageBrush ImageSource="Img/croissant.jpg"/>
                 </Button.Background>
             </Button>
             <Button Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="120" Width="130">
                 <Button.Background>
-                    <ImageBrush ImageSource="/sand4.jpg"/>
+                    <ImageBrush ImageSource="Img/sand4.jpg"/>
                 </Button.Background>
             </Button>
             <Button Content="" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="4.683,6.908" Height="120" Width="120" Margin="10" >
                 <Button.Background>
-                    <ImageBrush ImageSource="/empada.jpg"/>
+                    <ImageBrush ImageSource="Img/empada.jpg"/>
                 </Button.Background>
             </Button>
             <Button Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="120" Width="120" Margin="10" >
                 <Button.Background>
-                    <ImageBrush ImageSource="/Receita de Risoles E Versões Diferentes Macias Com Massa Mais Que Especial.jpg"/>
+                    <ImageBrush ImageSource="Img/Receita de Risoles E Versões Diferentes Macias Com Massa Mais Que Especial.jpg"/>
                 </Button.Background>
             </Button>
             <Button Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="120" Width="120" RenderTransformOrigin="1.769,-0.538">
                 <Button.Background>
-                    <ImageBrush ImageSource="/croquete.jpg"/>
+                    <ImageBrush ImageSource="Img/croquete.jpg"/>
                 </Button.Background>
             </Button>
             <Button Content="Voltar" HorizontalAlignment="Center" VerticalAlignment="Center" Height="56" Width="148" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI Black" Background="#FFE63030" />

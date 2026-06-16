@@ -13,7 +13,7 @@
             <RowDefinition Height="33*"/>
             <RowDefinition Height="17*"/>
         </Grid.RowDefinitions>
-        <Image Margin="69,28,455,86" Source="/WhatsApp Image 2026-05-26 at 20.10.53.jpeg" Stretch="Fill"/>
+        <Image Margin="69,28,455,86" Source="Img/WhatsApp Image 2026-05-26 at 20.10.53.jpeg" Stretch="Fill"/>
         <Label Content="Cappuccino" HorizontalAlignment="Left" Margin="400,28,0,0" VerticalAlignment="Top" FontSize="20"/>
         <TextBox HorizontalAlignment="Left" Margin="400,81,0,0" TextWrapping="Wrap" Text="Uma combinação equilibrada de café espresso encorpado, leite vaporizado e uma camada cremosa de espuma de leite. Finalizado com um toque de  canela, oferece aroma marcante, textura aveludada e sabor suave, perfeito para qualquer momento do dia." VerticalAlignment="Top" Width="390" FontSize="16"/>
         <Label Content="Ingredientes" HorizontalAlignment="Left" Margin="400,211,0,0" VerticalAlignment="Top" FontSize="20"/>

@@ -10,60 +10,60 @@
 
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="/top-view-coffee-tamper-with-copy-space.jpg"/>
+            <ImageBrush ImageSource="Img/top-view-coffee-tamper-with-copy-space.jpg"/>
         </Grid.Background>
 
         <WrapPanel Margin="10,10,230,10">
 
             <Button HorizontalAlignment="Left"  VerticalAlignment="Top" Height="100" Width="100"  Margin="10,5,0,50"  >
                 <Button.Background>
-                    <ImageBrush ImageSource="/WhatsApp Image 2026-05-26 at 20.10.07.jpeg"/>
+                    <ImageBrush ImageSource="Img/WhatsApp Image 2026-05-26 at 20.10.07.jpeg"/>
                 </Button.Background>
                 <Button  Content="" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="100" Width="100" Click="ButtonCappuccino" >
                     <Button.Background>
-                        <ImageBrush ImageSource="/WhatsApp Image 2026-05-26 at 20.10.53.jpeg"/>
+                        <ImageBrush ImageSource="Img/WhatsApp Image 2026-05-26 at 20.10.53.jpeg"/>
                     </Button.Background>
                 </Button>
             </Button>
             <Button  Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Height="100" Width="100" Margin="10,5,0,50">
                 <Button.Background>
-                    <ImageBrush ImageSource="/WhatsApp Image 2026-05-26 at 20.11.21.jpeg"/>
+                    <ImageBrush ImageSource="Img/WhatsApp Image 2026-05-26 at 20.11.21.jpeg"/>
                 </Button.Background>
             </Button>
             <Button  Content="" HorizontalAlignment="Center" VerticalAlignment="Top" Height="100" Width="100" Margin="10,5,0,50">
                 <Button.Background>
-                    <ImageBrush ImageSource="/WhatsApp Image 2026-05-26 at 20.11.57.jpeg"/>
+                    <ImageBrush ImageSource="Img/WhatsApp Image 2026-05-26 at 20.11.57.jpeg"/>
                 </Button.Background>
             </Button>
             <Button Content="" Height="100" Width="100" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,5,0,50" >
                 <Button.Background>
-                    <ImageBrush ImageSource="/WhatsApp Image 2026-05-26 at 20.12.11.jpeg"/>
+                    <ImageBrush ImageSource="Img/WhatsApp Image 2026-05-26 at 20.12.11.jpeg"/>
                 </Button.Background>
             </Button>
 
             <Button Content="" Height="100" Width="100" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,5,0,50" >
                 <Button.Background>
-                    <ImageBrush ImageSource="/Iced Moccha.jpeg"/>
+                    <ImageBrush ImageSource="Img/Iced Moccha.jpeg"/>
                 </Button.Background>
             </Button>
             <Button Content="" Height="100" Width="100" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,5,0,50" >
                 <Button.Background>
-                    <ImageBrush ImageSource="/Image5.png"/>
+                    <ImageBrush ImageSource="Img/Image5.png"/>
                 </Button.Background>
             </Button>
             <Button Content="" Height="100" Width="100" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,5,0,50" >
                 <Button.Background>
-                    <ImageBrush ImageSource="/iced latte.jpeg"/>
+                    <ImageBrush ImageSource="Img/iced latte.jpeg"/>
                 </Button.Background>
             </Button>
             <Button Content="" Height="100" Width="100" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,5,0,50" >
                 <Button.Background>
-                    <ImageBrush ImageSource="/Frappuchino.jpeg"/>
+                    <ImageBrush ImageSource="Img/Frappuchino.jpeg"/>
                 </Button.Background>
             </Button>
             <Button Content="" Height="100" Width="100" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,5,0,50" >
                 <Button.Background>
-                    <ImageBrush ImageSource="/Cold Brew.jpeg"/>
+                    <ImageBrush ImageSource="Img/Cold Brew.jpeg"/>
                 </Button.Background>
             </Button>
             <Button Content="Voltar" HorizontalAlignment="Center" VerticalAlignment="Center" Height="56" Width="148" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="#FFFF5D00" Background="{x:Null}" Click="btnVoltar_CLick" x:Name="btnEntrar"  BorderBrush="#FFFF5D00"/>

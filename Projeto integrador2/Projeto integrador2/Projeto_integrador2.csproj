@@ -10,11 +10,29 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="2.png" />
+    <None Remove="ChatGPT Image 11 de jun. de 2026, 20_20_00.png" />
+    <None Remove="ChatGPT Image 11 de jun. de 2026, 20_24_10.png" />
+    <None Remove="ChatGPT Image 11 de jun. de 2026, 20_28_20.png" />
+    <None Remove="img %284%29.png" />
+    <None Remove="img %287%29.png" />
+    <None Remove="img %288%29.png" />
+    <None Remove="img3.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MySql.Data" Version="9.7.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Img\" />
+    <Resource Include="2.png" />
+    <Resource Include="ChatGPT Image 11 de jun. de 2026, 20_20_00.png" />
+    <Resource Include="ChatGPT Image 11 de jun. de 2026, 20_24_10.png" />
+    <Resource Include="ChatGPT Image 11 de jun. de 2026, 20_28_20.png" />
+    <Resource Include="img (4).png" />
+    <Resource Include="img (7).png" />
+    <Resource Include="img (8).png" />
+    <Resource Include="img3.png" />
   </ItemGroup>
 
 </Project>
