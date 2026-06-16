@@ -10,6 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+<<<<<<< HEAD
     <None Remove="2.png" />
     <None Remove="ChatGPT Image 11 de jun. de 2026, 20_20_00.png" />
     <None Remove="ChatGPT Image 11 de jun. de 2026, 20_24_10.png" />
@@ -18,6 +19,10 @@
     <None Remove="img %287%29.png" />
     <None Remove="img %288%29.png" />
     <None Remove="img3.png" />
+=======
+    <None Remove="walpaper de descrição de bebida e lanche.png" />
+    <None Remove="walpaper descr bebida e lanche.png" />
+>>>>>>> 78c863682d82f93dea670cc7f4521ddda40c6e85
   </ItemGroup>
 
   <ItemGroup>
@@ -33,6 +38,11 @@
     <Resource Include="img (7).png" />
     <Resource Include="img (8).png" />
     <Resource Include="img3.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="walpaper de descrição de bebida e lanche.png" />
+    <Resource Include="walpaper descr bebida e lanche.png" />
   </ItemGroup>
 
 </Project>

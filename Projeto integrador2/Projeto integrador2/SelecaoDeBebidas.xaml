@@ -15,7 +15,47 @@
 
         <WrapPanel Margin="10,10,230,10">
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <Button Content="" HorizontalAlignment="Left" Margin="10,170,0,0" VerticalAlignment="Top" Height="100" Width="100" >
+            <Button.Background>
+                <ImageBrush ImageSource="/WhatsApp Image 2026-05-26 at 20.10.07.jpeg"/>
+            </Button.Background>
+        </Button>
+        <Button  Content="" HorizontalAlignment="Left" Margin="123,28,0,0" VerticalAlignment="Top" Height="100" Width="100" Click="ButtonCappuccino">
+            <Button.Background>
+                <ImageBrush ImageSource="/WhatsApp Image 2026-05-26 at 20.10.53.jpeg"/>
+            </Button.Background>
+        </Button>
+        <Button  Content="" HorizontalAlignment="Left" Margin="235,28,0,0" VerticalAlignment="Top" Height="100" Width="100">
+            <Button.Background>
+                <ImageBrush ImageSource="/WhatsApp Image 2026-05-26 at 20.11.21.jpeg"/>
+            </Button.Background>
+        </Button>
+        <Button  Content="" HorizontalAlignment="Center" Margin="0,28,0,0" VerticalAlignment="Top" Height="100" Width="100">
+            <Button.Background>
+                <ImageBrush ImageSource="/WhatsApp Image 2026-05-26 at 20.11.57.jpeg"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" Height="100" Width="100" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,28,0,0">
+            <Button.Background>
+                <ImageBrush ImageSource="/WhatsApp Image 2026-05-26 at 20.12.11.jpeg"/>
+            </Button.Background>
+        </Button>
+        <Label  Content="" HorizontalAlignment="Left" Margin="180,181,0,0" VerticalAlignment="Top"/>
+        <Image Margin="241,175,239,175" Source="/Image1.png" />
+        <TextBox  HorizontalAlignment="Left" Margin="173,247,0,0" TextWrapping="Wrap" Text="Ice Latte" VerticalAlignment="Top" Width="56" BorderBrush="White"/>
+        <Image Margin="240,324,240,32" Source="/Image2.png"  />
+        <Image Margin="569,137,81,197" Source="/Image3.png"   RenderTransformOrigin="0.5,0.5"/>
+=======
+            <Button Content="" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="100" Width="100"  Margin="10,5,0,50"  >
+=======
+            <Button Content="" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="100" Width="100"  Margin="10,5,0,50" Click="Button_Click"  >
+>>>>>>> b7030b6fbdd6f6301e05ea81fa32ccb2f9f6102d
+=======
             <Button HorizontalAlignment="Left"  VerticalAlignment="Top" Height="100" Width="100"  Margin="10,5,0,50"  >
+>>>>>>> 7e84fde72791874a2c9953894350bcd0115a703f
                 <Button.Background>
                     <ImageBrush ImageSource="Img/WhatsApp Image 2026-05-26 at 20.10.07.jpeg"/>
                 </Button.Background>
@@ -40,6 +80,7 @@
                     <ImageBrush ImageSource="Img/WhatsApp Image 2026-05-26 at 20.12.11.jpeg"/>
                 </Button.Background>
             </Button>
+>>>>>>> 968832a5a42f16788f9700e6488be5704d86871e
 
             <Button Content="" Height="100" Width="100" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,5,0,50" >
                 <Button.Background>
