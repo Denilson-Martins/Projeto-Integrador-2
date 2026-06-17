@@ -17,7 +17,7 @@
         <WrapPanel Margin="150,52,150,52" Grid.RowSpan="2">
             <Button Content="" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="-0.428,10.816" Height="120" Width="120" Click="BtnCoxinha">
                 <Button.Background>
-                    <ImageBrush ImageSource="Img/b4f3f5aedd8597e83587ea9b1fb00c67.jpg"/>
+                    <ImageBrush ImageSource="/img1.jpg" />
                 </Button.Background>
             </Button>
             <Button Content="" HorizontalAlignment="Left" Margin="10" VerticalAlignment="Top" RenderTransformOrigin="1.512,6.546" Height="120" Width="120">
@@ -37,7 +37,7 @@
             </Button>
             <Button Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="120" Width="120" Margin="10" >
                 <Button.Background>
-                    <ImageBrush ImageSource="Img/Receita de Risoles E Versões Diferentes Macias Com Massa Mais Que Especial.jpg"/>
+                    <ImageBrush ImageSource="/img (1).jpg"/>
                 </Button.Background>
             </Button>
             <Button Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="120" Width="120" RenderTransformOrigin="1.769,-0.538">

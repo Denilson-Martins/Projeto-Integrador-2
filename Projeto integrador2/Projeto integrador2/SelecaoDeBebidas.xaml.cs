@@ -34,6 +34,14 @@ namespace Projeto_integrador2
 
         }
 
-       
+        private void BtnCapMl(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

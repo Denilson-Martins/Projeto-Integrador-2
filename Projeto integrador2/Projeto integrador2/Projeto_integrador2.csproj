@@ -10,19 +10,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-<<<<<<< HEAD
     <None Remove="2.png" />
     <None Remove="ChatGPT Image 11 de jun. de 2026, 20_20_00.png" />
-    <None Remove="ChatGPT Image 11 de jun. de 2026, 20_24_10.png" />
     <None Remove="ChatGPT Image 11 de jun. de 2026, 20_28_20.png" />
+    <None Remove="img %281%29.jpg" />
     <None Remove="img %284%29.png" />
     <None Remove="img %287%29.png" />
     <None Remove="img %288%29.png" />
+    <None Remove="img1.jpg" />
     <None Remove="img3.png" />
-=======
-    <None Remove="walpaper de descrição de bebida e lanche.png" />
-    <None Remove="walpaper descr bebida e lanche.png" />
->>>>>>> 78c863682d82f93dea670cc7f4521ddda40c6e85
+    <None Remove="Img\img %284%29.png" />
+    <None Remove="Img\img %287%29.png" />
+    <None Remove="Img\img %288%29.png" />
+    <None Remove="Img\img3.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -31,18 +31,15 @@
 
   <ItemGroup>
     <Resource Include="2.png" />
-    <Resource Include="ChatGPT Image 11 de jun. de 2026, 20_20_00.png" />
-    <Resource Include="ChatGPT Image 11 de jun. de 2026, 20_24_10.png" />
-    <Resource Include="ChatGPT Image 11 de jun. de 2026, 20_28_20.png" />
-    <Resource Include="img (4).png" />
-    <Resource Include="img (7).png" />
-    <Resource Include="img (8).png" />
-    <Resource Include="img3.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Resource Include="walpaper de descrição de bebida e lanche.png" />
-    <Resource Include="walpaper descr bebida e lanche.png" />
+    <Resource Include="img (1).jpg" />
+    <Resource Include="img1.jpg" />
+    <Resource Include="Img\ChatGPT Image 11 de jun. de 2026, 20_20_00.png" />
+    <Resource Include=".png" />
+    <Resource Include="Img\ChatGPT Image 11 de jun. de 2026, 20_28_20.png" />
+    <Resource Include="Img\img (4).png" />
+    <Resource Include="Img\img (7).png" />
+    <Resource Include="Img\img (8).png" />
+    <Resource Include="Img\img3.png" />
   </ItemGroup>
 
 </Project>
