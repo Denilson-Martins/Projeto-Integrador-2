@@ -27,7 +27,7 @@ namespace Projeto_integrador2
         {
             NavigationService.Navigate(new Descrição_do_produto());
         }
-                
+
         private void btnVoltar_CLick(object sender, RoutedEventArgs e)
         {
             NavigationService.GoBack();
@@ -40,11 +40,6 @@ namespace Projeto_integrador2
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
 
         }

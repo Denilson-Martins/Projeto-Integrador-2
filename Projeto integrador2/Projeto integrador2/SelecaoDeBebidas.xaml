@@ -9,6 +9,67 @@
       Title="SelecaoDeBebidas">
 
     <Grid>
-       
+        <Grid.Background>
+            <ImageBrush ImageSource="/img (2).jpg"/>
+        </Grid.Background>
+
+        <Button Content="" Margin="21,10,699,360" Height="80" Width="80" Click="ButtonCappuccino">
+            <Button.Background>
+                <ImageBrush ImageSource="/img (2).jpeg"/>
+            </Button.Background>
+        </Button>
+        <Label Content="" HorizontalAlignment="Left" Margin="152,174,0,0" VerticalAlignment="Top"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="236,115,0,0" VerticalAlignment="Top" Width="80" Height="80" Click="Button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Cold Brew.jpeg"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="21,220,0,0" VerticalAlignment="Top" Width="80" Height="80">
+            <Button.Background>
+                <ImageBrush ImageSource="/Frappuchino.jpeg"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="236,10,0,0" VerticalAlignment="Top" Click="Button_Click_1" Width="80" Height="80">
+            <Button.Background>
+                <ImageBrush ImageSource="/img (1).jpeg"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="126,220,0,0" VerticalAlignment="Top" Width="80" Height="80">
+            <Button.Background>
+                <ImageBrush ImageSource="/Iced Moccha.jpeg"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="21,115,0,0" VerticalAlignment="Top" Click="Button_Click_2" Width="80" Height="80">
+            <Button.Background>
+                <ImageBrush ImageSource="/img (3).jpeg"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="126,10,0,0" VerticalAlignment="Top" Width="80" Height="80">
+            <Button.Background>
+                <ImageBrush ImageSource="/img (5).jpeg"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="126,115,0,0" VerticalAlignment="Top" Click="Button_Click_3" RenderTransformOrigin="0.576,0.615" Width="80" Height="80">
+            <Button.Background>
+                <ImageBrush ImageSource="/img (4).jpeg"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="236,220,0,0" VerticalAlignment="Top" Width="80" Height="80">
+            <Button.Background>
+                <ImageBrush ImageSource="/iced latte.jpeg"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" Width="80" Height="80" Margin="21,331,699,39">
+            <Button.Background>
+                <ImageBrush ImageSource="/Image5.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" Width="80" Height="80" Margin="126,331,594,39">
+            <Button.Background>
+                <ImageBrush ImageSource="/Image6.png"/>
+            </Button.Background>
+        </Button>
+
+
     </Grid>
 </Page>
