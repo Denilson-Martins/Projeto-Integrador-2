@@ -24,7 +24,7 @@
                 <ImageBrush ImageSource="/Cold Brew.jpeg"/>
             </Button.Background>
         </Button>
-        <Button Content="" HorizontalAlignment="Left" Margin="21,220,0,0" VerticalAlignment="Top" Width="80" Height="80">
+        <Button Content="" HorizontalAlignment="Left" Margin="21,225,0,0" VerticalAlignment="Top" Width="80" Height="80">
             <Button.Background>
                 <ImageBrush ImageSource="/Frappuchino.jpeg"/>
             </Button.Background>
@@ -34,12 +34,12 @@
                 <ImageBrush ImageSource="/img (1).jpeg"/>
             </Button.Background>
         </Button>
-        <Button Content="" HorizontalAlignment="Left" Margin="126,220,0,0" VerticalAlignment="Top" Width="80" Height="80">
+        <Button Content="" HorizontalAlignment="Left" Margin="126,225,0,0" VerticalAlignment="Top" Width="80" Height="80">
             <Button.Background>
                 <ImageBrush ImageSource="/Iced Moccha.jpeg"/>
             </Button.Background>
         </Button>
-        <Button Content="" HorizontalAlignment="Left" Margin="21,115,0,0" VerticalAlignment="Top" Click="Button_Click_2" Width="80" Height="80">
+        <Button Content="" HorizontalAlignment="Left" Margin="21,115,0,0" VerticalAlignment="Top" Width="80" Height="80">
             <Button.Background>
                 <ImageBrush ImageSource="/img (3).jpeg"/>
             </Button.Background>
@@ -49,12 +49,12 @@
                 <ImageBrush ImageSource="/img (5).jpeg"/>
             </Button.Background>
         </Button>
-        <Button Content="" HorizontalAlignment="Left" Margin="126,115,0,0" VerticalAlignment="Top" Click="Button_Click_3" RenderTransformOrigin="0.576,0.615" Width="80" Height="80">
+        <Button Content="" HorizontalAlignment="Left" Margin="126,115,0,0" VerticalAlignment="Top"  RenderTransformOrigin="0.576,0.615" Width="80" Height="80">
             <Button.Background>
                 <ImageBrush ImageSource="/img (4).jpeg"/>
             </Button.Background>
         </Button>
-        <Button Content="" HorizontalAlignment="Left" Margin="236,220,0,0" VerticalAlignment="Top" Width="80" Height="80">
+        <Button Content="" HorizontalAlignment="Left" Margin="236,225,0,0" VerticalAlignment="Top" Width="80" Height="80">
             <Button.Background>
                 <ImageBrush ImageSource="/iced latte.jpeg"/>
             </Button.Background>
@@ -66,7 +66,113 @@
         </Button>
         <Button Content="" Width="80" Height="80" Margin="126,331,594,39">
             <Button.Background>
-                <ImageBrush ImageSource="/Image6.png"/>
+                <ImageBrush ImageSource="/agua com gás.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="236,331,0,0" VerticalAlignment="Top" Width="80" Height="80" FontWeight="Bold">
+            <Button.Background>
+                <ImageBrush ImageSource="/agua normal.png"/>
+            </Button.Background>
+        </Button>
+        <Label Content="Cappucino" HorizontalAlignment="Left" Margin="29,90,0,0" VerticalAlignment="Top" FontWeight="Bold">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <Label Content="Latte     " HorizontalAlignment="Left" Margin="36,195,0,0" VerticalAlignment="Top" FontWeight="Bold">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <Label Content="Expresso" HorizontalAlignment="Left" Margin="244,90,0,0" VerticalAlignment="Top" FontWeight="Bold">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <Label Content="Mocha" HorizontalAlignment="Left" Margin="145,90,0,0" VerticalAlignment="Top" FontWeight="Bold">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <Label Content="Cold Brew" HorizontalAlignment="Left" Margin="244,195,0,0" VerticalAlignment="Top" FontWeight="Bold">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <Label Content="Americano" HorizontalAlignment="Left" Margin="128,195,0,0" VerticalAlignment="Top" FontWeight="Bold">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <Label Content="iced mocha" HorizontalAlignment="Left" Margin="131,305,0,0" VerticalAlignment="Top" FontWeight="Bold">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <Label Content="Ice Latte" HorizontalAlignment="Left" Margin="244,305,0,0" VerticalAlignment="Top" FontWeight="Bold">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <Label Content="Frappuccino" HorizontalAlignment="Left" Margin="25,305,0,0" VerticalAlignment="Top" FontWeight="Bold">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <Label Content="Agua(gás)" HorizontalAlignment="Left" Margin="134,411,0,0" VerticalAlignment="Top" FontWeight="Bold">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <Label Content="Agua" HorizontalAlignment="Left" Margin="257,411,0,0" VerticalAlignment="Top" FontWeight="Bold">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <Label Content="Creamy Iced Coffe" HorizontalAlignment="Left" Margin="10,411,0,0" VerticalAlignment="Top" FontWeight="Bold">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <Button Content="SAIR" HorizontalAlignment="Left" Margin="655,387,0,0" VerticalAlignment="Top" Width="100" Height="50" Click="Button_Click_1" BorderBrush="Red" Foreground="#FFCA5F5F" FontWeight="Bold" FontSize="20">
+            <Button.Background>
+                <ImageBrush/>
             </Button.Background>
         </Button>
 
