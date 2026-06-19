@@ -46,7 +46,7 @@
                 <ImageBrush ImageSource="/empada.jpg"/>
             </Button.Background>
         </Button>
-        <Button Content="" Width="100" Height="100" Margin="179,296,521,54" Grid.RowSpan="2">
+        <Button Content="" Width="100" Height="100" Margin="179,296,521,54" Grid.RowSpan="2" Click="Button_Click_1">
             <Button.Background>
                 <ImageBrush ImageSource="/img1.jpg"/>
             </Button.Background>
