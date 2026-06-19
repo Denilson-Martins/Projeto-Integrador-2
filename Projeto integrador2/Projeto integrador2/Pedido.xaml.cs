@@ -23,5 +23,26 @@ namespace Projeto_integrador2
             InitializeComponent();
             DgPedido.ItemsSource = ((App)Application.Current).ListaBebidas;
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.GoBack();
+        }
+
+        private void BtnRemove(object sender, RoutedEventArgs e)
+        {
+            int index = DgPedido.SelectedIndex;
+
+            if (index >= 0 && index < ((App)Application.Current).ListaBebidas.Count)
+            {
+                ((App)Application.Current).ListaBebidas.RemoveAt(index);
+                DgPedido.Items.Refresh();
+            }
+        }
+
+        private void BtnFinalizar(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new FinalizarCompra());
+        }
     }
 }

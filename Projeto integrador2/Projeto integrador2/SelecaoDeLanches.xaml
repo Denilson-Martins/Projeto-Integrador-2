@@ -16,7 +16,7 @@
             <RowDefinition Height="154*"/>
             <RowDefinition Height="71*"/>
         </Grid.RowDefinitions>
-        <Button Content="" Width="100" Height="100" Margin="44,44,656,164">
+        <Button Content="" Width="100" Height="100" Margin="179,296,521,54" Grid.RowSpan="2">
             <Button.Background>
                 <ImageBrush ImageSource="/croissant.jpg"/>
             </Button.Background>
@@ -26,7 +26,7 @@
                 <ImageBrush ImageSource="/Design-sem-nome.webp"/>
             </Button.Background>
         </Button>
-        <Button Content="" Width="100" Height="100" Margin="179,44,521,164" Click="Button_Click">
+        <Button Content="" Width="100" Height="100" Margin="179,44,521,164" >
             <Button.Background>
                 <ImageBrush ImageSource="/croquete.jpg"/>
             </Button.Background>
@@ -46,7 +46,7 @@
                 <ImageBrush ImageSource="/empada.jpg"/>
             </Button.Background>
         </Button>
-        <Button Content="" Width="100" Height="100" Margin="179,296,521,54" Grid.RowSpan="2" Click="Button_Click_1">
+        <Button Content="" Width="100" Height="100" Margin="44,44,656,164" Click="BtnCoxinha">
             <Button.Background>
                 <ImageBrush ImageSource="/img1.jpg"/>
             </Button.Background>

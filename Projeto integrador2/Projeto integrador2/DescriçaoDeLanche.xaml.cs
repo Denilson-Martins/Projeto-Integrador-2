@@ -23,14 +23,16 @@ namespace Projeto_integrador2
             InitializeComponent();
         }
 
-        private void btnEntrar_CLick(object sender, RoutedEventArgs e)
-        {
-
-        }
+        
 
         private void BtnTamanho(object sender, RoutedEventArgs e)
         {
-
+            if (sender is Button btn)
+            {
+                var valor = btn.Content.ToString() == "Grande" ? 5.50 : 9.00;
+                ((App)Application.Current).ListaBebidas.Add(new Bebidas(btn.Tag.ToString(), btn.Content.ToString(), valor));
+                NavigationService.Navigate(new Pedido());
+            }
 
         }
 

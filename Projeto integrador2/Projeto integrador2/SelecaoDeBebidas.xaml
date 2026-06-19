@@ -19,7 +19,7 @@
             </Button.Background>
         </Button>
         <Label Content="" HorizontalAlignment="Left" Margin="152,174,0,0" VerticalAlignment="Top"/>
-        <Button Content="" HorizontalAlignment="Left" Margin="236,115,0,0" VerticalAlignment="Top" Width="80" Height="80" Click="Button_Click">
+        <Button Content="" HorizontalAlignment="Left" Margin="236,115,0,0" VerticalAlignment="Top" Width="80" Height="80" >
             <Button.Background>
                 <ImageBrush ImageSource="/Cold Brew.jpeg"/>
             </Button.Background>
@@ -29,7 +29,7 @@
                 <ImageBrush ImageSource="/Frappuchino.jpeg"/>
             </Button.Background>
         </Button>
-        <Button Content="" HorizontalAlignment="Left" Margin="236,10,0,0" VerticalAlignment="Top" Click="Button_Click_1" Width="80" Height="80">
+        <Button Content="" HorizontalAlignment="Left" Margin="236,10,0,0" VerticalAlignment="Top"  Width="80" Height="80">
             <Button.Background>
                 <ImageBrush ImageSource="/img (1).jpeg"/>
             </Button.Background>
@@ -170,7 +170,7 @@
                 </LinearGradientBrush>
             </Label.Background>
         </Label>
-        <Button Content="SAIR" HorizontalAlignment="Left" Margin="655,387,0,0" VerticalAlignment="Top" Width="100" Height="50" Click="Button_Click_1" BorderBrush="Red" Foreground="#FFCA5F5F" FontWeight="Bold" FontSize="20">
+        <Button Content="SAIR" HorizontalAlignment="Left" Margin="655,387,0,0" VerticalAlignment="Top" Width="100" Height="50" BorderBrush="Red" Foreground="#FFCA5F5F" FontWeight="Bold" FontSize="20">
             <Button.Background>
                 <ImageBrush/>
             </Button.Background>
