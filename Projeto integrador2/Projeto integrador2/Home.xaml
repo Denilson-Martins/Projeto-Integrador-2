@@ -8,22 +8,25 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Home">
 
-    <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="Img/img (4).png"/>
-        </Grid.Background>
+    <Viewbox Stretch="Fill">
+        <Canvas Width="800" Height="450">
+            <Canvas.Background>
+                <ImageBrush ImageSource="Img/img (4).png"/>
+            </Canvas.Background>
 
 
-        <Button Content="ENTRAR" HorizontalAlignment="Center" VerticalAlignment="Top" Height="56" Width="148" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="#FFFF5D00" Background="{x:Null}" Click="btnEntrar_CLick" BorderBrush="#FFF10000"  Margin="0,371,0,0"/>
+            <Button Content="ENTRAR" HorizontalAlignment="Left" VerticalAlignment="Center" Height="56" Width="148" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="#FFFF5D00" Background="{x:Null}" Click="btnEntrar_CLick" BorderBrush="#FFF10000" Canvas.Left="326" Canvas.Top="384"/>
 
-        <Image Margin="588,0,0,286" Source="Img/img (8).png" Stretch="Fill"/>
-        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Height="164" Width="186" Click="BtnLogAdm" BorderThickness="0,0,0,0">
-            <Button.Background>
-                <ImageBrush ImageSource="Img/img (7).png"/>
-            </Button.Background>
-        </Button>
+            <Image Source="Img/img (8).png" Stretch="Fill" Canvas.Left="563" Height="191" Width="237" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Button Content="Button" HorizontalAlignment="Center" VerticalAlignment="Top" Height="164" Width="186" Click="BtnLogAdm" BorderThickness="0,0,0,0" Canvas.Top="8">
+                <Button.Background>
+                    <ImageBrush ImageSource="Img/img (7).png"/>
+                </Button.Background>
+            </Button>
 
-    </Grid>
+        </Canvas>
+
+    </Viewbox>
 
 
 </Page>
