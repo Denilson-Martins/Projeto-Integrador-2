@@ -28,17 +28,15 @@ namespace Projeto_integrador2
             NavigationService.Navigate(new Descrição_do_produto());
         }
 
-        private void btnVoltar_CLick(object sender, RoutedEventArgs e)
-        {
-            NavigationService.GoBack();
-
-        }
-
+        
         private void BtnCapMl(object sender, RoutedEventArgs e)
         {
 
         }
 
-        
+        private void BtnVoltar(object sender, RoutedEventArgs e)
+        {
+            NavigationService.GoBack();
+        }
     }
 }

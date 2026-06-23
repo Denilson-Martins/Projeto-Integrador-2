@@ -170,7 +170,7 @@
                 </LinearGradientBrush>
             </Label.Background>
         </Label>
-        <Button Content="SAIR" HorizontalAlignment="Left" Margin="655,387,0,0" VerticalAlignment="Top" Width="100" Height="50" BorderBrush="Red" Foreground="#FFCA5F5F" FontWeight="Bold" FontSize="20">
+        <Button Content="Voltar" Click="BtnVoltar" HorizontalAlignment="Left" Margin="655,387,0,0" VerticalAlignment="Top" Width="100" Height="50" BorderBrush="Red" Foreground="#FFCA5F5F" FontWeight="Bold" FontSize="20">
             <Button.Background>
                 <ImageBrush/>
             </Button.Background>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -14,7 +15,7 @@ using System.Windows.Shapes;
 namespace Projeto_integrador2
 {
     /// <summary>
-    /// Interação lógica para Pedido.xam
+    /// Interação lógica para Pedido.xaml
     /// </summary>
     public partial class Pedido : Page
     {
@@ -22,6 +23,14 @@ namespace Projeto_integrador2
         {
             InitializeComponent();
             DgPedido.ItemsSource = ((App)Application.Current).ListaBebidas;
+            AtualizarSubtotal();
+        }
+
+        
+        private void AtualizarSubtotal()
+        {
+            double subtotal = ((App)Application.Current).ListaBebidas.Sum(b => b.Valor);
+            TxtSubtotal.Text = subtotal.ToString("C2");
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -37,12 +46,18 @@ namespace Projeto_integrador2
             {
                 ((App)Application.Current).ListaBebidas.RemoveAt(index);
                 DgPedido.Items.Refresh();
+                AtualizarSubtotal(); // Atualiza o subtotal após remover o item
             }
         }
 
         private void BtnFinalizar(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new FinalizarCompra());
+        }
+
+        private void BtnEscolherBebida(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Escolher());
         }
     }
 }

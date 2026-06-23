@@ -9,20 +9,50 @@
       Title="Pedido">
 
     <Grid Background="White">
-        <DataGrid x:Name="DgPedido" AutoGenerateColumns="False" CanUserDeleteRows="True" Margin="0,0,0,71">
-            <DataGrid.Columns>
 
-                <DataGridTextColumn Header="Nome" Binding="{Binding Nome}"/>
-                <DataGridTextColumn Header="Tamanho" Binding="{Binding Tamanho}"/>
-                <DataGridTextColumn Header="Valor" Binding="{Binding Valor, StringFormat={}{0:C2}}"/>
+        
+        <DataGrid x:Name="DgPedido" AutoGenerateColumns="False" CanUserDeleteRows="False" Margin="0,0,0,203">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Nome"    Binding="{Binding Nome}"   Width="*"/>
+                <DataGridTextColumn Header="Tamanho" Binding="{Binding Tamanho}" Width="Auto"/>
+                <DataGridTextColumn Header="Valor"   Binding="{Binding Valor, StringFormat={}{0:C2}}" Width="Auto"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button Content="Voltar" HorizontalAlignment="Left" VerticalAlignment="Top" Height="56" Width="148" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="#FFE84242" Margin="10,384,0,0" Click="Button_Click" BorderBrush="Red">
+
+        <!-- Painel de Subtotal -->
+        <Border BorderBrush="#FFCCCCCC" BorderThickness="1" CornerRadius="6"
+                HorizontalAlignment="Right" VerticalAlignment="Bottom"
+                Margin="0,0,23,209" Padding="16,10" Background="#FFF9F9F9">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Subtotal: " FontSize="18" FontWeight="Bold"
+                           FontFamily="Segoe UI" VerticalAlignment="Center" Foreground="#FF333333"/>
+                <TextBlock x:Name="TxtSubtotal" Text="R$ 0,00" FontSize="18" FontWeight="Bold"
+                           FontFamily="Segoe UI" VerticalAlignment="Center" Foreground="#FF228B22"/>
+            </StackPanel>
+        </Border>
+
+       
+        <Button Content="Remover" HorizontalAlignment="Left" Margin="31,301,0,0"
+                VerticalAlignment="Top" Click="BtnRemove" FontSize="20"
+                Background="#FFE84242" Foreground="White" BorderBrush="#FFCC0000"
+                Padding="10,4"/>
+
+        <Button Content="Voltar para a tela de Escolha" HorizontalAlignment="Left"
+                Margin="31,252,0,0" VerticalAlignment="Top" FontSize="20"
+                Click="BtnEscolherBebida"/>
+
+        <Button Content="Finalizar Pedido" HorizontalAlignment="Left"
+                Margin="31,348,0,0" VerticalAlignment="Top" FontSize="20"
+                Click="BtnFinalizar"/>
+
+        <Button Content="Voltar" HorizontalAlignment="Left" VerticalAlignment="Top"
+                Height="56" Width="148" FontSize="20" FontWeight="Bold"
+                FontFamily="Segoe UI Black" Foreground="#FFE84242"
+                Margin="10,384,0,0" Click="Button_Click" BorderBrush="Red">
             <Button.Background>
                 <ImageBrush/>
             </Button.Background>
         </Button>
-        <Button Content="Remover" HorizontalAlignment="Center" Margin="0,405,0,0" VerticalAlignment="Top" Click="BtnRemove" FontSize="20"/>
-        <Button Content="Finalizar Pedido" HorizontalAlignment="Left" Margin="634,405,0,0" VerticalAlignment="Top" FontSize="20" Click="BtnFinalizar"/>
+
     </Grid>
 </Page>
