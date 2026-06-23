@@ -7,61 +7,65 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="SelecaoDeLanches">
+    <Viewbox Stretch="Fill">
+        <Canvas Width="800" Height="450" >
+            <Canvas.Background>
+                <ImageBrush ImageSource="/img (1).png"/>
+            </Canvas.Background>
+                        <Button Content="" Width="100" Height="100" Margin="386,291,314,59">
+                <Button.Background>
+                    <ImageBrush ImageSource="/croissant.jpg"/>
+                </Button.Background>
+            </Button>
+            <Button Content="" Width="100" Height="100" Margin="648,296,52,54">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Design-sem-nome.webp"/>
+                </Button.Background>
+            </Button>
+            <Button Content="" Width="100" Height="100" Margin="510,18,190,332" RenderTransformOrigin="1.44,0.291" >
+                <Button.Background>
+                    <ImageBrush ImageSource="/croquete.jpg"/>
+                </Button.Background>
+            </Button>
+            <Button Content="" Width="100" Height="100" Margin="510,296,190,54">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img (1).jpg"/>
+                </Button.Background>
+            </Button>
+            <Button Content="" Width="100" Height="100" Margin="386,170,314,180">
+                <Button.Background>
+                    <ImageBrush ImageSource="/sanduiche.jpg"/>
+                </Button.Background>
+            </Button>
+            <Button Content="" Width="100" Height="100" Margin="648,0,52,346">
+                <Button.Background>
+                    <ImageBrush ImageSource="/empada.jpg"/>
+                </Button.Background>
+            </Button>
+            <Button Content="" Width="100" Height="100" Margin="386,18,314,332" Click="BtnCoxinha">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img1.jpg"/>
+                </Button.Background>
+            </Button>
+            <Button Content="" Width="100" Height="100" Margin="510,141,190,209">
+                <Button.Background>
+                    <ImageBrush ImageSource="/bauru-de-forno-5-.avif"/>
+                </Button.Background>
+            </Button>
+            <Button Content="" Width="100" Height="100" Margin="648,141,52,209">
+                <Button.Background>
+                    <ImageBrush ImageSource="/enroladinho-de-salsicha-com-catupiry-1.jpg.webp"/>
+                </Button.Background>
+            </Button>
 
-    <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="/walpaper de descrição de bebida e lanche.png"/>
-        </Grid.Background>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="154*"/>
-            <RowDefinition Height="71*"/>
-        </Grid.RowDefinitions>
-        <Button Content="" Width="100" Height="100" Margin="179,296,521,54" Grid.RowSpan="2">
-            <Button.Background>
-                <ImageBrush ImageSource="/croissant.jpg"/>
-            </Button.Background>
-        </Button>
-        <Button Content="" Width="100" Height="100" Margin="44,296,656,54" Grid.RowSpan="2">
-            <Button.Background>
-                <ImageBrush ImageSource="/Design-sem-nome.webp"/>
-            </Button.Background>
-        </Button>
-        <Button Content="" Width="100" Height="100" Margin="179,44,521,164" >
-            <Button.Background>
-                <ImageBrush ImageSource="/croquete.jpg"/>
-            </Button.Background>
-        </Button>
-        <Button Content="" Width="100" Height="100" Margin="44,170,656,38">
-            <Button.Background>
-                <ImageBrush ImageSource="/img (1).jpg"/>
-            </Button.Background>
-        </Button>
-        <Button Content="" Width="100" Height="100" Margin="179,170,521,38">
-            <Button.Background>
-                <ImageBrush ImageSource="/sanduiche.jpg"/>
-            </Button.Background>
-        </Button>
-        <Button Content="" Width="100" Height="100" Margin="310,44,390,164">
-            <Button.Background>
-                <ImageBrush ImageSource="/empada.jpg"/>
-            </Button.Background>
-        </Button>
-        <Button Content="" Width="100" Height="100" Margin="44,44,656,164" Click="BtnCoxinha">
-            <Button.Background>
-                <ImageBrush ImageSource="/img1.jpg"/>
-            </Button.Background>
-        </Button>
-        <Button Content="" Width="100" Height="100" Margin="310,170,390,38">
-            <Button.Background>
-                <ImageBrush ImageSource="/bauru-de-forno-5-.avif"/>
-            </Button.Background>
-        </Button>
-        <Button Content="" Width="100" Height="100" Margin="310,296,390,54" Grid.RowSpan="2">
-            <Button.Background>
-                <ImageBrush ImageSource="/enroladinho-de-salsicha-com-catupiry-1.jpg.webp"/>
-            </Button.Background>
-        </Button>
+            <Button Content="Voltar" HorizontalAlignment="Center" VerticalAlignment="Top" Height="56" Width="148" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="#FFE84242" Grid.Row="2" Click="BtnVoltar" BorderBrush="Red" Canvas.Left="27" Canvas.Top="367">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
 
 
-    </Grid>
+        </Canvas>
+    </Viewbox>
+    
 </Page>

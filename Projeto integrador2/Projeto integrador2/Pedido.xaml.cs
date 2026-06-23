@@ -46,7 +46,7 @@ namespace Projeto_integrador2
             {
                 ((App)Application.Current).ListaBebidas.RemoveAt(index);
                 DgPedido.Items.Refresh();
-                AtualizarSubtotal(); // Atualiza o subtotal após remover o item
+                AtualizarSubtotal(); 
             }
         }
 

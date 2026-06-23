@@ -7,8 +7,10 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="FinalizarCompra">
+    <Viewbox Stretch="Fill">
+        <Canvas Width="800" Height="450" Background="White">
 
-    <Grid Background="White">
-        
-    </Grid>
+        </Canvas>
+    </Viewbox>   
+    
 </Page>

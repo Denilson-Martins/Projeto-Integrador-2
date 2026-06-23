@@ -22,5 +22,13 @@ namespace Projeto_integrador2
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+
+            if (txbSenha & txbUser ) ;
+            NavigationService.Navigate(new CadastroDeProdutos());
+        }
     }
 }

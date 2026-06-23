@@ -29,6 +29,7 @@
     <None Remove="Image6.png" />
     <None Remove="img %281%29.jpeg" />
     <None Remove="img %281%29.jpg" />
+    <None Remove="img %281%29.png" />
     <None Remove="img %282%29.jpeg" />
     <None Remove="img %282%29.jpg" />
     <None Remove="img %283%29.jpeg" />
@@ -69,6 +70,7 @@
     <Resource Include="Image6.png" />
     <Resource Include="img (1).jpeg" />
     <Resource Include="img (1).jpg" />
+    <Resource Include="img (1).png" />
     <Resource Include="img (2).jpeg" />
     <Resource Include="img (2).jpg" />
     <Resource Include="img (3).jpeg" />
