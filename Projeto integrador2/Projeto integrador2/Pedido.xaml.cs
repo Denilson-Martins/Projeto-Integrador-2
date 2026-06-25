@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,14 +26,14 @@ namespace Projeto_integrador2
             AtualizarSubtotal();
         }
 
-        
         private void AtualizarSubtotal()
         {
-            double subtotal = ((App)Application.Current).ListaBebidas.Sum(b => b.Valor);
+            // Subtotal correto: soma de (Valor * Quantidade) de cada item
+            double subtotal = ((App)Application.Current).ListaBebidas.Sum(b => b.Valor * b.Quantidade);
             TxtSubtotal.Text = subtotal.ToString("C2");
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void BtnVoltar(object sender, RoutedEventArgs e)
         {
             NavigationService.GoBack();
         }
@@ -46,7 +46,7 @@ namespace Projeto_integrador2
             {
                 ((App)Application.Current).ListaBebidas.RemoveAt(index);
                 DgPedido.Items.Refresh();
-                AtualizarSubtotal(); 
+                AtualizarSubtotal();
             }
         }
 
@@ -58,6 +58,57 @@ namespace Projeto_integrador2
         private void BtnEscolherBebida(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new Escolher());
+        }
+
+        private void BtnAdicionar(object sender, RoutedEventArgs e)
+        {
+            int index = DgPedido.SelectedIndex;
+
+            if (index < 0 || index >= ((App)Application.Current).ListaBebidas.Count)
+            {
+                MessageBox.Show("Selecione um item na lista antes de adicionar.", "Atenção", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
+            ((App)Application.Current).ListaBebidas[index].Quantidade++;
+            DgPedido.Items.Refresh();
+            AtualizarSubtotal();
+        }
+
+        private void BtnDiminuir(object sender, RoutedEventArgs e)
+        {
+            int index = DgPedido.SelectedIndex;
+
+            if (index < 0 || index >= ((App)Application.Current).ListaBebidas.Count)
+            {
+                MessageBox.Show("Selecione um item na lista antes de remover.", "Atenção", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
+            var item = ((App)Application.Current).ListaBebidas[index];
+
+            if (item.Quantidade > 1)
+            {
+                item.Quantidade--;
+                DgPedido.Items.Refresh();
+                AtualizarSubtotal();
+            }
+            else
+            {
+               
+                var resultado = MessageBox.Show(
+                    $"A quantidade de '{item.Nome}' é 1. Deseja remover o item do pedido?",
+                    "Remover item?",
+                    MessageBoxButton.YesNo,
+                    MessageBoxImage.Question);
+
+                if (resultado == MessageBoxResult.Yes)
+                {
+                    ((App)Application.Current).ListaBebidas.RemoveAt(index);
+                    DgPedido.Items.Refresh();
+                    AtualizarSubtotal();
+                }
+            }
         }
     }
 }
