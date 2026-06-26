@@ -42,5 +42,9 @@ namespace Projeto_integrador2
             NavigationService.GoBack();
         }
 
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
