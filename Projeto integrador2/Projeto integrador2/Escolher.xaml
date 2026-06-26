@@ -12,8 +12,8 @@
             <Canvas.Background>
                 <ImageBrush ImageSource="/EscolherBackground.png"/>
             </Canvas.Background>
-            <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" Click="BtnBebidas" Canvas.Left="55" Canvas.Top="329"  />
-            <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" Click="BtnLanches" Canvas.Left="634" Canvas.Top="321"  />
+            <Button Content="Selecionar Bebida" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" Click="BtnBebidas" Canvas.Left="55" Canvas.Top="329"  />
+            <Button Content="Selecionar Lanche" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" Click="BtnLanches" Canvas.Left="634" Canvas.Top="321"  />
             <Button Content="" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" Click="BtnVoltar" RenderTransformOrigin="4.854,1.074" Canvas.Left="322" Canvas.Top="10" Height="127" Width="156">
                 <Button.Background>
                     <ImageBrush ImageSource="/BtnVoltarDaTelaEscolher.png"/>
