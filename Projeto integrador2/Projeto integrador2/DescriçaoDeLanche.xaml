@@ -8,34 +8,66 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="DescriçãoDeLanche">
     <Viewbox Stretch="Fill">
-        <Canvas Width="800" Height="450" Background="White">
+        <Canvas Width="800" Height="450">
+            <Canvas.Background>
+                <ImageBrush ImageSource="/superficie-escura-com-espaco-em-branco-e-fast-food-menu_23-2147684608.jpg"/>
+            </Canvas.Background>
 
-            <Label Content="Coxinha" HorizontalAlignment="Left" Margin="364,33,0,0" VerticalAlignment="Top" FontSize="20" RenderTransformOrigin="2.83,0.589"/>
-            <Label Content="Ingredientes" HorizontalAlignment="Left" Margin="364,263,0,0" VerticalAlignment="Top" FontSize="20"/>
-            <TextBox HorizontalAlignment="Left" Margin="364,305,0,0" TextWrapping="Wrap" Text="Caldo de frango&#xA;Leite&#xA;Manteiga&#xA;Sal&#xA;Farinha de trigo&#xD;&#xA;Frango (Recheio)" VerticalAlignment="Top" Width="390" FontSize="16">
-                <TextBox.BorderBrush>
+            <Label Content="Coxinha" HorizontalAlignment="Left" Margin="364,33,0,0" VerticalAlignment="Top" FontSize="20" RenderTransformOrigin="2.83,0.589" Foreground="White">
+                <Label.Background>
                     <ImageBrush/>
-                </TextBox.BorderBrush>
+                </Label.Background>
+            </Label>
+            <Label Content="Ingredientes" HorizontalAlignment="Left" Margin="364,263,0,0" VerticalAlignment="Top" FontSize="20" Foreground="White">
+                <Label.Background>
+                    <ImageBrush/>
+                </Label.Background>
+            </Label>
+            <TextBox HorizontalAlignment="Left" Margin="364,305,0,0" TextWrapping="Wrap" Text="Caldo de frango&#xA;Leite&#xA;Manteiga&#xA;Sal&#xA;Farinha de trigo&#xD;&#xA;Frango (Recheio)" VerticalAlignment="Top" Width="390" FontSize="16" Foreground="White">
                 <TextBox.Background>
                     <ImageBrush/>
                 </TextBox.Background>
+                <TextBox.BorderBrush>
+                    <ImageBrush/>
+                </TextBox.BorderBrush>
             </TextBox>
-            <Label Content="Preço" HorizontalAlignment="Left" Margin="126,220,0,0" VerticalAlignment="Top" FontSize="16" RenderTransformOrigin="0.442,1.58"/>
-            <Label Content="R$ 5,50" HorizontalAlignment="Left" Margin="182,251,0,0" VerticalAlignment="Top" FontSize="16"/>
-            <Label Content="R$ 9,00" HorizontalAlignment="Left" Margin="74,251,0,0" VerticalAlignment="Top" FontSize="16"/>
+            <Label Content="Preço" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="16" RenderTransformOrigin="0.442,1.58" Canvas.Left="126" Canvas.Top="216" Foreground="White">
+                <Label.Background>
+                    <ImageBrush/>
+                </Label.Background>
+            </Label>
+            <Label Content="R$ 5,50" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Canvas.Left="182" Canvas.Top="251" Foreground="White">
+                <Label.Background>
+                    <ImageBrush/>
+                </Label.Background>
+            </Label>
+            <Label Content="R$ 9,00" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Canvas.Left="64" Canvas.Top="251" BorderBrush="Red" Foreground="White">
+                <Label.Background>
+                    <ImageBrush/>
+                </Label.Background>
+            </Label>
 
-            <Button Tag="Coxinha" Content="Média" HorizontalAlignment="Left" Margin="182,298,0,0" VerticalAlignment="Top" FontSize="16" Click="BtnTamanho"/>
-            <Button Tag="Coxinha" Content="Grande" HorizontalAlignment="Left" Margin="74,298,0,0" VerticalAlignment="Top" FontSize="16" Click="BtnTamanho"/>
-
-            <TextBox HorizontalAlignment="Left" Margin="364,96,0,0" TextWrapping="Wrap" Text="Uma deliciosa coxinha de massa leve e dourada, recheada com frango desfiado temperado e cremoso. Crocante por fora e macia por dentro, é o acompanhamento perfeito para um café, cappuccino ou outras bebidas da cafeteria. Preparada com ingredientes selecionados para garantir sabor e qualidade em cada mordida." VerticalAlignment="Top" Width="390" FontSize="16"/>
+            <Button Tag="Coxinha" Content="Média" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="16" Click="BtnTamanho" RenderTransformOrigin="1.1,0.672" Canvas.Left="189" Canvas.Top="311" Foreground="White">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button Tag="Coxinha" Content="Grande" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Click="BtnTamanho" Canvas.Left="74" Canvas.Top="311" Foreground="White">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
             <Image Source="/img1.jpg" Stretch="Fill" Canvas.Left="31" Canvas.Top="33" Height="165" Width="240"/>
-            <TextBox HorizontalAlignment="Left" Margin="364,96,0,0" TextWrapping="Wrap" Text="Uma deliciosa coxinha de massa leve e dourada, recheada com frango desfiado temperado e cremoso. Crocante por fora e macia por dentro, é o acompanhamento perfeito para um café, cappuccino ou outras bebidas da cafeteria. Preparada com ingredientes selecionados para garantir sabor e qualidade em cada mordida." VerticalAlignment="Top" Width="390" FontSize="16">
+            <TextBox HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="390" FontSize="16" TextChanged="TextBox_TextChanged" Canvas.Left="364" Canvas.Top="96">
+                <TextBox.Background>
+                    <ImageBrush Stretch="None"/>
+                </TextBox.Background>
+                <TextBox.Foreground>
+                    <ImageBrush/>
+                </TextBox.Foreground>
                 <TextBox.BorderBrush>
                     <ImageBrush/>
                 </TextBox.BorderBrush>
-                <TextBox.Background>
-                    <ImageBrush/>
-                </TextBox.Background>
             </TextBox>
             <Button Content="Voltar" HorizontalAlignment="Left" VerticalAlignment="Top" Height="56" Width="148" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="#FFFF5D00" Background="{x:Null}" BorderBrush="#FFF10000" Canvas.Left="69" Canvas.Top="338" Margin="0,394,0,0" Click="Button_Click"/>
             <Button Content="Voltar" HorizontalAlignment="Center" VerticalAlignment="Top" Height="56" Width="148" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="#FFE84242" Grid.Row="2" Click="Button_Click" BorderBrush="Red" Canvas.Left="27" Canvas.Top="367">
@@ -43,6 +75,7 @@
                     <ImageBrush/>
                 </Button.Background>
             </Button>
+            <TextBlock Canvas.Left="364" TextWrapping="Wrap" Text="Uma deliciosa coxinha de massa leve e dourada, recheada com frango desfiado temperado e cremoso. Crocante por fora e macia por dentro, é o acompanhamento perfeito para um café, cappuccino ou outras bebidas da cafeteria. Preparada com ingredientes selecionados para garantir sabor e qualidade em cada mordida." Canvas.Top="78" HorizontalAlignment="Center" VerticalAlignment="Top" Height="177" Width="390" FontSize="16" Foreground="White"/>
         </Canvas>
     </Viewbox>
 

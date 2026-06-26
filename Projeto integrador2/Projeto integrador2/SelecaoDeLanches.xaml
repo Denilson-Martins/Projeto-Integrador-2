@@ -32,9 +32,9 @@
                     <ImageBrush ImageSource="/img (1).jpg"/>
                 </Button.Background>
             </Button>
-            <Button Content="" Width="100" Height="100" Margin="386,170,314,180">
+            <Button Content="" Width="100" Height="100" Canvas.Left="386" Canvas.Top="141">
                 <Button.Background>
-                    <ImageBrush ImageSource="/sanduiche.jpg"/>
+                    <ImageBrush ImageSource="/sanduiche.jpeg"/>
                 </Button.Background>
             </Button>
             <Button Content="" Width="100" Height="100" Margin="648,0,52,346">
@@ -49,7 +49,7 @@
             </Button>
             <Button Content="" Width="100" Height="100" Margin="510,141,190,209">
                 <Button.Background>
-                    <ImageBrush ImageSource="/bauru-de-forno-5-.avif"/>
+                    <ImageBrush ImageSource="/bauru.jpeg"/>
                 </Button.Background>
             </Button>
             <Button Content="" Width="100" Height="100" Margin="648,141,52,209">
@@ -63,6 +63,8 @@
                     <ImageBrush/>
                 </Button.Background>
             </Button>
+            
+            
 
 
         </Canvas>
