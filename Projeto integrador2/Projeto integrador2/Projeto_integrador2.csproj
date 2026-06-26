@@ -14,12 +14,8 @@
     <None Remove="agua com gás.png" />
     <None Remove="agua normal.png" />
     <None Remove="bauru-de-forno-5-.avif" />
-<<<<<<< HEAD
     <None Remove="BtnVoltarDaTelaEscolher.png" />
     <None Remove="BtnVoltarDaTelaEscolher2.png" />
-=======
-    <None Remove="bauru.jpeg" />
->>>>>>> 9cc35aac4421b1bbabc3f419ca027f17933a23c9
     <None Remove="ChatGPT Image 11 de jun. de 2026, 20_20_00.png" />
     <None Remove="ChatGPT Image 11 de jun. de 2026, 20_28_20.png" />
     <None Remove="Cold Brew.jpeg" />
@@ -30,7 +26,6 @@
     <None Remove="enroladinho-de-salsicha-com-catupiry-1.jpg.webp" />
     <None Remove="EscolherBackground.png" />
     <None Remove="Frappuchino.jpeg" />
-    <None Remove="FundoCafe.jpg" />
     <None Remove="iced latte.jpeg" />
     <None Remove="Iced Moccha.jpeg" />
     <None Remove="Image5.png" />
@@ -52,9 +47,7 @@
     <None Remove="Img\img %287%29.png" />
     <None Remove="Img\img %288%29.png" />
     <None Remove="Img\img3.png" />
-    <None Remove="sanduiche.jpeg" />
     <None Remove="sanduiche.jpg" />
-    <None Remove="superficie-escura-com-espaco-em-branco-e-fast-food-menu_23-2147684608.jpg" />
     <None Remove="walpaper de descrição de bebida e lanche.png" />
   </ItemGroup>
 
@@ -67,12 +60,8 @@
     <Resource Include="agua com gás.png" />
     <Resource Include="agua normal.png" />
     <Resource Include="bauru-de-forno-5-.avif" />
-<<<<<<< HEAD
     <Resource Include="BtnVoltarDaTelaEscolher.png" />
     <Resource Include="BtnVoltarDaTelaEscolher2.png" />
-=======
-    <Resource Include="bauru.jpeg" />
->>>>>>> 9cc35aac4421b1bbabc3f419ca027f17933a23c9
     <Resource Include="Cold Brew.jpeg" />
     <Resource Include="croissant.jpg" />
     <Resource Include="croquete.jpg" />
@@ -81,7 +70,6 @@
     <Resource Include="enroladinho-de-salsicha-com-catupiry-1.jpg.webp" />
     <Resource Include="EscolherBackground.png" />
     <Resource Include="Frappuchino.jpeg" />
-    <Resource Include="FundoCafe.jpg" />
     <Resource Include="iced latte.jpeg" />
     <Resource Include="Iced Moccha.jpeg" />
     <Resource Include="Image5.png" />
@@ -102,9 +90,7 @@
     <Resource Include="Img\img (7).png" />
     <Resource Include="Img\img (8).png" />
     <Resource Include="Img\img3.png" />
-    <Resource Include="sanduiche.jpeg" />
     <Resource Include="sanduiche.jpg" />
-    <Resource Include="superficie-escura-com-espaco-em-branco-e-fast-food-menu_23-2147684608.jpg" />
     <Resource Include="walpaper de descrição de bebida e lanche.png" />
   </ItemGroup>
 

@@ -32,11 +32,8 @@
                     <ImageBrush ImageSource="/img (1).jpg"/>
                 </Button.Background>
             </Button>
-<<<<<<< HEAD
             <Button Content="" Width="100" Height="100" RenderTransformOrigin="0.493,0.169" Canvas.Left="386" Canvas.Top="141">
-=======
-            <Button Content="" Width="100" Height="100" Canvas.Left="386" Canvas.Top="141">
->>>>>>> 9cc35aac4421b1bbabc3f419ca027f17933a23c9
+
                 <Button.Background>
                     <ImageBrush ImageSource="/sanduiche.jpeg"/>
                 </Button.Background>
