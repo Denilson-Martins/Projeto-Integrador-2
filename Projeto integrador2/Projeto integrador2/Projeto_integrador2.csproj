@@ -14,6 +14,8 @@
     <None Remove="agua com gás.png" />
     <None Remove="agua normal.png" />
     <None Remove="bauru-de-forno-5-.avif" />
+    <None Remove="BtnVoltarDaTelaEscolher.png" />
+    <None Remove="BtnVoltarDaTelaEscolher2.png" />
     <None Remove="ChatGPT Image 11 de jun. de 2026, 20_20_00.png" />
     <None Remove="ChatGPT Image 11 de jun. de 2026, 20_28_20.png" />
     <None Remove="Cold Brew.jpeg" />
@@ -22,6 +24,7 @@
     <None Remove="Design-sem-nome.webp" />
     <None Remove="empada.jpg" />
     <None Remove="enroladinho-de-salsicha-com-catupiry-1.jpg.webp" />
+    <None Remove="EscolherBackground.png" />
     <None Remove="Frappuchino.jpeg" />
     <None Remove="iced latte.jpeg" />
     <None Remove="Iced Moccha.jpeg" />
@@ -57,12 +60,15 @@
     <Resource Include="agua com gás.png" />
     <Resource Include="agua normal.png" />
     <Resource Include="bauru-de-forno-5-.avif" />
+    <Resource Include="BtnVoltarDaTelaEscolher.png" />
+    <Resource Include="BtnVoltarDaTelaEscolher2.png" />
     <Resource Include="Cold Brew.jpeg" />
     <Resource Include="croissant.jpg" />
     <Resource Include="croquete.jpg" />
     <Resource Include="Design-sem-nome.webp" />
     <Resource Include="empada.jpg" />
     <Resource Include="enroladinho-de-salsicha-com-catupiry-1.jpg.webp" />
+    <Resource Include="EscolherBackground.png" />
     <Resource Include="Frappuchino.jpeg" />
     <Resource Include="iced latte.jpeg" />
     <Resource Include="Iced Moccha.jpeg" />

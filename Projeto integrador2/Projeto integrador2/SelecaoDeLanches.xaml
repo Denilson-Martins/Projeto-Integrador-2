@@ -12,7 +12,7 @@
             <Canvas.Background>
                 <ImageBrush ImageSource="/img (1).png"/>
             </Canvas.Background>
-                        <Button Content="" Width="100" Height="100" Margin="386,291,314,59">
+            <Button Content="" Width="100" Height="100" Margin="386,291,314,59">
                 <Button.Background>
                     <ImageBrush ImageSource="/croissant.jpg"/>
                 </Button.Background>
@@ -32,7 +32,7 @@
                     <ImageBrush ImageSource="/img (1).jpg"/>
                 </Button.Background>
             </Button>
-            <Button Content="" Width="100" Height="100" Margin="386,170,314,180">
+            <Button Content="" Width="100" Height="100" RenderTransformOrigin="0.493,0.169" Canvas.Left="386" Canvas.Top="141">
                 <Button.Background>
                     <ImageBrush ImageSource="/sanduiche.jpg"/>
                 </Button.Background>
@@ -67,5 +67,5 @@
 
         </Canvas>
     </Viewbox>
-    
+
 </Page>

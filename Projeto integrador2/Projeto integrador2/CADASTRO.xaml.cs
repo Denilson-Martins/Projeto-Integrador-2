@@ -23,13 +23,11 @@ namespace Projeto_integrador2
             InitializeComponent();
         }
 
-<<<<<<< HEAD
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new CadastroDeProdutos());
         }
-=======
-       
->>>>>>> c752155d4e97b3b19869a3d51992e037009712a8
+
     }
 }
