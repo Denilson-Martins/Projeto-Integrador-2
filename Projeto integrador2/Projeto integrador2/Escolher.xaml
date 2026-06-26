@@ -8,12 +8,17 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Escolher">
     <Viewbox Stretch="Fill">
-        <Canvas Width="800" Height="450" Background="White">
-            <Label Content="Seleção de bebidas" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" Canvas.Left="28" Canvas.Top="28"/>
-            <Label Content="Seleção de Lanches" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" Canvas.Left="575" Canvas.Top="20"/>
+        <Canvas Width="800" Height="450">
+            <Canvas.Background>
+                <ImageBrush ImageSource="/EscolherBackground.png"/>
+            </Canvas.Background>
             <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" Click="BtnBebidas" Canvas.Left="55" Canvas.Top="329"  />
             <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" Click="BtnLanches" Canvas.Left="634" Canvas.Top="321"  />
-            <Button Content="Voltar" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" Click="BtnVoltar" RenderTransformOrigin="4.854,1.074" Canvas.Left="400" Canvas.Top="47"/>
+            <Button Content="" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" Click="BtnVoltar" RenderTransformOrigin="4.854,1.074" Canvas.Left="322" Canvas.Top="10" Height="127" Width="156">
+                <Button.Background>
+                    <ImageBrush ImageSource="/BtnVoltarDaTelaEscolher.png"/>
+                </Button.Background>
+            </Button>
 
         </Canvas>
     </Viewbox>
