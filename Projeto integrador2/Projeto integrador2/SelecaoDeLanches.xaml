@@ -12,12 +12,12 @@
             <Canvas.Background>
                 <ImageBrush ImageSource="/img (1).png"/>
             </Canvas.Background>
-                        <Button Content="" Width="100" Height="100" Margin="386,291,314,59">
+            <Button Content="" Width="100" Height="100" Canvas.Left="386" Canvas.Top="296">
                 <Button.Background>
                     <ImageBrush ImageSource="/croissant.jpg"/>
                 </Button.Background>
             </Button>
-            <Button Content="" Width="100" Height="100" Margin="648,296,52,54">
+            <Button Content="" Width="100" Height="100" Canvas.Left="648" Canvas.Top="296">
                 <Button.Background>
                     <ImageBrush ImageSource="/Design-sem-nome.webp"/>
                 </Button.Background>
@@ -32,12 +32,12 @@
                     <ImageBrush ImageSource="/img (1).jpg"/>
                 </Button.Background>
             </Button>
-            <Button Content="" Width="100" Height="100" Canvas.Left="386" Canvas.Top="141">
+            <Button Content="" Width="100" Height="100" Canvas.Left="386" Canvas.Top="158" HorizontalAlignment="Center" VerticalAlignment="Top">
                 <Button.Background>
                     <ImageBrush ImageSource="/sanduiche.jpeg"/>
                 </Button.Background>
             </Button>
-            <Button Content="" Width="100" Height="100" Margin="648,0,52,346">
+            <Button Content="" Width="100" Height="100" Canvas.Left="648" Canvas.Top="18">
                 <Button.Background>
                     <ImageBrush ImageSource="/empada.jpg"/>
                 </Button.Background>
@@ -47,12 +47,12 @@
                     <ImageBrush ImageSource="/img1.jpg"/>
                 </Button.Background>
             </Button>
-            <Button Content="" Width="100" Height="100" Margin="510,141,190,209">
+            <Button Content="" Width="100" Height="100" Canvas.Left="510" Canvas.Top="158">
                 <Button.Background>
                     <ImageBrush ImageSource="/bauru.jpeg"/>
                 </Button.Background>
             </Button>
-            <Button Content="" Width="100" Height="100" Margin="648,141,52,209">
+            <Button Content="" Width="100" Height="100" Canvas.Left="648" Canvas.Top="158" HorizontalAlignment="Center" VerticalAlignment="Top">
                 <Button.Background>
                     <ImageBrush ImageSource="/enroladinho-de-salsicha-com-catupiry-1.jpg.webp"/>
                 </Button.Background>
@@ -63,11 +63,56 @@
                     <ImageBrush/>
                 </Button.Background>
             </Button>
-            
-            
+            <Button Content="Coxinha" Height="25" Width="80" FontSize="18" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="#FFD4D4D4" Click="BtnVoltar" BorderBrush="Black" Canvas.Left="396" Canvas.Top="123" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button Content="Empada" Height="25" Width="80" FontSize="18" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="#FFD4D4D4" Click="BtnVoltar" BorderBrush="#FF040404" Canvas.Left="658" Canvas.Top="123" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Churros" Content="Churros" Height="25" Width="80" FontSize="18" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="#FFD4D4D4" Click="BtnVoltar" BorderBrush="#FF040404" Canvas.Left="520" Canvas.Top="123" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button Content="Sanduiche" Height="25" Width="100" FontSize="18" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="#FFD4D4D4" Click="BtnVoltar" BorderBrush="#FF040404" Canvas.Left="386" Canvas.Top="263" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button Content="Bauru" Height="25" Width="102" FontSize="18" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="#FFD4D4D4" Click="BtnVoltar" BorderBrush="#FF040404" Canvas.Left="646" Canvas.Top="263" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button Content="X-Buguer" Height="25" Width="100" FontSize="18" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="#FFD4D4D4" Click="BtnVoltar" BorderBrush="#FF040404" Canvas.Left="510" Canvas.Top="263" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button Content="Pastel.Frango" Height="25" Width="134" FontSize="18" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="#FFD4D4D4" Click="BtnVoltar" BorderBrush="#FF040404" Canvas.Left="498" Canvas.Top="406" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button Content="Croissant" Height="25" Width="100" FontSize="18" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="#FFD4D4D4" Click="BtnVoltar" BorderBrush="#FF040404" Canvas.Left="386" Canvas.Top="406" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button Content="Pão de Queijo" Height="25" Width="132" FontSize="18" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="#FFD4D4D4" Click="BtnVoltar" BorderBrush="#FF040404" Canvas.Left="637" Canvas.Top="406" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+
+
 
 
         </Canvas>
     </Viewbox>
-    
+
 </Page>
