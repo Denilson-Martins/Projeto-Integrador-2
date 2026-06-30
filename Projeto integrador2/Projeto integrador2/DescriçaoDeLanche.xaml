@@ -31,14 +31,14 @@
                     <ImageBrush/>
                 </TextBox.BorderBrush>
             </TextBox>
-            <Label Content="Preço" HorizontalAlignment="Left" Margin="126,220,0,0" VerticalAlignment="Top" FontSize="16" RenderTransformOrigin="0.442,1.58"/>
-            <Label Content="R$ 5,50" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Canvas.Left="81" Canvas.Top="259"/>
-            <Label Content="R$ 9,00" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Canvas.Left="182" Canvas.Top="252"/>
+            <Label Content="Preço" HorizontalAlignment="Left" Margin="126,220,0,0" VerticalAlignment="Top" FontSize="16" RenderTransformOrigin="0.442,1.58" Foreground="White"/>
+            <Label Content="R$ 5,50" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Canvas.Left="81" Canvas.Top="259" Foreground="White"/>
+            <Label Content="R$ 9,00" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Canvas.Left="182" Canvas.Top="252" Foreground="White"/>
 
             <Button Tag="Coxinha" Content="Média" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Click="BtnTamanho" Canvas.Left="81" Canvas.Top="305"/>
             <Button Tag="Coxinha" Content="Grande" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Click="BtnTamanho" RenderTransformOrigin="3.326,2.505" Canvas.Left="182" Canvas.Top="305"/>
 
-            <TextBox HorizontalAlignment="Left" Margin="364,96,0,0" TextWrapping="Wrap" Text="Uma deliciosa coxinha de massa leve e dourada, recheada com frango desfiado temperado e cremoso. Crocante por fora e macia por dentro, é o acompanhamento perfeito para um café, cappuccino ou outras bebidas da cafeteria. Preparada com ingredientes selecionados para garantir sabor e qualidade em cada mordida." VerticalAlignment="Top" Width="390" FontSize="16"/>
+            <TextBox HorizontalAlignment="Left" Margin="364,96,0,0" TextWrapping="Wrap" Text="Uma deliciosa coxinha de massa leve e dourada, recheada com frango desfiado temperado e cremoso. Crocante por fora e macia por dentro, é o acompanhamento perfeito para um café, cappuccino ou outras bebidas da cafeteria. Preparada com ingredientes selecionados para garantir sabor e qualidade em cada mordida." VerticalAlignment="Top" Width="390" FontSize="16" Background="{x:Null}" Foreground="White"/>
 
             <Image Source="/img1.jpg" Stretch="Fill" Canvas.Left="31" Canvas.Top="33" Height="165" Width="240"/>
             <TextBox HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="390" FontSize="16" TextChanged="TextBox_TextChanged" Canvas.Left="364" Canvas.Top="96">
@@ -58,7 +58,6 @@
                     <ImageBrush/>
                 </Button.Background>
             </Button>
-            <TextBlock Canvas.Left="364" TextWrapping="Wrap" Text="Uma deliciosa coxinha de massa leve e dourada, recheada com frango desfiado temperado e cremoso. Crocante por fora e macia por dentro, é o acompanhamento perfeito para um café, cappuccino ou outras bebidas da cafeteria. Preparada com ingredientes selecionados para garantir sabor e qualidade em cada mordida." Canvas.Top="78" HorizontalAlignment="Center" VerticalAlignment="Top" Height="177" Width="390" FontSize="16" Foreground="White"/>
         </Canvas>
     </Viewbox>
 
