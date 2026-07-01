@@ -35,7 +35,7 @@ namespace Projeto_integrador2
             if (sender is Button btn)
             {
                 var valor = btn.Content.ToString() == "100ml" ? 6.00 : 12.00;
-                lista.Add(new Bebidas(btn.Tag.ToString(), btn.Content.ToString(), valor, lista.Count));
+                lista.Add(new Bebidas(btn.Tag.ToString(), btn.Content.ToString(), valor, 1));
                 NavigationService.Navigate(new Pedido());
             }
         }

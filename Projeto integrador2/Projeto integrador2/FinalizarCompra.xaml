@@ -1,16 +1,133 @@
-﻿<Page x:Class="Projeto_integrador2.FinalizarCompra"
+<Page x:Class="Projeto_integrador2.FinalizarCompra"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="clr-namespace:Projeto_integrador2"
-      mc:Ignorable="d" 
+      mc:Ignorable="d"
       d:DesignHeight="450" d:DesignWidth="800"
       Title="FinalizarCompra">
     <Viewbox Stretch="Fill">
-        <Canvas Width="800" Height="450" Background="White">
+
+        <Canvas Width="800" Height="480" Background="White">
+
+            <TextBlock Text="Finalizar Pedido"
+                       Canvas.Left="20" Canvas.Top="14"
+                       FontSize="22" FontWeight="Bold"
+                       FontFamily="Segoe UI"
+                       Foreground="#FF333333"/>
+
+            <DataGrid x:Name="DgItens"
+                      AutoGenerateColumns="False" CanUserDeleteRows="False"
+                      IsReadOnly="True"
+                      Width="760" Height="180"
+                      Canvas.Left="20" Canvas.Top="54"
+                      HorizontalAlignment="Left" VerticalAlignment="Top">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Nome"       Binding="{Binding Nome}"      Width="*"/>
+                    <DataGridTextColumn Header="Tamanho"    Binding="{Binding Tamanho}"   Width="Auto"/>
+                    <DataGridTextColumn Header="Valor Unit" Binding="{Binding Valor, StringFormat={}{0:C2}}" Width="Auto"/>
+                    <DataGridTextColumn Header="Quantidade" Binding="{Binding Quantidade}" Width="Auto"/>
+                    <DataGridTextColumn Header="Subtotal"   Binding="{Binding Subtotal, StringFormat={}{0:C2}}" Width="Auto"/>
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <Rectangle Canvas.Left="20" Canvas.Top="244"
+                       Width="760" Height="1"
+                       Fill="#FFCCCCCC"/>
+
+            <Border Canvas.Left="20" Canvas.Top="256"
+                    Width="760" Height="44"
+                    BorderBrush="#FFCCCCCC" BorderThickness="1"
+                    CornerRadius="4" Background="#FFF9F9F9">
+                <StackPanel Orientation="Horizontal"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Center"
+                            Margin="0,0,16,0">
+                    <TextBlock Text="Total: "
+                               FontSize="18" FontWeight="Bold"
+                               FontFamily="Segoe UI"
+                               VerticalAlignment="Center"
+                               Foreground="#FF333333"/>
+                    <TextBlock x:Name="TxtTotal" Text="R$ 0,00"
+                               FontSize="18" FontWeight="Bold"
+                               FontFamily="Segoe UI"
+                               VerticalAlignment="Center"
+                               Foreground="#FF228B22"/>
+                </StackPanel>
+            </Border>
+
+            <TextBlock Text="Forma de Pagamento"
+                       Canvas.Left="20" Canvas.Top="312"
+                       FontSize="16" FontWeight="Bold"
+                       FontFamily="Segoe UI"
+                       Foreground="#FF333333"/>
+
+            <RadioButton x:Name="RbPix" Content="PIX"
+                         GroupName="Pagamento"
+                         Checked="PagamentoSelecionado"
+                         Canvas.Left="20" Canvas.Top="338"
+                         Width="370" Height="36"
+                         FontSize="15" FontWeight="SemiBold"
+                         Foreground="#FF333333"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"/>
+
+            <RadioButton x:Name="RbCredito" Content="Cartão de Crédito"
+                         GroupName="Pagamento"
+                         Checked="PagamentoSelecionado"
+                         Canvas.Left="410" Canvas.Top="338"
+                         Width="370" Height="36"
+                         FontSize="15" FontWeight="SemiBold"
+                         Foreground="#FF333333"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"/>
+
+            <RadioButton x:Name="RbDebito" Content="Cartão de Débito"
+                         GroupName="Pagamento"
+                         Checked="PagamentoSelecionado"
+                         Canvas.Left="20" Canvas.Top="380"
+                         Width="370" Height="36"
+                         FontSize="15" FontWeight="SemiBold"
+                         Foreground="#FF333333"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"/>
+
+            <RadioButton x:Name="RbDinheiro" Content="Dinheiro"
+                         GroupName="Pagamento"
+                         Checked="PagamentoSelecionado"
+                         Canvas.Left="410" Canvas.Top="380"
+                         Width="370" Height="36"
+                         FontSize="15" FontWeight="SemiBold"
+                         Foreground="#FF333333"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"/>
+
+            <TextBlock x:Name="TxtAvisoPagamento"
+                       Text="Selecione uma forma de pagamento para continuar."
+                       Canvas.Left="20" Canvas.Top="420"
+                       FontSize="13" FontStyle="Italic"
+                       Foreground="#FFE84242"
+                       Visibility="Collapsed"/>
+
+            <Button Content="← Voltar"
+                    Click="BtnVoltar"
+                    Canvas.Left="20" Canvas.Top="434"
+                    Width="370" Height="44" FontSize="17"
+                    Foreground="#FFE84242" BorderBrush="#FFE84242" FontWeight="Bold">
+                <Button.Background>
+                    <SolidColorBrush Color="White"/>
+                </Button.Background>
+            </Button>
+
+            <Button Content="Confirmar Pedido ✔"
+                    Click="BtnConfirmar"
+                    Canvas.Left="410" Canvas.Top="434"
+                    Width="370" Height="44" FontSize="17"
+                    Background="#FF1565C0" Foreground="White"
+                    BorderBrush="#FF0D47A1" FontWeight="SemiBold"/>
 
         </Canvas>
-    </Viewbox>   
-    
+    </Viewbox>
+
 </Page>

@@ -1,0 +1,104 @@
+<Page x:Class="Projeto_integrador2.NotaFiscal"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:Projeto_integrador2"
+      mc:Ignorable="d"
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="NotaFiscal">
+    <Viewbox Stretch="Fill">
+
+        <Canvas Width="800" Height="480" Background="White">
+
+            <TextBlock Text="✔ Pedido Confirmado!"
+                       Canvas.Left="20" Canvas.Top="14"
+                       FontSize="22" FontWeight="Bold"
+                       FontFamily="Segoe UI"
+                       Foreground="#FF228B22"/>
+
+            <TextBlock Text="Nota Fiscal"
+                       Canvas.Left="20" Canvas.Top="44"
+                       FontSize="14"
+                       FontFamily="Segoe UI"
+                       Foreground="#FF666666"/>
+
+            <Rectangle Canvas.Left="20" Canvas.Top="68"
+                       Width="760" Height="1"
+                       Fill="#FFCCCCCC"/>
+
+            <DataGrid x:Name="DgItens"
+                      AutoGenerateColumns="False"
+                      CanUserDeleteRows="False"
+                      IsReadOnly="True"
+                      Width="760" Height="190"
+                      Canvas.Left="20" Canvas.Top="76"
+                      HorizontalAlignment="Left" VerticalAlignment="Top">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Nome"        Binding="{Binding Nome}"                              Width="*"/>
+                    <DataGridTextColumn Header="Tamanho"     Binding="{Binding Tamanho}"                           Width="Auto"/>
+                    <DataGridTextColumn Header="Valor Unit"  Binding="{Binding Valor, StringFormat={}{0:C2}}"      Width="Auto"/>
+                    <DataGridTextColumn Header="Quantidade"  Binding="{Binding Quantidade}"                        Width="Auto"/>
+                    <DataGridTextColumn Header="Subtotal"    Binding="{Binding Subtotal, StringFormat={}{0:C2}}"   Width="Auto"/>
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <Rectangle Canvas.Left="20" Canvas.Top="276"
+                       Width="760" Height="1"
+                       Fill="#FFCCCCCC"/>
+
+            <Border Canvas.Left="20" Canvas.Top="284"
+                    Width="760" Height="44"
+                    BorderBrush="#FFCCCCCC" BorderThickness="1"
+                    CornerRadius="4" Background="#FFF9F9F9">
+                <StackPanel Orientation="Horizontal"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Center"
+                            Margin="0,0,16,0">
+                    <TextBlock Text="Total: "
+                               FontSize="18" FontWeight="Bold"
+                               FontFamily="Segoe UI"
+                               VerticalAlignment="Center"
+                               Foreground="#FF333333"/>
+                    <TextBlock x:Name="TxtTotal"
+                               FontSize="18" FontWeight="Bold"
+                               FontFamily="Segoe UI"
+                               VerticalAlignment="Center"
+                               Foreground="#FF228B22"/>
+                </StackPanel>
+            </Border>
+
+            <Border Canvas.Left="20" Canvas.Top="338"
+                    Width="760" Height="44"
+                    BorderBrush="#FFCCCCCC" BorderThickness="1"
+                    CornerRadius="4" Background="#FFF0F8FF">
+                <StackPanel Orientation="Horizontal"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            Margin="16,0,0,0">
+                    <TextBlock Text="Forma de pagamento: "
+                               FontSize="15" FontWeight="Bold"
+                               FontFamily="Segoe UI"
+                               VerticalAlignment="Center"
+                               Foreground="#FF333333"/>
+                    <TextBlock x:Name="TxtFormaPagamento"
+                               FontSize="15" FontWeight="SemiBold"
+                               FontFamily="Segoe UI"
+                               VerticalAlignment="Center"
+                               Foreground="#FF1565C0"/>
+                </StackPanel>
+            </Border>
+
+            <Button Content="Voltar Para a Tela de Início"
+                    Click="BtnVoltarInicio"
+                    Canvas.Left="20" Canvas.Top="402"
+                    Width="760" Height="50"
+                    FontSize="17" FontWeight="Bold"
+                    FontFamily="Segoe UI"
+                    Background="#FF1565C0" Foreground="White"
+                    BorderBrush="#FF0D47A1"/>
+
+        </Canvas>
+    </Viewbox>
+
+</Page>

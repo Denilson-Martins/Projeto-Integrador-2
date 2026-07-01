@@ -8,11 +8,8 @@
       Title="Pedido" d:DesignHeight="450">
     <Viewbox Stretch="Fill">
 
-       
-
         <Canvas Width="800" Height="464" Background="White">
 
-           
             <DataGrid x:Name="DgPedido"
                       AutoGenerateColumns="False" CanUserDeleteRows="False"
                       Width="800" Height="236"
@@ -27,12 +24,10 @@
                 </DataGrid.Columns>
             </DataGrid>
 
-            
             <Rectangle Canvas.Left="0" Canvas.Top="236"
                        Width="800" Height="1"
                        Fill="#FFCCCCCC"/>
 
-           
             <Button Content="−  Quantidade"
                     Click="BtnDiminuir"
                     Canvas.Left="20" Canvas.Top="256"
@@ -64,12 +59,10 @@
                 </Button.Background>
             </Button>
 
-           
             <Rectangle Canvas.Left="395" Canvas.Top="244"
                        Width="1" Height="208"
                        Fill="#FFCCCCCC"/>
 
-                      
             <Border Canvas.Left="410" Canvas.Top="256"
                     Width="370" Height="44"
                     BorderBrush="#FFCCCCCC" BorderThickness="1"
@@ -90,7 +83,6 @@
                 </StackPanel>
             </Border>
 
-           
             <Button Content="Finalizar Pedido ✔"
                     Click="BtnFinalizar"
                     Canvas.Left="410" Canvas.Top="316"
@@ -98,7 +90,6 @@
                     Background="#FF1565C0" Foreground="White"
                     BorderBrush="#FF0D47A1" FontWeight="SemiBold"/>
 
-            
             <Button Content="← Voltar para a tela de Escolha"
                     Click="BtnEscolherBebida"
                     Canvas.Left="410" Canvas.Top="376"
