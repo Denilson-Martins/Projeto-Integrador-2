@@ -27,5 +27,25 @@ namespace Projeto_integrador2
         {
             NavigationService.Navigate(new CadastroDeProdutos());
         }
+
+        private void txbUser_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            if (txbUser.Text == "ADM" && txbSenha.Text == "123456" && txbEmail.Text == "Administrador@gmail.com")
+            {
+
+                NavigationService.Navigate(new CadastroDeProdutos());
+
+            }
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
