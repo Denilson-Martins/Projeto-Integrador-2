@@ -9,15 +9,16 @@
       Title="CADASTRO">
 
     <Viewbox Stretch="Fill">
-        <Canvas Width="800" Height="450" Background="White">
-            <Label Content="Nome" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-3.731,-0.413" Canvas.Left="284" Canvas.Top="93"/>
-            <Label Content="Senha" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="284" Canvas.Top="171"/>
-            <TextBox x:Name="txbUser" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Canvas.Left="518" Canvas.Top="145"/>
-            <TextBox x:Name="txbSenha" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Canvas.Left="477" Canvas.Top="175"/>
-            <Button Content="Cadastro" HorizontalAlignment="Left" VerticalAlignment="Top" Height="55" Width="132" Canvas.Left="222" Canvas.Top="321"/>
+        <Canvas Width="800" Height="450" Background="#FFF1F1F1">
+            <Label Content="Nome" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="-3.731,-0.413" Canvas.Left="287" Canvas.Top="139"/>
+            <Label Content="Senha" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="287" Canvas.Top="188"/>
+            <TextBox x:Name="txbUser" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Canvas.Left="357" Canvas.Top="139"/>
+            <TextBox x:Name="txbSenha" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Canvas.Left="357" Canvas.Top="188"/>
+            <Button Content="Cadastro" HorizontalAlignment="Left" VerticalAlignment="Top" Height="55" Width="132" Canvas.Left="345" Canvas.Top="287" BorderBrush="#FFFFF8F8"/>
             <Label Content="Label" HorizontalAlignment="Left" Height="0" Margin="215,106,0,0" VerticalAlignment="Top" Width="13"/>
-            <Label Content="Email" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.235,0.886" Canvas.Left="284" Canvas.Top="234"/>
-            <TextBox HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Canvas.Left="537" Canvas.Top="225"/>
+            <Label Content="Email" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.235,0.886" Canvas.Left="287" Canvas.Top="225" Height="34" Width="60"/>
+            <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Canvas.Left="357" Canvas.Top="233"/>
+            <Button Content="VOLTAR" Canvas.Left="351" Canvas.Top="363" Height="51" Width="126" HorizontalAlignment="Center" VerticalAlignment="Top" Click="Button_Click"/>
 
         </Canvas>
     </Viewbox>

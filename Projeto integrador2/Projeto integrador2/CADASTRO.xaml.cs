@@ -18,14 +18,14 @@ namespace Projeto_integrador2
     /// </summary>
     public partial class CADASTRO : Page
     {
-        public CADASTRO()
+        public  CADASTRO()
         {
             InitializeComponent();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new CadastroDeProdutos());
+            NavigationService.Navigate(new Home());
         }
     }
 }
