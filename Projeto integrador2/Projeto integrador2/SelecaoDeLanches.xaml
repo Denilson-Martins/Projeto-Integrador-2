@@ -95,7 +95,7 @@
                     <ImageBrush/>
                 </Button.Background>
             </Button>
-            <Button Content="Pastel.Frango" Height="25" Width="134" FontSize="18" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="#FFD4D4D4" Click="BtnVoltar" BorderBrush="#FF040404" Canvas.Left="498" Canvas.Top="406" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Button Content="Risoles" Height="25" Width="134" FontSize="18" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="#FFD4D4D4" Click="BtnVoltar" BorderBrush="#FF040404" Canvas.Left="498" Canvas.Top="406" HorizontalAlignment="Left" VerticalAlignment="Center">
                 <Button.Background>
                     <ImageBrush/>
                 </Button.Background>
