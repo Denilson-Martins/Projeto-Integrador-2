@@ -49,6 +49,7 @@
     <None Remove="Img\img %288%29.png" />
     <None Remove="Img\img3.png" />
     <None Remove="qz8j4.jpg" />
+    <None Remove="PainelBebidas.jpg" />
     <None Remove="sanduiche.jpg" />
     <None Remove="sanduiche.jpeg" />
     <None Remove="bauru.jpeg" />
@@ -98,6 +99,7 @@
     <Resource Include="Img\img (8).png" />
     <Resource Include="Img\img3.png" />
     <Resource Include="qz8j4.jpg" />
+    <Resource Include="PainelBebidas.jpg" />
     <Resource Include="sanduiche.jpg" />
     <Resource Include="sanduiche.jpeg" />
     <Resource Include="bauru.jpeg" />

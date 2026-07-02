@@ -7,177 +7,232 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="SelecaoDeBebidas">
+
+    <Page.Resources>
+
+        <!-- Botão de foto de bebida: moldura dourada fina, sem o "chrome" padrão do botão -->
+        <Style x:Key="TileButtonStyle" TargetType="Button">
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="borda"
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="#C9A876"
+                                BorderThickness="1.3"
+                                SnapsToDevicePixels="True">
+                            <Border.Effect>
+                                <DropShadowEffect Color="Black" BlurRadius="10" ShadowDepth="0" Opacity="0.55"/>
+                            </Border.Effect>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="borda" Property="BorderBrush" Value="#F3DDB2"/>
+                                <Setter TargetName="borda" Property="BorderThickness" Value="2.2"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Linha dourada fina abaixo da foto -->
+        <Style x:Key="TileDividerStyle" TargetType="Rectangle">
+            <Setter Property="Height" Value="1.3"/>
+            <Setter Property="Fill" Value="#C9A876"/>
+        </Style>
+
+        <!-- Nome da bebida -->
+        <Style x:Key="TileNameStyle" TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="Georgia"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Foreground" Value="#F1D7AC"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="IsHitTestVisible" Value="False"/>
+        </Style>
+
+        <!-- Pequeno florão decorativo abaixo do nome -->
+        <Style x:Key="TileFlourishStyle" TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="Segoe UI Symbol"/>
+            <Setter Property="FontSize" Value="10"/>
+            <Setter Property="Foreground" Value="#C9A876"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="IsHitTestVisible" Value="False"/>
+        </Style>
+
+        <!-- Botão Voltar: caixa escura com moldura dupla dourada -->
+        <Style x:Key="VoltarButtonStyle" TargetType="Button">
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="FontFamily" Value="Georgia"/>
+            <Setter Property="FontSize" Value="19"/>
+            <Setter Property="Foreground" Value="#F1D7AC"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Border Background="#E6141009" BorderBrush="#C9A876" BorderThickness="1.3"/>
+                            <Border Margin="5" BorderBrush="#C9A876" BorderThickness="1"/>
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Foreground" Value="#FFFFFF"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+    </Page.Resources>
+
     <Viewbox Stretch="Fill" >
         <Canvas Width="800" Height="450">
+
             <Canvas.Background>
-                <ImageBrush ImageSource="/img (2).jpg"/>
+                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                    <GradientStop Color="#221E1A" Offset="0"/>
+                    <GradientStop Color="#121010" Offset="1"/>
+                </LinearGradientBrush>
             </Canvas.Background>
 
-            <Button Content="" Margin="21,10,699,360" Height="80" Width="80" Click="ButtonCappuccino">
-                <Button.Background>
-                    <ImageBrush ImageSource="/img (2).jpeg"/>
-                </Button.Background>
-            </Button>
-            <Label Content="" HorizontalAlignment="Left" Margin="152,174,0,0" VerticalAlignment="Top"/>
-            <Button Content="" HorizontalAlignment="Left" Margin="236,115,0,0" VerticalAlignment="Top" Width="80" Height="80" >
-                <Button.Background>
-                    <ImageBrush ImageSource="/Cold Brew.jpeg"/>
-                </Button.Background>
-            </Button>
-            <Button Content="" HorizontalAlignment="Left" Margin="21,225,0,0" VerticalAlignment="Top" Width="80" Height="80">
-                <Button.Background>
-                    <ImageBrush ImageSource="/Frappuchino.jpeg"/>
-                </Button.Background>
-            </Button>
-            <Button Content="" HorizontalAlignment="Left" Margin="236,10,0,0" VerticalAlignment="Top"  Width="80" Height="80">
-                <Button.Background>
-                    <ImageBrush ImageSource="/img (1).jpeg"/>
-                </Button.Background>
-            </Button>
-            <Button Content="" HorizontalAlignment="Left" Margin="126,225,0,0" VerticalAlignment="Top" Width="80" Height="80">
-                <Button.Background>
-                    <ImageBrush ImageSource="/Iced Moccha.jpeg"/>
-                </Button.Background>
-            </Button>
-            <Button Content="" HorizontalAlignment="Left" Margin="21,115,0,0" VerticalAlignment="Top" Width="80" Height="80">
-                <Button.Background>
-                    <ImageBrush ImageSource="/img (3).jpeg"/>
-                </Button.Background>
-            </Button>
-            <Button Content="" HorizontalAlignment="Left" Margin="126,10,0,0" VerticalAlignment="Top" Width="80" Height="80">
-                <Button.Background>
-                    <ImageBrush ImageSource="/img (5).jpeg"/>
-                </Button.Background>
-            </Button>
-            <Button Content="" HorizontalAlignment="Left" Margin="126,115,0,0" VerticalAlignment="Top"  RenderTransformOrigin="0.576,0.615" Width="80" Height="80">
-                <Button.Background>
-                    <ImageBrush ImageSource="/img (4).jpeg"/>
-                </Button.Background>
-            </Button>
-            <Button Content="" HorizontalAlignment="Left" Margin="236,225,0,0" VerticalAlignment="Top" Width="80" Height="80">
-                <Button.Background>
-                    <ImageBrush ImageSource="/iced latte.jpeg"/>
-                </Button.Background>
-            </Button>
-            <Button Content="" Width="80" Height="80" Margin="21,331,699,39">
-                <Button.Background>
-                    <ImageBrush ImageSource="/Image5.png"/>
-                </Button.Background>
-            </Button>
-            <Button Content="" Width="80" Height="80" Margin="126,331,594,39">
-                <Button.Background>
-                    <ImageBrush ImageSource="/agua com gás.png"/>
-                </Button.Background>
-            </Button>
-            <Button Content="" HorizontalAlignment="Left" Margin="236,331,0,0" VerticalAlignment="Top" Width="80" Height="80" FontWeight="Bold">
-                <Button.Background>
-                    <ImageBrush ImageSource="/agua normal.png"/>
-                </Button.Background>
-            </Button>
-            <Label Content="Cappucino" HorizontalAlignment="Left" Margin="29,90,0,0" VerticalAlignment="Top" FontWeight="Bold">
-                <Label.Background>
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="Black"/>
-                        <GradientStop Color="White" Offset="1"/>
-                    </LinearGradientBrush>
-                </Label.Background>
-            </Label>
-            <Label Content="Latte     " HorizontalAlignment="Left" Margin="36,195,0,0" VerticalAlignment="Top" FontWeight="Bold">
-                <Label.Background>
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="Black"/>
-                        <GradientStop Color="White" Offset="1"/>
-                    </LinearGradientBrush>
-                </Label.Background>
-            </Label>
-            <Label Content="Expresso" HorizontalAlignment="Left" Margin="244,90,0,0" VerticalAlignment="Top" FontWeight="Bold">
-                <Label.Background>
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="Black"/>
-                        <GradientStop Color="White" Offset="1"/>
-                    </LinearGradientBrush>
-                </Label.Background>
-            </Label>
-            <Label Content="Mocha" HorizontalAlignment="Left" Margin="145,90,0,0" VerticalAlignment="Top" FontWeight="Bold">
-                <Label.Background>
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="Black"/>
-                        <GradientStop Color="White" Offset="1"/>
-                    </LinearGradientBrush>
-                </Label.Background>
-            </Label>
-            <Label Content="Cold Brew" HorizontalAlignment="Left" Margin="244,195,0,0" VerticalAlignment="Top" FontWeight="Bold">
-                <Label.Background>
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="Black"/>
-                        <GradientStop Color="White" Offset="1"/>
-                    </LinearGradientBrush>
-                </Label.Background>
-            </Label>
-            <Label Content="Americano" HorizontalAlignment="Left" Margin="128,195,0,0" VerticalAlignment="Top" FontWeight="Bold">
-                <Label.Background>
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="Black"/>
-                        <GradientStop Color="White" Offset="1"/>
-                    </LinearGradientBrush>
-                </Label.Background>
-            </Label>
-            <Label Content="iced mocha" HorizontalAlignment="Left" Margin="131,305,0,0" VerticalAlignment="Top" FontWeight="Bold">
-                <Label.Background>
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="Black"/>
-                        <GradientStop Color="White" Offset="1"/>
-                    </LinearGradientBrush>
-                </Label.Background>
-            </Label>
-            <Label Content="Ice Latte" HorizontalAlignment="Left" Margin="244,305,0,0" VerticalAlignment="Top" FontWeight="Bold">
-                <Label.Background>
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="Black"/>
-                        <GradientStop Color="White" Offset="1"/>
-                    </LinearGradientBrush>
-                </Label.Background>
-            </Label>
-            <Label Content="Frappuccino" HorizontalAlignment="Left" Margin="25,305,0,0" VerticalAlignment="Top" FontWeight="Bold">
-                <Label.Background>
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="Black"/>
-                        <GradientStop Color="White" Offset="1"/>
-                    </LinearGradientBrush>
-                </Label.Background>
-            </Label>
-            <Label Content="Agua(gás)" HorizontalAlignment="Left" Margin="134,411,0,0" VerticalAlignment="Top" FontWeight="Bold">
-                <Label.Background>
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="Black"/>
-                        <GradientStop Color="White" Offset="1"/>
-                    </LinearGradientBrush>
-                </Label.Background>
-            </Label>
-            <Label Content="Agua" HorizontalAlignment="Left" Margin="257,411,0,0" VerticalAlignment="Top" FontWeight="Bold">
-                <Label.Background>
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="Black"/>
-                        <GradientStop Color="White" Offset="1"/>
-                    </LinearGradientBrush>
-                </Label.Background>
-            </Label>
-            <Label Content="Creamy Iced Coffe" HorizontalAlignment="Left" Margin="10,411,0,0" VerticalAlignment="Top" FontWeight="Bold">
-                <Label.Background>
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="Black"/>
-                        <GradientStop Color="White" Offset="1"/>
-                    </LinearGradientBrush>
-                </Label.Background>
-            </Label>
-            <Button Content="Voltar" Click="BtnVoltar" HorizontalAlignment="Left" Margin="655,387,0,0" VerticalAlignment="Top" Width="100" Height="50" BorderBrush="Red" Foreground="#FFCA5F5F" FontWeight="Bold" FontSize="20">
-                <Button.Background>
-                    <ImageBrush/>
-                </Button.Background>
-            </Button>
+            <!-- Painel direito: grãos de café + porta-filtro -->
+            <Rectangle Canvas.Left="480" Canvas.Top="0" Width="320" Height="450">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="/PainelBebidas.jpg" Stretch="UniformToFill"/>
+                </Rectangle.Fill>
+            </Rectangle>
 
+            <!-- ===================== LINHA 1 ===================== -->
+
+            <!-- Cappuccino -->
+            <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="15" Canvas.Top="15" Width="105" Height="105" Click="ButtonCappuccino">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img (2).jpeg" Stretch="UniformToFill"/>
+                </Button.Background>
+            </Button>
+            <Rectangle Style="{StaticResource TileDividerStyle}" Canvas.Left="15" Canvas.Top="123" Width="105"/>
+            <TextBlock Text="Cappuccino" Style="{StaticResource TileNameStyle}" Canvas.Left="15" Canvas.Top="126" Width="105"/>
+            <TextBlock Text="◆" Style="{StaticResource TileFlourishStyle}" Canvas.Left="15" Canvas.Top="147" Width="105"/>
+
+            <!-- Mocha -->
+            <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="132" Canvas.Top="15" Width="105" Height="105">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img (5).jpeg" Stretch="UniformToFill"/>
+                </Button.Background>
+            </Button>
+            <Rectangle Style="{StaticResource TileDividerStyle}" Canvas.Left="132" Canvas.Top="123" Width="105"/>
+            <TextBlock Text="Mocha" Style="{StaticResource TileNameStyle}" Canvas.Left="132" Canvas.Top="126" Width="105"/>
+            <TextBlock Text="◆" Style="{StaticResource TileFlourishStyle}" Canvas.Left="132" Canvas.Top="147" Width="105"/>
+
+            <!-- Expresso -->
+            <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="249" Canvas.Top="15" Width="105" Height="105">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img (1).jpeg" Stretch="UniformToFill"/>
+                </Button.Background>
+            </Button>
+            <Rectangle Style="{StaticResource TileDividerStyle}" Canvas.Left="249" Canvas.Top="123" Width="105"/>
+            <TextBlock Text="Expresso" Style="{StaticResource TileNameStyle}" Canvas.Left="249" Canvas.Top="126" Width="105"/>
+            <TextBlock Text="◆" Style="{StaticResource TileFlourishStyle}" Canvas.Left="249" Canvas.Top="147" Width="105"/>
+
+            <!-- Cold Brew -->
+            <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="366" Canvas.Top="15" Width="105" Height="105">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Cold Brew.jpeg" Stretch="UniformToFill"/>
+                </Button.Background>
+            </Button>
+            <Rectangle Style="{StaticResource TileDividerStyle}" Canvas.Left="366" Canvas.Top="123" Width="105"/>
+            <TextBlock Text="Cold Brew" Style="{StaticResource TileNameStyle}" Canvas.Left="366" Canvas.Top="126" Width="105"/>
+            <TextBlock Text="◆" Style="{StaticResource TileFlourishStyle}" Canvas.Left="366" Canvas.Top="147" Width="105"/>
+
+            <!-- ===================== LINHA 2 ===================== -->
+
+            <!-- Latte -->
+            <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="15" Canvas.Top="158" Width="105" Height="105">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img (3).jpeg" Stretch="UniformToFill"/>
+                </Button.Background>
+            </Button>
+            <Rectangle Style="{StaticResource TileDividerStyle}" Canvas.Left="15" Canvas.Top="266" Width="105"/>
+            <TextBlock Text="Latte" Style="{StaticResource TileNameStyle}" Canvas.Left="15" Canvas.Top="269" Width="105"/>
+            <TextBlock Text="◆" Style="{StaticResource TileFlourishStyle}" Canvas.Left="15" Canvas.Top="290" Width="105"/>
+
+            <!-- Americano -->
+            <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="132" Canvas.Top="158" Width="105" Height="105">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img (4).jpeg" Stretch="UniformToFill"/>
+                </Button.Background>
+            </Button>
+            <Rectangle Style="{StaticResource TileDividerStyle}" Canvas.Left="132" Canvas.Top="266" Width="105"/>
+            <TextBlock Text="Americano" Style="{StaticResource TileNameStyle}" Canvas.Left="132" Canvas.Top="269" Width="105"/>
+            <TextBlock Text="◆" Style="{StaticResource TileFlourishStyle}" Canvas.Left="132" Canvas.Top="290" Width="105"/>
+
+            <!-- Frappuccino -->
+            <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="249" Canvas.Top="158" Width="105" Height="105">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Frappuchino.jpeg" Stretch="UniformToFill"/>
+                </Button.Background>
+            </Button>
+            <Rectangle Style="{StaticResource TileDividerStyle}" Canvas.Left="249" Canvas.Top="266" Width="105"/>
+            <TextBlock Text="Frappuccino" Style="{StaticResource TileNameStyle}" Canvas.Left="249" Canvas.Top="269" Width="105"/>
+            <TextBlock Text="◆" Style="{StaticResource TileFlourishStyle}" Canvas.Left="249" Canvas.Top="290" Width="105"/>
+
+            <!-- Iced Mocha -->
+            <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="366" Canvas.Top="158" Width="105" Height="105">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Iced Moccha.jpeg" Stretch="UniformToFill"/>
+                </Button.Background>
+            </Button>
+            <Rectangle Style="{StaticResource TileDividerStyle}" Canvas.Left="366" Canvas.Top="266" Width="105"/>
+            <TextBlock Text="Iced Mocha" Style="{StaticResource TileNameStyle}" Canvas.Left="366" Canvas.Top="269" Width="105"/>
+            <TextBlock Text="◆" Style="{StaticResource TileFlourishStyle}" Canvas.Left="366" Canvas.Top="290" Width="105"/>
+
+            <!-- ===================== LINHA 3 ===================== -->
+
+            <!-- Ice Latte -->
+            <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="15" Canvas.Top="301" Width="105" Height="105">
+                <Button.Background>
+                    <ImageBrush ImageSource="/iced latte.jpeg" Stretch="UniformToFill"/>
+                </Button.Background>
+            </Button>
+            <Rectangle Style="{StaticResource TileDividerStyle}" Canvas.Left="15" Canvas.Top="409" Width="105"/>
+            <TextBlock Text="Ice Latte" Style="{StaticResource TileNameStyle}" Canvas.Left="15" Canvas.Top="412" Width="105"/>
+            <TextBlock Text="◆" Style="{StaticResource TileFlourishStyle}" Canvas.Left="15" Canvas.Top="433" Width="105"/>
+
+            <!-- Creamy Iced Coffee -->
+            <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="132" Canvas.Top="301" Width="105" Height="105">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Image5.png" Stretch="UniformToFill"/>
+                </Button.Background>
+            </Button>
+            <Rectangle Style="{StaticResource TileDividerStyle}" Canvas.Left="132" Canvas.Top="409" Width="105"/>
+            <TextBlock Text="Creamy Iced Coffe" Style="{StaticResource TileNameStyle}" Canvas.Left="132" Canvas.Top="412" Width="105" FontSize="11"/>
+            <TextBlock Text="◆" Style="{StaticResource TileFlourishStyle}" Canvas.Left="132" Canvas.Top="433" Width="105"/>
+
+            <!-- Agua (gás) -->
+            <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="249" Canvas.Top="301" Width="105" Height="105">
+                <Button.Background>
+                    <ImageBrush ImageSource="/agua com gás.png" Stretch="UniformToFill"/>
+                </Button.Background>
+            </Button>
+            <Rectangle Style="{StaticResource TileDividerStyle}" Canvas.Left="249" Canvas.Top="409" Width="105"/>
+            <TextBlock Text="Agua (gás)" Style="{StaticResource TileNameStyle}" Canvas.Left="249" Canvas.Top="412" Width="105"/>
+            <TextBlock Text="◆" Style="{StaticResource TileFlourishStyle}" Canvas.Left="249" Canvas.Top="433" Width="105"/>
+
+            <!-- Agua -->
+            <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="366" Canvas.Top="301" Width="105" Height="105">
+                <Button.Background>
+                    <ImageBrush ImageSource="/agua normal.png" Stretch="UniformToFill"/>
+                </Button.Background>
+            </Button>
+            <Rectangle Style="{StaticResource TileDividerStyle}" Canvas.Left="366" Canvas.Top="409" Width="105"/>
+            <TextBlock Text="Agua" Style="{StaticResource TileNameStyle}" Canvas.Left="366" Canvas.Top="412" Width="105"/>
+            <TextBlock Text="◆" Style="{StaticResource TileFlourishStyle}" Canvas.Left="366" Canvas.Top="433" Width="105"/>
+
+            <!-- Botão Voltar -->
+            <Button Content="Voltar" Style="{StaticResource VoltarButtonStyle}" Click="BtnVoltar" Canvas.Left="652" Canvas.Top="378" Width="123" Height="46"/>
 
         </Canvas>
     </Viewbox>
-    
+
 </Page>
