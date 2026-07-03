@@ -7,112 +7,231 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="SelecaoDeLanches">
-    <Viewbox Stretch="Fill">
-        <Canvas Width="800" Height="450" >
+
+    <Page.Resources>
+
+        <!-- Botão de foto de lanche: moldura dourada fina, sem o "chrome" padrão do botão -->
+        <Style x:Key="TileButtonStyle" TargetType="Button">
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="borda"
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="#C9A876"
+                                BorderThickness="1.3"
+                                SnapsToDevicePixels="True">
+                            <Border.Effect>
+                                <DropShadowEffect Color="Black" BlurRadius="10" ShadowDepth="0" Opacity="0.55"/>
+                            </Border.Effect>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="borda" Property="BorderBrush" Value="#F3DDB2"/>
+                                <Setter TargetName="borda" Property="BorderThickness" Value="2.2"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Linha dourada fina abaixo da foto -->
+        <Style x:Key="TileDividerStyle" TargetType="Rectangle">
+            <Setter Property="Height" Value="1.3"/>
+            <Setter Property="Fill" Value="#C9A876"/>
+        </Style>
+
+        <!-- Nome do lanche -->
+        <Style x:Key="TileNameStyle" TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="Georgia"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Foreground" Value="#F1D7AC"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="IsHitTestVisible" Value="False"/>
+        </Style>
+
+        <!-- Pequeno florão decorativo abaixo do nome -->
+        <Style x:Key="TileFlourishStyle" TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="Segoe UI Symbol"/>
+            <Setter Property="FontSize" Value="10"/>
+            <Setter Property="Foreground" Value="#C9A876"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="IsHitTestVisible" Value="False"/>
+        </Style>
+
+        <!-- Botão Voltar: caixa escura com moldura dupla dourada -->
+        <Style x:Key="VoltarButtonStyle" TargetType="Button">
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="FontFamily" Value="Georgia"/>
+            <Setter Property="FontSize" Value="19"/>
+            <Setter Property="Foreground" Value="#F1D7AC"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Border Background="#E6141009" BorderBrush="#C9A876" BorderThickness="1.3"/>
+                            <Border Margin="5" BorderBrush="#C9A876" BorderThickness="1"/>
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Foreground" Value="#FFFFFF"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+    </Page.Resources>
+
+    <Viewbox Stretch="Fill" >
+        <Canvas Width="800" Height="450">
+
             <Canvas.Background>
-                <ImageBrush ImageSource="/img (1).png"/>
+                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                    <GradientStop Color="#221E1A" Offset="0"/>
+                    <GradientStop Color="#121010" Offset="1"/>
+                </LinearGradientBrush>
             </Canvas.Background>
-            <Button Content="" Width="100" Height="100" Canvas.Left="386" Canvas.Top="296">
 
-                <Button.Background>
-                    <ImageBrush ImageSource="/croissant.jpg"/>
-                </Button.Background>
-            </Button>
-            <Button Content="" Width="100" Height="100" Canvas.Left="648" Canvas.Top="296">
-                <Button.Background>
-                    <ImageBrush ImageSource="/Design-sem-nome.webp"/>
-                </Button.Background>
-            </Button>
-            <Button Content="" Width="100" Height="100" Margin="510,18,190,332" RenderTransformOrigin="1.44,0.291" >
-                <Button.Background>
-                    <ImageBrush ImageSource="/croquete.jpg"/>
-                </Button.Background>
-            </Button>
-            <Button Content="" Width="100" Height="100" Margin="510,296,190,54">
-                <Button.Background>
-                    <ImageBrush ImageSource="/img (1).jpg"/>
-                </Button.Background>
-            </Button>
-            <Button Content="" Width="100" Height="100" Canvas.Left="386" Canvas.Top="158" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <!-- Painel esquerdo: imagem decorativa de lanches (produtos ficam alinhados à direita) -->
+            <!-- AlignmentX="Left" garante que o hambúrguer (que fica no lado esquerdo da foto original) apareça por inteiro, em vez de ser cortado pelo recorte central padrão -->
+            <Rectangle Canvas.Left="0" Canvas.Top="0" Width="320" Height="450">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="/img (1).png" Stretch="UniformToFill" AlignmentX="Left"/>
+                </Rectangle.Fill>
+            </Rectangle>
 
-                <Button.Background>
-                    <ImageBrush ImageSource="/sanduiche.jpeg"/>
-                </Button.Background>
-            </Button>
-            <Button Content="" Width="100" Height="100" Canvas.Left="648" Canvas.Top="18">
-                <Button.Background>
-                    <ImageBrush ImageSource="/empada.jpg"/>
-                </Button.Background>
-            </Button>
-            <Button Content="" Width="100" Height="100" Margin="386,18,314,332" Click="BtnCoxinha">
-                <Button.Background>
-                    <ImageBrush ImageSource="/img1.jpg"/>
-                </Button.Background>
-            </Button>
-            <Button Content="" Width="100" Height="100" Canvas.Left="510" Canvas.Top="158">
-                <Button.Background>
-                    <ImageBrush ImageSource="/bauru.jpeg"/>
-                </Button.Background>
-            </Button>
-            <Button Content="" Width="100" Height="100" Canvas.Left="648" Canvas.Top="158" HorizontalAlignment="Center" VerticalAlignment="Top">
-                <Button.Background>
-                    <ImageBrush ImageSource="/enroladinho-de-salsicha-com-catupiry-1.jpg.webp"/>
-                </Button.Background>
-            </Button>
+            <!-- ===================== LINHA 1 ===================== -->
 
-            <Button Content="Voltar" HorizontalAlignment="Center" VerticalAlignment="Top" Height="56" Width="148" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="#FFE84242" Grid.Row="2" Click="BtnVoltar" BorderBrush="Red" Canvas.Left="27" Canvas.Top="367">
+            <!-- Sonho de Chocolate -->
+            <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="446" Canvas.Top="15" Width="105" Height="105" HorizontalAlignment="Left" VerticalAlignment="Center">
                 <Button.Background>
-                    <ImageBrush/>
+                    <ImageBrush ImageSource="/sonho-chocolate.jpg" Stretch="UniformToFill"/>
                 </Button.Background>
             </Button>
-            <Button Content="Coxinha" Height="25" Width="80" FontSize="18" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="#FFD4D4D4" Click="BtnVoltar" BorderBrush="Black" Canvas.Left="396" Canvas.Top="123" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <Button.Background>
-                    <ImageBrush/>
-                </Button.Background>
-            </Button>
-            <Button Content="Empada" Height="25" Width="80" FontSize="18" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="#FFD4D4D4" Click="BtnVoltar" BorderBrush="#FF040404" Canvas.Left="658" Canvas.Top="123" HorizontalAlignment="Left" VerticalAlignment="Center">
-                <Button.Background>
-                    <ImageBrush/>
-                </Button.Background>
-            </Button>
-            <Button x:Name="Churros" Content="Churros" Height="25" Width="80" FontSize="18" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="#FFD4D4D4" Click="BtnVoltar" BorderBrush="#FF040404" Canvas.Left="520" Canvas.Top="123" HorizontalAlignment="Center" VerticalAlignment="Top">
-                <Button.Background>
-                    <ImageBrush/>
-                </Button.Background>
-            </Button>
-            <Button Content="Sanduiche" Height="25" Width="100" FontSize="18" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="#FFD4D4D4" Click="BtnVoltar" BorderBrush="#FF040404" Canvas.Left="386" Canvas.Top="263" HorizontalAlignment="Center" VerticalAlignment="Top">
-                <Button.Background>
-                    <ImageBrush/>
-                </Button.Background>
-            </Button>
-            <Button Content="Bauru" Height="25" Width="102" FontSize="18" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="#FFD4D4D4" Click="BtnVoltar" BorderBrush="#FF040404" Canvas.Left="646" Canvas.Top="263" HorizontalAlignment="Left" VerticalAlignment="Top">
-                <Button.Background>
-                    <ImageBrush/>
-                </Button.Background>
-            </Button>
-            <Button Content="X-Buguer" Height="25" Width="100" FontSize="18" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="#FFD4D4D4" Click="BtnVoltar" BorderBrush="#FF040404" Canvas.Left="510" Canvas.Top="263" HorizontalAlignment="Left" VerticalAlignment="Center">
-                <Button.Background>
-                    <ImageBrush/>
-                </Button.Background>
-            </Button>
-            <Button Content="Risoles" Height="25" Width="134" FontSize="18" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="#FFD4D4D4" Click="BtnVoltar" BorderBrush="#FF040404" Canvas.Left="498" Canvas.Top="406" HorizontalAlignment="Left" VerticalAlignment="Center">
-                <Button.Background>
-                    <ImageBrush/>
-                </Button.Background>
-            </Button>
-            <Button Content="Croissant" Height="25" Width="100" FontSize="18" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="#FFD4D4D4" Click="BtnVoltar" BorderBrush="#FF040404" Canvas.Left="386" Canvas.Top="406" HorizontalAlignment="Left" VerticalAlignment="Top">
-                <Button.Background>
-                    <ImageBrush/>
-                </Button.Background>
-            </Button>
-            <Button Content="Pão de Queijo" Height="25" Width="132" FontSize="18" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="#FFD4D4D4" Click="BtnVoltar" BorderBrush="#FF040404" Canvas.Left="637" Canvas.Top="406" HorizontalAlignment="Left" VerticalAlignment="Center">
-                <Button.Background>
-                    <ImageBrush/>
-                </Button.Background>
-            </Button>
+            <Rectangle Style="{StaticResource TileDividerStyle}" Canvas.Left="446" Canvas.Top="124" Width="105"/>
+            <TextBlock Text="Sonho de Chocolate" Style="{StaticResource TileNameStyle}" Canvas.Left="446" Canvas.Top="128" Width="105" FontSize="10"/>
+            <TextBlock Text="◆" Style="{StaticResource TileFlourishStyle}" Canvas.Left="329" Canvas.Top="147" Width="105"/>
 
+            <!-- Coxinha -->
+            <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="329" Canvas.Top="15" Width="105" Height="105" Click="BtnCoxinha">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img1.jpg" Stretch="UniformToFill"/>
+                </Button.Background>
+            </Button>
+            <Rectangle Style="{StaticResource TileDividerStyle}" Canvas.Left="329" Canvas.Top="124" Width="105"/>
+            <TextBlock Text="Coxinha" Style="{StaticResource TileNameStyle}" Canvas.Left="329" Canvas.Top="124" Width="105" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBlock Text="◆" Style="{StaticResource TileFlourishStyle}" Canvas.Left="446" Canvas.Top="147" Width="105"/>
 
+            <!-- Churros -->
+            <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="563" Canvas.Top="15" Width="105" Height="105">
+                <Button.Background>
+                    <ImageBrush ImageSource="/croquete.jpg" Stretch="UniformToFill"/>
+                </Button.Background>
+            </Button>
+            <Rectangle Style="{StaticResource TileDividerStyle}" Canvas.Left="563" Canvas.Top="123" Width="105"/>
+            <TextBlock Text="Churros" Style="{StaticResource TileNameStyle}" Canvas.Left="563" Canvas.Top="126" Width="105"/>
+            <TextBlock Text="◆" Style="{StaticResource TileFlourishStyle}" Canvas.Left="563" Canvas.Top="147" Width="105"/>
 
+            <!-- Empada -->
+            <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="680" Canvas.Top="15" Width="105" Height="105">
+                <Button.Background>
+                    <ImageBrush ImageSource="/empada.jpg" Stretch="UniformToFill"/>
+                </Button.Background>
+            </Button>
+            <Rectangle Style="{StaticResource TileDividerStyle}" Canvas.Left="680" Canvas.Top="123" Width="105"/>
+            <TextBlock Text="Empada" Style="{StaticResource TileNameStyle}" Canvas.Left="680" Canvas.Top="126" Width="105"/>
+            <TextBlock Text="◆" Style="{StaticResource TileFlourishStyle}" Canvas.Left="680" Canvas.Top="147" Width="105"/>
+
+            <!-- ===================== LINHA 2 ===================== -->
+
+            <!-- Fatia de Pizza de Frango -->
+            <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="329" Canvas.Top="158" Width="105" Height="105">
+                <Button.Background>
+                    <ImageBrush ImageSource="/pizza.jpg" Stretch="UniformToFill"/>
+                </Button.Background>
+            </Button>
+            <Rectangle Style="{StaticResource TileDividerStyle}" Canvas.Left="329" Canvas.Top="266" Width="105"/>
+            <TextBlock Text="Pizza " Style="{StaticResource TileNameStyle}" Canvas.Left="329" Canvas.Top="269" Width="105" FontSize="11"/>
+            <TextBlock Text="◆" Style="{StaticResource TileFlourishStyle}" Canvas.Left="329" Canvas.Top="290" Width="105"/>
+
+            <!-- Sanduiche -->
+            <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="446" Canvas.Top="158" Width="105" Height="105">
+                <Button.Background>
+                    <ImageBrush ImageSource="/sanduiche.jpeg" Stretch="UniformToFill"/>
+                </Button.Background>
+            </Button>
+            <Rectangle Style="{StaticResource TileDividerStyle}" Canvas.Left="446" Canvas.Top="266" Width="105"/>
+            <TextBlock Text="Sanduíche" Style="{StaticResource TileNameStyle}" Canvas.Left="446" Canvas.Top="269" Width="105"/>
+            <TextBlock Text="◆" Style="{StaticResource TileFlourishStyle}" Canvas.Left="446" Canvas.Top="290" Width="105"/>
+
+            <!-- Bauru -->
+            <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="563" Canvas.Top="158" Width="105" Height="105">
+                <Button.Background>
+                    <ImageBrush ImageSource="/bauru.jpeg" Stretch="UniformToFill"/>
+                </Button.Background>
+            </Button>
+            <Rectangle Style="{StaticResource TileDividerStyle}" Canvas.Left="563" Canvas.Top="266" Width="105"/>
+            <TextBlock Text="Bauru" Style="{StaticResource TileNameStyle}" Canvas.Left="563" Canvas.Top="269" Width="105"/>
+            <TextBlock Text="◆" Style="{StaticResource TileFlourishStyle}" Canvas.Left="563" Canvas.Top="290" Width="105"/>
+
+            <!-- X-Burguer -->
+            <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="680" Canvas.Top="158" Width="105" Height="105">
+                <Button.Background>
+                    <ImageBrush ImageSource="/enroladinho-de-salsicha-com-catupiry-1.jpg.webp" Stretch="UniformToFill"/>
+                </Button.Background>
+            </Button>
+            <Rectangle Style="{StaticResource TileDividerStyle}" Canvas.Left="680" Canvas.Top="266" Width="105"/>
+            <TextBlock Text="X-Burguer" Style="{StaticResource TileNameStyle}" Canvas.Left="680" Canvas.Top="269" Width="105"/>
+            <TextBlock Text="◆" Style="{StaticResource TileFlourishStyle}" Canvas.Left="680" Canvas.Top="290" Width="105"/>
+
+            <!-- ===================== LINHA 3 ===================== -->
+
+            <!-- Fatia de Pizza de Chocolate -->
+            <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="329" Canvas.Top="301" Width="105" Height="105">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Pizza Doce.jpg" Stretch="UniformToFill"/>
+                </Button.Background>
+            </Button>
+            <Rectangle Style="{StaticResource TileDividerStyle}" Canvas.Left="329" Canvas.Top="409" Width="105"/>
+            <TextBlock Text="Pizza de Chocolate" Style="{StaticResource TileNameStyle}" Canvas.Left="329" Canvas.Top="412" Width="105" FontSize="10"/>
+            <TextBlock Text="◆" Style="{StaticResource TileFlourishStyle}" Canvas.Left="329" Canvas.Top="433" Width="105"/>
+
+            <!-- Croissant -->
+            <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="446" Canvas.Top="301" Width="105" Height="105">
+                <Button.Background>
+                    <ImageBrush ImageSource="/croissant.jpg" Stretch="UniformToFill"/>
+                </Button.Background>
+            </Button>
+            <Rectangle Style="{StaticResource TileDividerStyle}" Canvas.Left="446" Canvas.Top="409" Width="105"/>
+            <TextBlock Text="Croissant" Style="{StaticResource TileNameStyle}" Canvas.Left="446" Canvas.Top="412" Width="105"/>
+            <TextBlock Text="◆" Style="{StaticResource TileFlourishStyle}" Canvas.Left="446" Canvas.Top="433" Width="105"/>
+
+            <!-- Risoles -->
+            <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="563" Canvas.Top="301" Width="105" Height="105">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img (1).jpg" Stretch="UniformToFill"/>
+                </Button.Background>
+            </Button>
+            <Rectangle Style="{StaticResource TileDividerStyle}" Canvas.Left="563" Canvas.Top="409" Width="105"/>
+            <TextBlock Text="Risoles" Style="{StaticResource TileNameStyle}" Canvas.Left="563" Canvas.Top="412" Width="105"/>
+            <TextBlock Text="◆" Style="{StaticResource TileFlourishStyle}" Canvas.Left="563" Canvas.Top="433" Width="105"/>
+
+            <!-- Pão de Queijo -->
+            <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="680" Canvas.Top="301" Width="105" Height="105">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Design-sem-nome.webp" Stretch="UniformToFill"/>
+                </Button.Background>
+            </Button>
+            <Rectangle Style="{StaticResource TileDividerStyle}" Canvas.Left="680" Canvas.Top="409" Width="105"/>
+            <TextBlock Text="Pão de Queijo" Style="{StaticResource TileNameStyle}" Canvas.Left="680" Canvas.Top="412" Width="105" FontSize="11"/>
+            <TextBlock Text="◆" Style="{StaticResource TileFlourishStyle}" Canvas.Left="680" Canvas.Top="433" Width="105"/>
+
+            <!-- Botão Voltar -->
+            <Button Content="Voltar" Style="{StaticResource VoltarButtonStyle}" Click="BtnVoltar" Canvas.Left="25" Canvas.Top="378" Width="123" Height="46"/>
 
         </Canvas>
     </Viewbox>

@@ -49,6 +49,8 @@
     <None Remove="Img\img %287%29.png" />
     <None Remove="Img\img %288%29.png" />
     <None Remove="Img\img3.png" />
+    <None Remove="Pizza Doce.jpg" />
+    <None Remove="pizza.jpg" />
     <None Remove="qz8j4.jpg" />
     <None Remove="PainelBebidas.jpg" />
     <None Remove="sanduiche.jpg" />
@@ -57,6 +59,9 @@
     <None Remove="FundoCafe.jpg" />
     <None Remove="superficie-escura-com-espaco-em-branco-e-fast-food-menu_23-2147684608.jpg" />
     <None Remove="walpaper de descrição de bebida e lanche.png" />
+    <None Remove="sonho-chocolate.jpg" />
+    <None Remove="pizza-frango.jpg" />
+    <None Remove="pizza-chocolate.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -100,6 +105,8 @@
     <Resource Include="Img\img (7).png" />
     <Resource Include="Img\img (8).png" />
     <Resource Include="Img\img3.png" />
+    <Resource Include="Pizza Doce.jpg" />
+    <Resource Include="pizza.jpg" />
     <Resource Include="qz8j4.jpg" />
     <Resource Include="PainelBebidas.jpg" />
     <Resource Include="sanduiche.jpg" />
@@ -107,6 +114,7 @@
     <Resource Include="bauru.jpeg" />
     <Resource Include="superficie-escura-com-espaco-em-branco-e-fast-food-menu_23-2147684608.jpg" />
     <Resource Include="walpaper de descrição de bebida e lanche.png" />
+    <Resource Include="sonho-chocolate.jpg" />
   </ItemGroup>
 
 </Project>
