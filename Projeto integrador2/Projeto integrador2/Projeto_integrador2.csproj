@@ -22,6 +22,7 @@
     <None Remove="Cold Brew.jpeg" />
     <None Remove="croissant.jpg" />
     <None Remove="croquete.jpg" />
+    <None Remove="DescriçãoDeBebida-Background.png" />
     <None Remove="Design-sem-nome.webp" />
     <None Remove="empada.jpg" />
     <None Remove="enroladinho-de-salsicha-com-catupiry-1.jpg.webp" />
@@ -73,6 +74,7 @@
     <Resource Include="Cold Brew.jpeg" />
     <Resource Include="croissant.jpg" />
     <Resource Include="croquete.jpg" />
+    <Resource Include="DescriçãoDeBebida-Background.png" />
     <Resource Include="Design-sem-nome.webp" />
     <Resource Include="empada.jpg" />
     <Resource Include="enroladinho-de-salsicha-com-catupiry-1.jpg.webp" />
@@ -103,7 +105,6 @@
     <Resource Include="sanduiche.jpg" />
     <Resource Include="sanduiche.jpeg" />
     <Resource Include="bauru.jpeg" />
-    <Resource Include="FundoCafe.jpg" />
     <Resource Include="superficie-escura-com-espaco-em-branco-e-fast-food-menu_23-2147684608.jpg" />
     <Resource Include="walpaper de descrição de bebida e lanche.png" />
   </ItemGroup>
