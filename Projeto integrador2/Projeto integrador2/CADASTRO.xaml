@@ -18,7 +18,7 @@
             <Button Content="Cadastro" HorizontalAlignment="Left" VerticalAlignment="Top" Height="55" Width="132" Canvas.Left="345" Canvas.Top="287" BorderBrush="#FFFFF8F8"/>
             <Label Content="Label" HorizontalAlignment="Left" Height="0" Margin="215,106,0,0" VerticalAlignment="Top" Width="13"/>
             <Label Content="Email" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.235,0.886" Canvas.Left="287" Canvas.Top="225" Height="34" Width="60"/>
-            <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Canvas.Left="357" Canvas.Top="233"/>
+            <TextBox x:Name="txbEmail" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Canvas.Left="357" Canvas.Top="233" TextChanged="txbEmail_TextChanged"/>
             <Button Content="VOLTAR" Canvas.Left="351" Canvas.Top="363" Height="51" Width="126" HorizontalAlignment="Center" VerticalAlignment="Top" Click="Button_Click"/>
 
        

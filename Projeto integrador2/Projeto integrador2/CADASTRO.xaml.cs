@@ -47,5 +47,10 @@ namespace Projeto_integrador2
         {
 
         }
+
+        private void txbEmail_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
