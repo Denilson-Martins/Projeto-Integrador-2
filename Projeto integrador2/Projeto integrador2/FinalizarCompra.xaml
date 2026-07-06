@@ -114,7 +114,7 @@
                     Click="BtnVoltar"
                     Canvas.Left="20" Canvas.Top="434"
                     Width="370" Height="44" FontSize="17"
-                    Foreground="#FFE84242" BorderBrush="#FFE84242" FontWeight="Bold">
+                    Foreground="#FFFDFDFD" BorderBrush="White" FontWeight="Bold" Style="{StaticResource VoltarButtonStyle}">
                 <Button.Background>
                     <SolidColorBrush Color="White"/>
                 </Button.Background>
@@ -125,7 +125,7 @@
                     Canvas.Left="410" Canvas.Top="434"
                     Width="370" Height="44" FontSize="17"
                     Background="#FF1565C0" Foreground="White"
-                    BorderBrush="#FF0D47A1" FontWeight="SemiBold"/>
+                    BorderBrush="#FF0D47A1" FontWeight="SemiBold" Style="{StaticResource VoltarButtonStyle}"/>
 
         </Canvas>
     </Viewbox>

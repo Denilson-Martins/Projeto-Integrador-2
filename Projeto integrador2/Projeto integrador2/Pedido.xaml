@@ -33,27 +33,27 @@
                     Canvas.Left="20" Canvas.Top="256"
                     Width="170" Height="44" FontSize="17"
                     Background="#FFE84242" Foreground="White"
-                    BorderBrush="#FFCC0000" FontWeight="SemiBold"/>
+                    BorderBrush="#FFCC0000" FontWeight="SemiBold" Style="{StaticResource VoltarButtonStyle}" />
 
             <Button Content="Adicionar  +"
                     Click="BtnAdicionar"
                     Canvas.Left="205" Canvas.Top="256"
                     Width="170" Height="44" FontSize="17"
                     Background="#FF228B22" Foreground="White"
-                    BorderBrush="#FF006400" FontWeight="SemiBold"/>
+                    BorderBrush="#FF006400" FontWeight="SemiBold" Style="{StaticResource VoltarButtonStyle}"/>
 
             <Button Content="Remover Item"
                     Click="BtnRemove"
                     Canvas.Left="20" Canvas.Top="316"
                     Width="355" Height="44" FontSize="17"
                     Background="#FFE84242" Foreground="White"
-                    BorderBrush="#FFCC0000" FontWeight="SemiBold"/>
+                    BorderBrush="#FFCC0000" FontWeight="SemiBold" Style="{StaticResource VoltarButtonStyle}"/>
 
             <Button Content="← Voltar"
                     Click="BtnVoltar"
                     Canvas.Left="20" Canvas.Top="376"
                     Width="355" Height="44" FontSize="17"
-                    Foreground="#FFE84242" BorderBrush="#FFE84242" FontWeight="Bold">
+                    Foreground="#FFF9F9F9" BorderBrush="White" FontWeight="Bold" Style="{StaticResource VoltarButtonStyle}">
                 <Button.Background>
                     <SolidColorBrush Color="White"/>
                 </Button.Background>
@@ -66,7 +66,7 @@
             <Border Canvas.Left="410" Canvas.Top="256"
                     Width="370" Height="44"
                     BorderBrush="#FFCCCCCC" BorderThickness="1"
-                    CornerRadius="4" Background="#FFF9F9F9">
+                    CornerRadius="4" Background="#FFF9F9F9" >
                 <StackPanel Orientation="Horizontal"
                             HorizontalAlignment="Center"
                             VerticalAlignment="Center">
@@ -88,14 +88,14 @@
                     Canvas.Left="410" Canvas.Top="316"
                     Width="370" Height="44" FontSize="17"
                     Background="#FF1565C0" Foreground="White"
-                    BorderBrush="#FF0D47A1" FontWeight="SemiBold"/>
+                    BorderBrush="#FF0D47A1" FontWeight="SemiBold" Style="{StaticResource VoltarButtonStyle}"/>
 
             <Button Content="← Voltar para a tela de Escolha"
                     Click="BtnEscolherBebida"
                     Canvas.Left="410" Canvas.Top="376"
                     Width="370" Height="44" FontSize="15"
-                    Background="White" Foreground="#FF1565C0"
-                    BorderBrush="#FF1565C0" FontWeight="SemiBold"/>
+                    Background="White" Foreground="White"
+                    BorderBrush="White" FontWeight="SemiBold" Style="{StaticResource VoltarButtonStyle}"/>
 
         </Canvas>
     </Viewbox>

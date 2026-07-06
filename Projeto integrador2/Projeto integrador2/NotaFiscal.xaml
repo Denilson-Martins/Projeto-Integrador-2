@@ -96,7 +96,7 @@
                     FontSize="17" FontWeight="Bold"
                     FontFamily="Segoe UI"
                     Background="#FF1565C0" Foreground="White"
-                    BorderBrush="#FF0D47A1"/>
+                    BorderBrush="#FF0D47A1" Style="{StaticResource VoltarButtonStyle}"/>
 
         </Canvas>
     </Viewbox>
