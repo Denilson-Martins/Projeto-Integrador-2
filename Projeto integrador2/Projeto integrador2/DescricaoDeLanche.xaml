@@ -32,11 +32,11 @@
                 </TextBox.BorderBrush>
             </TextBox>
             <Label Content="Preço" HorizontalAlignment="Left" Margin="126,220,0,0" VerticalAlignment="Top" FontSize="16" RenderTransformOrigin="0.442,1.58" Foreground="White"/>
-            <Label Content="R$ 5,50" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Canvas.Left="81" Canvas.Top="259" Foreground="White"/>
-            <Label Content="R$ 9,00" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Canvas.Left="182" Canvas.Top="252" Foreground="White"/>
+            <Label Content="R$ 5,50" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" Canvas.Left="82" Canvas.Top="252" Foreground="White" Width="75"/>
+            <Label Content="R$ 9,00" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" Canvas.Left="182" Canvas.Top="252" Foreground="White" Width="88"/>
 
-            <Button Tag="Coxinha" Content="Média" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Click="BtnTamanho" Canvas.Left="81" Canvas.Top="305"/>
-            <Button Tag="Coxinha" Content="Grande" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Click="BtnTamanho" RenderTransformOrigin="3.326,2.505" Canvas.Left="182" Canvas.Top="305"/>
+            <Button Style="{StaticResource VoltarButtonStyle}" Tag="Coxinha" Content="Média" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Click="BtnTamanho" Canvas.Left="82" Canvas.Top="288" Height="33" Width="75"/>
+            <Button Style="{StaticResource VoltarButtonStyle}" Tag="Coxinha" Content="Grande" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Click="BtnTamanho" RenderTransformOrigin="3.326,2.505" Canvas.Left="182" Canvas.Top="287" Height="35" Width="75"/>
 
             <TextBox HorizontalAlignment="Left" Margin="364,96,0,0" TextWrapping="Wrap" Text="Uma deliciosa coxinha de massa leve e dourada, recheada com frango desfiado temperado e cremoso. Crocante por fora e macia por dentro, é o acompanhamento perfeito para um café, cappuccino ou outras bebidas da cafeteria. Preparada com ingredientes selecionados para garantir sabor e qualidade em cada mordida." VerticalAlignment="Top" Width="390" FontSize="16" Background="{x:Null}" Foreground="White"/>
 
@@ -52,8 +52,8 @@
                     <ImageBrush/>
                 </TextBox.BorderBrush>
             </TextBox>
-            <Button Content="Voltar" HorizontalAlignment="Left" VerticalAlignment="Top" Height="56" Width="148" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="#FFFF5D00" Background="{x:Null}" BorderBrush="#FFF10000" Canvas.Left="69" Canvas.Top="338" Margin="0,394,0,0" Click="Button_Click"/>
-            <Button Content="Voltar" HorizontalAlignment="Center" VerticalAlignment="Top" Height="56" Width="148" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="#FFE84242" Grid.Row="2" Click="Button_Click" BorderBrush="Red" Canvas.Left="27" Canvas.Top="367">
+
+            <Button Style="{StaticResource VoltarButtonStyle}" Content="Voltar" HorizontalAlignment="Center" VerticalAlignment="Top" Height="56" Width="148" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="#FFE84242" Grid.Row="2" Click="Button_Click" BorderBrush="Red" Canvas.Left="27" Canvas.Top="367">
                 <Button.Background>
                     <ImageBrush/>
                 </Button.Background>

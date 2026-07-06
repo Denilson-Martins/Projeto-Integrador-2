@@ -27,13 +27,9 @@ namespace Projeto_integrador2
         {
             NavigationService.Navigate(new Home());
         }
-
-        private void txbUser_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+            
+       
+        private void BtnCadastro(object sender, RoutedEventArgs e)
         {
             if (txbUser.Text == "ADM" && txbSenha.Text == "123456" && txbEmail.Text == "Administrador@gmail.com")
             {
@@ -42,6 +38,7 @@ namespace Projeto_integrador2
 
             }
         }
+
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -52,5 +49,6 @@ namespace Projeto_integrador2
         {
 
         }
+
     }
 }
