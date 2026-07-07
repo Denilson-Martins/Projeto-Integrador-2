@@ -23,14 +23,14 @@
                 </Rectangle.Fill>
             </Rectangle>
 
-           
-            <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="15" Canvas.Top="15" Width="105" Height="105" Click="ButtonCappuccino">
+
+            <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="366" Canvas.Top="15" Width="105" Height="105" Click="ButtonCappuccino" HorizontalAlignment="Left" VerticalAlignment="Center">
                 <Button.Background>
                     <ImageBrush ImageSource="/img (2).jpeg" Stretch="UniformToFill"/>
                 </Button.Background>
             </Button>
             <Rectangle Style="{StaticResource TileDividerStyle}" Canvas.Left="15" Canvas.Top="123" Width="105"/>
-            <TextBlock Text="Cappuccino" Style="{StaticResource TileNameStyle}" Canvas.Left="15" Canvas.Top="126" Width="105"/>
+            <TextBlock Text="Cappuccino" Style="{StaticResource TileNameStyle}" Canvas.Left="366" Canvas.Top="126" Width="105" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <TextBlock Text="◆" Style="{StaticResource TileFlourishStyle}" Canvas.Left="15" Canvas.Top="147" Width="105"/>
 
             <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="132" Canvas.Top="15" Width="105" Height="105">
@@ -51,16 +51,16 @@
             <TextBlock Text="Expresso" Style="{StaticResource TileNameStyle}" Canvas.Left="249" Canvas.Top="126" Width="105"/>
             <TextBlock Text="◆" Style="{StaticResource TileFlourishStyle}" Canvas.Left="249" Canvas.Top="147" Width="105"/>
 
-            <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="366" Canvas.Top="15" Width="105" Height="105">
+            <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="15" Canvas.Top="15" Width="105" Height="105" HorizontalAlignment="Center" VerticalAlignment="Top">
                 <Button.Background>
                     <ImageBrush ImageSource="/Cold Brew.jpeg" Stretch="UniformToFill"/>
                 </Button.Background>
             </Button>
             <Rectangle Style="{StaticResource TileDividerStyle}" Canvas.Left="366" Canvas.Top="123" Width="105"/>
-            <TextBlock Text="Cold Brew" Style="{StaticResource TileNameStyle}" Canvas.Left="366" Canvas.Top="126" Width="105"/>
+            <TextBlock Text="Cold Brew" Style="{StaticResource TileNameStyle}" Canvas.Left="15" Canvas.Top="126" Width="105"/>
             <TextBlock Text="◆" Style="{StaticResource TileFlourishStyle}" Canvas.Left="366" Canvas.Top="147" Width="105"/>
 
-            
+
             <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="15" Canvas.Top="158" Width="105" Height="105">
                 <Button.Background>
                     <ImageBrush ImageSource="/img (3).jpeg" Stretch="UniformToFill"/>
@@ -97,7 +97,7 @@
             <TextBlock Text="Iced Mocha" Style="{StaticResource TileNameStyle}" Canvas.Left="366" Canvas.Top="269" Width="105"/>
             <TextBlock Text="◆" Style="{StaticResource TileFlourishStyle}" Canvas.Left="366" Canvas.Top="290" Width="105"/>
 
-            
+
             <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="15" Canvas.Top="301" Width="105" Height="105">
                 <Button.Background>
                     <ImageBrush ImageSource="/iced latte.jpeg" Stretch="UniformToFill"/>

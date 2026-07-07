@@ -12,9 +12,11 @@
   <ItemGroup>
     <None Remove="2.png" />
     <None Remove="24449ab69adb8-5 %281%29.webp" />
+    <None Remove="8fvHa.jpg" />
     <None Remove="agua com gás.png" />
     <None Remove="agua normal.png" />
     <None Remove="aguabase.webp" />
+    <None Remove="Background3.png" />
     <None Remove="bauru-de-forno-5-.avif" />
     <None Remove="BtnVoltarDaTelaEscolher.png" />
     <None Remove="BtnVoltarDaTelaEscolher2.png" />
@@ -22,6 +24,7 @@
     <None Remove="ChatGPT Image 11 de jun. de 2026, 20_28_20.png" />
     <None Remove="ChatGPT Image 29 de jun. de 2026, 20_00_35.png" />
     <None Remove="ChatGPT Image 6 de jul. de 2026, 20_37_21.png" />
+    <None Remove="ChatGPT Image 7 de jul. de 2026, 20_27_15.png" />
     <None Remove="Cold Brew.jpeg" />
     <None Remove="croissant.jpg" />
     <None Remove="croquete.jpg" />
@@ -61,9 +64,7 @@
     <None Remove="sanduiche.jpeg" />
     <None Remove="bauru.jpeg" />
     <None Remove="FundoCafe.jpg" />
-<<<<<<< HEAD
     <None Remove="sem gas 6.png" />
-=======
     <None Remove="sem gas 4.png" />
     <None Remove="sem gas 6.png" />
     <None Remove="sem gas.png" />
@@ -71,8 +72,8 @@
     <None Remove="sem gás 3.png" />
     <None Remove="sem gás 5.png" />
     <None Remove="sem gás.png" />
->>>>>>> c35f0ad20e23b7082c9cf5cd4140b6961f079bca
     <None Remove="superficie-escura-com-espaco-em-branco-e-fast-food-menu_23-2147684608.jpg" />
+    <None Remove="TB6pk.jpg" />
     <None Remove="walpaper de descrição de bebida e lanche.png" />
     <None Remove="sonho-chocolate.jpg" />
     <None Remove="pizza-frango.jpg" />
@@ -85,13 +86,16 @@
 
   <ItemGroup>
     <Resource Include="2.png" />
+    <Resource Include="8fvHa.jpg" />
     <Resource Include="agua com gás.png" />
     <Resource Include="agua normal.png" />
+    <Resource Include="Background3.png" />
     <Resource Include="bauru-de-forno-5-.avif" />
     <Resource Include="BtnVoltarDaTelaEscolher.png" />
     <Resource Include="BtnVoltarDaTelaEscolher2.png" />
     <Resource Include="ChatGPT Image 29 de jun. de 2026, 20_00_35.png" />
     <Resource Include="ChatGPT Image 6 de jul. de 2026, 20_37_21.png" />
+    <Resource Include="ChatGPT Image 7 de jul. de 2026, 20_27_15.png" />
     <Resource Include="Cold Brew.jpeg" />
     <Resource Include="croissant.jpg" />
     <Resource Include="croquete.jpg" />
@@ -130,6 +134,7 @@
     <Resource Include="bauru.jpeg" />
     <Resource Include="sem gas 6.png" />
     <Resource Include="superficie-escura-com-espaco-em-branco-e-fast-food-menu_23-2147684608.jpg" />
+    <Resource Include="TB6pk.jpg" />
     <Resource Include="walpaper de descrição de bebida e lanche.png" />
     <Resource Include="sonho-chocolate.jpg" />
   </ItemGroup>
