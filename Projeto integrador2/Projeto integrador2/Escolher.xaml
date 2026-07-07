@@ -14,7 +14,7 @@
             </Canvas.Background>
             <Button Style="{StaticResource VoltarButtonStyle}" Content="Selecionar Bebida" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" Click="BtnBebidas" Canvas.Left="73" Canvas.Top="312" Height="40" Width="180"  />
             <Button Style="{StaticResource VoltarButtonStyle}" Content="Selecionar Lanche" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" Click="BtnLanches" Canvas.Left="564" Canvas.Top="312" Height="40" Width="180"  />
-            <Button Content="" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" Click="BtnVoltar" RenderTransformOrigin="4.854,1.074" Canvas.Left="321" Height="175" Width="186" BorderBrush="{x:Null}">
+            <Button Content="" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" Click="BtnVoltar" RenderTransformOrigin="4.854,1.074" Canvas.Left="318" Height="175" Width="186" BorderBrush="{x:Null}">
                 <Button.Background>
                     <ImageBrush  ImageSource="/ChatGPT Image 29 de jun. de 2026, 20_00_35.png"/>
                 </Button.Background>
