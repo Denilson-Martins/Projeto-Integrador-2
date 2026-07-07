@@ -17,17 +17,14 @@
                 </LinearGradientBrush>
             </Canvas.Background>
 
-            <!-- Painel esquerdo: imagem decorativa de lanches (produtos ficam alinhados à direita) -->
-            <!-- AlignmentX="Left" garante que o hambúrguer (que fica no lado esquerdo da foto original) apareça por inteiro, em vez de ser cortado pelo recorte central padrão -->
+            
             <Rectangle Canvas.Left="0" Canvas.Top="0" Width="320" Height="450">
                 <Rectangle.Fill>
                     <ImageBrush ImageSource="/img (1).png" Stretch="UniformToFill" AlignmentX="Left"/>
                 </Rectangle.Fill>
             </Rectangle>
 
-            <!-- ===================== LINHA 1 ===================== -->
-
-            <!-- Sonho de Chocolate -->
+          
             <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="446" Canvas.Top="15" Width="105" Height="105" HorizontalAlignment="Left" VerticalAlignment="Center">
                 <Button.Background>
                     <ImageBrush ImageSource="/sonho-chocolate.jpg" Stretch="UniformToFill"/>
@@ -37,17 +34,15 @@
             <TextBlock Text="Sonho de Chocolate" Style="{StaticResource TileNameStyle}" Canvas.Left="446" Canvas.Top="128" Width="105" FontSize="10"/>
             <TextBlock Text="◆" Style="{StaticResource TileFlourishStyle}" Canvas.Left="329" Canvas.Top="147" Width="105"/>
 
-            <!-- Coxinha -->
             <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="329" Canvas.Top="15" Width="105" Height="105" Click="BtnCoxinha">
                 <Button.Background>
-                    <ImageBrush ImageSource="/img1.jpg" Stretch="UniformToFill"/>
+                    <ImageBrush ImageSource="/ChatGPT Image 6 de jul. de 2026, 20_37_21.png" Stretch="UniformToFill"/>
                 </Button.Background>
             </Button>
             <Rectangle Style="{StaticResource TileDividerStyle}" Canvas.Left="329" Canvas.Top="124" Width="105"/>
             <TextBlock Text="Coxinha" Style="{StaticResource TileNameStyle}" Canvas.Left="329" Canvas.Top="124" Width="105" HorizontalAlignment="Center" VerticalAlignment="Top"/>
             <TextBlock Text="◆" Style="{StaticResource TileFlourishStyle}" Canvas.Left="446" Canvas.Top="147" Width="105"/>
 
-            <!-- Churros -->
             <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="563" Canvas.Top="15" Width="105" Height="105">
                 <Button.Background>
                     <ImageBrush ImageSource="/croquete.jpg" Stretch="UniformToFill"/>
@@ -57,7 +52,6 @@
             <TextBlock Text="Churros" Style="{StaticResource TileNameStyle}" Canvas.Left="563" Canvas.Top="126" Width="105"/>
             <TextBlock Text="◆" Style="{StaticResource TileFlourishStyle}" Canvas.Left="563" Canvas.Top="147" Width="105"/>
 
-            <!-- Empada -->
             <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="680" Canvas.Top="15" Width="105" Height="105">
                 <Button.Background>
                     <ImageBrush ImageSource="/empada.jpg" Stretch="UniformToFill"/>
@@ -67,9 +61,7 @@
             <TextBlock Text="Empada" Style="{StaticResource TileNameStyle}" Canvas.Left="680" Canvas.Top="126" Width="105"/>
             <TextBlock Text="◆" Style="{StaticResource TileFlourishStyle}" Canvas.Left="680" Canvas.Top="147" Width="105"/>
 
-            <!-- ===================== LINHA 2 ===================== -->
-
-            <!-- Fatia de Pizza de Frango -->
+           
             <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="329" Canvas.Top="158" Width="105" Height="105">
                 <Button.Background>
                     <ImageBrush ImageSource="/pizza.jpg" Stretch="UniformToFill"/>
@@ -79,7 +71,7 @@
             <TextBlock Text="Pizza " Style="{StaticResource TileNameStyle}" Canvas.Left="329" Canvas.Top="269" Width="105" FontSize="11"/>
             <TextBlock Text="◆" Style="{StaticResource TileFlourishStyle}" Canvas.Left="329" Canvas.Top="290" Width="105"/>
 
-            <!-- Sanduiche -->
+           
             <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="446" Canvas.Top="158" Width="105" Height="105">
                 <Button.Background>
                     <ImageBrush ImageSource="/sanduiche.jpeg" Stretch="UniformToFill"/>
@@ -89,7 +81,6 @@
             <TextBlock Text="Sanduíche" Style="{StaticResource TileNameStyle}" Canvas.Left="446" Canvas.Top="269" Width="105"/>
             <TextBlock Text="◆" Style="{StaticResource TileFlourishStyle}" Canvas.Left="446" Canvas.Top="290" Width="105"/>
 
-            <!-- Bauru -->
             <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="563" Canvas.Top="158" Width="105" Height="105">
                 <Button.Background>
                     <ImageBrush ImageSource="/bauru.jpeg" Stretch="UniformToFill"/>
@@ -99,7 +90,6 @@
             <TextBlock Text="Bauru" Style="{StaticResource TileNameStyle}" Canvas.Left="563" Canvas.Top="269" Width="105"/>
             <TextBlock Text="◆" Style="{StaticResource TileFlourishStyle}" Canvas.Left="563" Canvas.Top="290" Width="105"/>
 
-            <!-- X-Burguer -->
             <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="680" Canvas.Top="158" Width="105" Height="105">
                 <Button.Background>
                     <ImageBrush ImageSource="/enroladinho-de-salsicha-com-catupiry-1.jpg.webp" Stretch="UniformToFill"/>
@@ -109,9 +99,7 @@
             <TextBlock Text="X-Burguer" Style="{StaticResource TileNameStyle}" Canvas.Left="680" Canvas.Top="269" Width="105"/>
             <TextBlock Text="◆" Style="{StaticResource TileFlourishStyle}" Canvas.Left="680" Canvas.Top="290" Width="105"/>
 
-            <!-- ===================== LINHA 3 ===================== -->
-
-            <!-- Fatia de Pizza de Chocolate -->
+           
             <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="329" Canvas.Top="301" Width="105" Height="105">
                 <Button.Background>
                     <ImageBrush ImageSource="/Pizza Doce.jpg" Stretch="UniformToFill"/>
@@ -121,7 +109,6 @@
             <TextBlock Text="Pizza de Chocolate" Style="{StaticResource TileNameStyle}" Canvas.Left="329" Canvas.Top="412" Width="105" FontSize="10"/>
             <TextBlock Text="◆" Style="{StaticResource TileFlourishStyle}" Canvas.Left="329" Canvas.Top="433" Width="105"/>
 
-            <!-- Croissant -->
             <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="446" Canvas.Top="301" Width="105" Height="105">
                 <Button.Background>
                     <ImageBrush ImageSource="/croissant.jpg" Stretch="UniformToFill"/>
@@ -131,7 +118,6 @@
             <TextBlock Text="Croissant" Style="{StaticResource TileNameStyle}" Canvas.Left="446" Canvas.Top="412" Width="105"/>
             <TextBlock Text="◆" Style="{StaticResource TileFlourishStyle}" Canvas.Left="446" Canvas.Top="433" Width="105"/>
 
-            <!-- Risoles -->
             <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="563" Canvas.Top="301" Width="105" Height="105">
                 <Button.Background>
                     <ImageBrush ImageSource="/img (1).jpg" Stretch="UniformToFill"/>
@@ -141,7 +127,6 @@
             <TextBlock Text="Risoles" Style="{StaticResource TileNameStyle}" Canvas.Left="563" Canvas.Top="412" Width="105"/>
             <TextBlock Text="◆" Style="{StaticResource TileFlourishStyle}" Canvas.Left="563" Canvas.Top="433" Width="105"/>
 
-            <!-- Pão de Queijo -->
             <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="680" Canvas.Top="301" Width="105" Height="105">
                 <Button.Background>
                     <ImageBrush ImageSource="/Design-sem-nome.webp" Stretch="UniformToFill"/>
@@ -151,7 +136,6 @@
             <TextBlock Text="Pão de Queijo" Style="{StaticResource TileNameStyle}" Canvas.Left="680" Canvas.Top="412" Width="105" FontSize="11"/>
             <TextBlock Text="◆" Style="{StaticResource TileFlourishStyle}" Canvas.Left="680" Canvas.Top="433" Width="105"/>
 
-            <!-- Botão Voltar -->
             <Button Content="Voltar" Style="{StaticResource VoltarButtonStyle}" Click="BtnVoltar" Canvas.Left="25" Canvas.Top="378" Width="123" Height="46"/>
 
         </Canvas>

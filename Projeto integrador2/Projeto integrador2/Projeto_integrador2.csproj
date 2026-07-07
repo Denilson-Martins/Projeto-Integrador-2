@@ -19,6 +19,7 @@
     <None Remove="ChatGPT Image 11 de jun. de 2026, 20_20_00.png" />
     <None Remove="ChatGPT Image 11 de jun. de 2026, 20_28_20.png" />
     <None Remove="ChatGPT Image 29 de jun. de 2026, 20_00_35.png" />
+    <None Remove="ChatGPT Image 6 de jul. de 2026, 20_37_21.png" />
     <None Remove="Cold Brew.jpeg" />
     <None Remove="croissant.jpg" />
     <None Remove="croquete.jpg" />
@@ -76,6 +77,7 @@
     <Resource Include="BtnVoltarDaTelaEscolher.png" />
     <Resource Include="BtnVoltarDaTelaEscolher2.png" />
     <Resource Include="ChatGPT Image 29 de jun. de 2026, 20_00_35.png" />
+    <Resource Include="ChatGPT Image 6 de jul. de 2026, 20_37_21.png" />
     <Resource Include="Cold Brew.jpeg" />
     <Resource Include="croissant.jpg" />
     <Resource Include="croquete.jpg" />

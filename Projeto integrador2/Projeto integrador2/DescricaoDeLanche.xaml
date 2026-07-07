@@ -7,57 +7,95 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="DescriçãoDeLanche">
+
+    <Page.Resources>
+        <Style x:Key="PainelVidro" TargetType="Border">
+            <Setter Property="Background" Value="#B3161616"/>
+            <Setter Property="CornerRadius" Value="14"/>
+            <Setter Property="BorderBrush" Value="#26FFFFFF"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="16,10"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect Color="Black" BlurRadius="18" ShadowDepth="3" Opacity="0.45"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+
     <Viewbox Stretch="Fill">
         <Canvas Width="800" Height="450">
             <Canvas.Background>
                 <ImageBrush ImageSource="/superficie-escura-com-espaco-em-branco-e-fast-food-menu_23-2147684608.jpg"/>
             </Canvas.Background>
 
-            <Label Content="Coxinha" HorizontalAlignment="Left" Margin="364,33,0,0" VerticalAlignment="Top" FontSize="20" RenderTransformOrigin="2.83,0.589" Foreground="White">
-                <Label.Background>
-                    <ImageBrush/>
-                </Label.Background>
-            </Label>
-            <Label Content="Ingredientes" HorizontalAlignment="Left" Margin="364,263,0,0" VerticalAlignment="Top" FontSize="20" Foreground="White">
-                <Label.Background>
-                    <ImageBrush/>
-                </Label.Background>
-            </Label>
-            <TextBox HorizontalAlignment="Left" Margin="364,305,0,0" TextWrapping="Wrap" Text="Caldo de frango&#xA;Leite&#xA;Manteiga&#xA;Sal&#xA;Farinha de trigo&#xD;&#xA;Frango (Recheio)" VerticalAlignment="Top" Width="390" FontSize="16" Foreground="White">
-                <TextBox.Background>
-                    <ImageBrush/>
-                </TextBox.Background>
-                <TextBox.BorderBrush>
-                    <ImageBrush/>
-                </TextBox.BorderBrush>
-            </TextBox>
-            <Label Content="Preço" HorizontalAlignment="Left" Margin="126,220,0,0" VerticalAlignment="Top" FontSize="16" RenderTransformOrigin="0.442,1.58" Foreground="White"/>
-            <Label Content="R$ 5,50" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" Canvas.Left="82" Canvas.Top="252" Foreground="White" Width="75"/>
-            <Label Content="R$ 9,00" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" Canvas.Left="182" Canvas.Top="252" Foreground="White" Width="88"/>
+            <StackPanel Canvas.Left="40" Canvas.Top="40" Width="320" Orientation="Vertical">
+                <Border Width="320" Height="180" CornerRadius="18" RenderOptions.BitmapScalingMode="HighQuality">
+                    <Border.Background>
+                        <ImageBrush ImageSource="/ChatGPT Image 6 de jul. de 2026, 20_37_21.png" Stretch="Fill"/>
+                    </Border.Background>
+                    <Border.Effect>
+                        <DropShadowEffect Color="Black" BlurRadius="20" ShadowDepth="5" Opacity="0.5"/>
+                    </Border.Effect>
+                    <Border.OpacityMask>
+                        <VisualBrush>
+                            <VisualBrush.Visual>
+                                <Border Background="White" CornerRadius="18" Width="320" Height="180"/>
+                            </VisualBrush.Visual>
+                        </VisualBrush>
+                    </Border.OpacityMask>
+                </Border>
 
-            <Button Style="{StaticResource VoltarButtonStyle}" Tag="Coxinha" Content="Média" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Click="BtnTamanho" Canvas.Left="82" Canvas.Top="288" Height="33" Width="75"/>
-            <Button Style="{StaticResource VoltarButtonStyle}" Tag="Coxinha" Content="Grande" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Click="BtnTamanho" RenderTransformOrigin="3.326,2.505" Canvas.Left="182" Canvas.Top="287" Height="35" Width="75"/>
+                <Border Width="320" CornerRadius="14" Background="#B3161616" BorderBrush="#26FFFFFF" BorderThickness="1" Margin="0,16,0,0">
+                    <Border.Effect>
+                        <DropShadowEffect Color="Black" BlurRadius="16" ShadowDepth="3" Opacity="0.4"/>
+                    </Border.Effect>
+                    <Grid Margin="16,10,16,10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
 
-            <TextBox HorizontalAlignment="Left" Margin="364,96,0,0" TextWrapping="Wrap" Text="Uma deliciosa coxinha de massa leve e dourada, recheada com frango desfiado temperado e cremoso. Crocante por fora e macia por dentro, é o acompanhamento perfeito para um café, cappuccino ou outras bebidas da cafeteria. Preparada com ingredientes selecionados para garantir sabor e qualidade em cada mordida." VerticalAlignment="Top" Width="390" FontSize="16" Background="{x:Null}" Foreground="White"/>
+                        <TextBlock Grid.Row="0" Grid.ColumnSpan="2" Text="PREÇO" FontSize="13" FontWeight="Bold" Foreground="#E8B96B" HorizontalAlignment="Center" Margin="0,0,0,6"/>
 
-            <Image Source="/img1.jpg" Stretch="Fill" Canvas.Left="31" Canvas.Top="33" Height="165" Width="240"/>
-            <TextBox HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="390" FontSize="16" TextChanged="TextBox_TextChanged" Canvas.Left="364" Canvas.Top="96">
-                <TextBox.Background>
-                    <ImageBrush Stretch="None"/>
-                </TextBox.Background>
-                <TextBox.Foreground>
-                    <ImageBrush/>
-                </TextBox.Foreground>
-                <TextBox.BorderBrush>
-                    <ImageBrush/>
-                </TextBox.BorderBrush>
-            </TextBox>
+                        <TextBlock Grid.Row="1" Grid.Column="0" Text="R$ 5,50" FontSize="18" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
+                        <TextBlock Grid.Row="1" Grid.Column="1" Text="R$ 9,00" FontSize="18" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
 
-            <Button Style="{StaticResource VoltarButtonStyle}" Content="Voltar" HorizontalAlignment="Center" VerticalAlignment="Top" Height="56" Width="148" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="#FFE84242" Grid.Row="2" Click="Button_Click" BorderBrush="Red" Canvas.Left="27" Canvas.Top="367">
+                        <Button Grid.Row="2" Grid.Column="0" Style="{StaticResource VoltarButtonStyle}" Tag="Coxinha" Content="Média" FontSize="15" Click="BtnTamanho" Height="38" Width="90" Margin="0,8,6,0" HorizontalAlignment="Center"/>
+                        <Button Grid.Row="2" Grid.Column="1" Style="{StaticResource VoltarButtonStyle}" Tag="Coxinha" Content="Grande" FontSize="15" Click="BtnTamanho" Height="38" Width="90" Margin="6,8,0,0" HorizontalAlignment="Center"/>
+                    </Grid>
+                </Border>
+            </StackPanel>
+
+            <StackPanel Canvas.Left="400" Canvas.Top="40" Width="360" Orientation="Vertical">
+                <Label Content="Coxinha" FontSize="24" FontWeight="Bold" FontFamily="Segoe UI Semibold" Foreground="#FFE8B96B" Padding="0"/>
+                <Rectangle Width="56" Height="3" Fill="#E8B96B" Margin="4,2,0,0" RadiusX="1.5" RadiusY="1.5" HorizontalAlignment="Left"/>
+
+                <Border Style="{StaticResource PainelVidro}" Width="360" Margin="0,10,0,0">
+                    <TextBlock Text="Uma deliciosa coxinha de massa leve e dourada, recheada com frango desfiado temperado e cremoso. Crocante por fora e macia por dentro, é o acompanhamento perfeito para um café, cappuccino ou outras bebidas da cafeteria. Preparada com ingredientes selecionados para garantir sabor e qualidade em cada mordida."
+                               TextWrapping="Wrap" FontSize="14" LineHeight="19" Foreground="#F2F2F2" FontFamily="Segoe UI"/>
+                </Border>
+
+                <Label Content="INGREDIENTES" FontSize="13" FontWeight="Bold" Foreground="#E8B96B" Margin="0,12,0,4"/>
+                <Border Style="{StaticResource PainelVidro}" Width="360">
+                    <TextBlock Text="Caldo de frango&#x0a;Leite&#x0a;Manteiga&#x0a;Sal&#x0a;Farinha de trigo&#x0a;Frango (recheio)"
+                               TextWrapping="Wrap" FontSize="14" LineHeight="19" Foreground="#F2F2F2" FontFamily="Segoe UI"/>
+                </Border>
+            </StackPanel>
+
+            <TextBox Canvas.Left="-1000" Canvas.Top="-1000" Width="1" Height="1" Opacity="0" TextChanged="TextBox_TextChanged"/>
+
+            <Button Style="{StaticResource VoltarButtonStyle}" Content="Voltar" HorizontalAlignment="Left" VerticalAlignment="Top" Height="48" Width="148" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="#FFF1D7AC" Click="Button_Click" Canvas.Left="32" Canvas.Top="392">
                 <Button.Background>
                     <ImageBrush/>
                 </Button.Background>
             </Button>
+
         </Canvas>
     </Viewbox>
 
