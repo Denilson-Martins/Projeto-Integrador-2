@@ -58,6 +58,7 @@
     <None Remove="sanduiche.jpeg" />
     <None Remove="bauru.jpeg" />
     <None Remove="FundoCafe.jpg" />
+    <None Remove="sem gas 6.png" />
     <None Remove="superficie-escura-com-espaco-em-branco-e-fast-food-menu_23-2147684608.jpg" />
     <None Remove="walpaper de descrição de bebida e lanche.png" />
     <None Remove="sonho-chocolate.jpg" />
@@ -90,7 +91,6 @@
     <Resource Include="iced latte.jpeg" />
     <Resource Include="Iced Moccha.jpeg" />
     <Resource Include="Image5.png" />
-    <Resource Include="Image6.png" />
     <Resource Include="img (1).jpeg" />
     <Resource Include="img (1).jpg" />
     <Resource Include="img (1).png" />
@@ -114,6 +114,7 @@
     <Resource Include="sanduiche.jpg" />
     <Resource Include="sanduiche.jpeg" />
     <Resource Include="bauru.jpeg" />
+    <Resource Include="sem gas 6.png" />
     <Resource Include="superficie-escura-com-espaco-em-branco-e-fast-food-menu_23-2147684608.jpg" />
     <Resource Include="walpaper de descrição de bebida e lanche.png" />
     <Resource Include="sonho-chocolate.jpg" />
