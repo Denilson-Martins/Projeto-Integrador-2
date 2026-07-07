@@ -118,7 +118,7 @@
 
             <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="249" Canvas.Top="301" Width="105" Height="105">
                 <Button.Background>
-                    <ImageBrush ImageSource="/agua com gás.png" Stretch="UniformToFill"/>
+                    <ImageBrush ImageSource="/gás.png" Stretch="UniformToFill"/>
                 </Button.Background>
             </Button>
             <Rectangle Style="{StaticResource TileDividerStyle}" Canvas.Left="249" Canvas.Top="409" Width="105"/>
