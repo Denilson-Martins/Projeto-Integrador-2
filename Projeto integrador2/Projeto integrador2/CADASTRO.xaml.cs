@@ -15,10 +15,10 @@ namespace Projeto_integrador2
 {
     /// <summary>
     /// Interação lógica para CADASTRO.xam
-    /// </summary>
+    /// </summary> 
     public partial class CADASTRO : Page
     {
-        public  CADASTRO()
+        public CADASTRO()
         {
             InitializeComponent();
         }
@@ -27,15 +27,16 @@ namespace Projeto_integrador2
         {
             NavigationService.Navigate(new Home());
         }
-            
-       
+
+
         private void BtnCadastro(object sender, RoutedEventArgs e)
         {
+            ConnectBD conect = new ConnectBD();
+            conect.InsertAdm(txbUser.Text, txbSenha.Text, txbEmail.Text);
+
             if (txbUser.Text == "ADM" && txbSenha.Text == "123456" && txbEmail.Text == "Administrador@gmail.com")
             {
-
                 NavigationService.Navigate(new CadastroDeProdutos());
-
             }
         }
 
