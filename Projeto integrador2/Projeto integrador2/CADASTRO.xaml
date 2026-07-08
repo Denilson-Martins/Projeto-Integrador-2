@@ -20,15 +20,14 @@
             <Label Content="Label" HorizontalAlignment="Left" Height="0" Margin="215,106,0,0" VerticalAlignment="Top" Width="13"/>
 
             <Label Content="Email" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.235,0.886" Canvas.Left="287" Canvas.Top="225" Height="34" Width="60"/>
-            <TextBox x:Name="txbEmail" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Canvas.Left="357" Canvas.Top="233" TextChanged="txbEmail_TextChanged"/>
-            <Button Content="VOLTAR" Canvas.Left="351" Canvas.Top="363" Height="51" Width="126" HorizontalAlignment="Center" VerticalAlignment="Top" Click="Button_Click"/>
+            <Button Content="VOLTAR" Canvas.Left="351" Canvas.Top="363" Height="51" Width="126" HorizontalAlignment="Center" VerticalAlignment="Top" Click="BtnVoltar"/>
 
-       
+
 
             <Label  Content="Email" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.235,0.886" Canvas.Left="287" Canvas.Top="225" Height="34" Width="60"/>
-            <TextBox  HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Canvas.Left="357" Canvas.Top="233"/>
-            <Button Content="VOLTAR" Canvas.Left="351" Canvas.Top="363" Height="51" Width="126" HorizontalAlignment="Center" VerticalAlignment="Top" Click="Button_Click"/>
-        
+            <Button Content="VOLTAR" Canvas.Left="345" Canvas.Top="363" Height="51" Width="132" HorizontalAlignment="Left" VerticalAlignment="Center" Click="BtnVoltar"/>
+            <TextBox x:Name="txbEmail" Canvas.Left="357" TextWrapping="Wrap" Canvas.Top="233" Width="120" RenderTransformOrigin="-0.201,2.656"/>
+
 
 
         </Canvas>
