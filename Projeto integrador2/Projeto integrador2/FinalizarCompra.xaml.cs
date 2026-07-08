@@ -64,6 +64,13 @@ namespace Projeto_integrador2
                 return;
             }
 
+            ConnectBD conect = new ConnectBD();
+
+            foreach (var item in ((App)Application.Current).ListaBebidas)
+            {
+                conect.InsertProduto(item.Nome, item.Quantidade, item.Tamanho, item.Valor);
+            }
+
             NavigationService.Navigate(new NotaFiscal(
                 ((App)Application.Current).ListaBebidas,
                 TxtTotal.Text,
