@@ -38,6 +38,33 @@ namespace Projeto_integrador2
             {
                 NavigationService.Navigate(new CadastroDeProdutos());
             }
+
+            if (string.IsNullOrEmpty(txbUser.Text))
+            {
+
+                MessageBox.Show("Preencha o Usuario");
+              
+
+
+            }
+           
+            if (string.IsNullOrEmpty(txbSenha.Text))
+            {
+
+                MessageBox.Show("Preencha a senha");
+
+
+
+            }
+
+            if (string.IsNullOrEmpty(txbEmail.Text))
+            {
+
+                MessageBox.Show("Preencha o Email");
+
+
+
+            }
         }
 
 
@@ -51,5 +78,9 @@ namespace Projeto_integrador2
 
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

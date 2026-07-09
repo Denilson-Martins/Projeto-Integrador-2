@@ -14,11 +14,11 @@ using System.Windows.Shapes;
 namespace Projeto_integrador2
 {
     /// <summary>
-    /// Interação lógica para CadastroDeProdutos.xam
+    /// Lógica interna para DadosdeVendas.xaml
     /// </summary>
-    public partial class CadastroDeProdutos : Page
+    public partial class DadosdeVendas : Page
     {
-        public CadastroDeProdutos()
+        public DadosdeVendas()
         {
             InitializeComponent();
         }
@@ -26,6 +26,12 @@ namespace Projeto_integrador2
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void CadastrodeProduto(object sender, RoutedEventArgs e)
+        {
+            ConnectBD conect = new ConnectBD();
+            NavigationService.Navigate(new CadastroDeProdutos()); 
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
