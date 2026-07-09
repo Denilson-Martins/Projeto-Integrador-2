@@ -9,7 +9,7 @@
       Title="NotaFiscal">
     <Viewbox Stretch="Fill">
 
-        <Canvas Width="800" Height="480" Background="White">
+        <Canvas Width="800" Height="480" Background="#FF7B4F29">
 
             <TextBlock Text="✔ Pedido Confirmado!"
                        Canvas.Left="20" Canvas.Top="14"
@@ -21,7 +21,7 @@
                        Canvas.Left="20" Canvas.Top="44"
                        FontSize="14"
                        FontFamily="Segoe UI"
-                       Foreground="#FF666666"/>
+                       Foreground="White"/>
 
             <Rectangle Canvas.Left="20" Canvas.Top="68"
                        Width="760" Height="1"

@@ -9,7 +9,7 @@
       Title="CadastroDeProdutos">
 
     <Grid Background="White">
-        <Button Content="Adicionar Produto" HorizontalAlignment="Center" Margin="0,382,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Button Content="Adicionar Produto" HorizontalAlignment="Left" Margin="199,358,0,0" VerticalAlignment="Top" FontSize="14"/>
         <Label Content="Cadastrar Produto" HorizontalAlignment="Left" Margin="154,10,0,0" VerticalAlignment="Top" Width="155" Height="35" FontSize="18"/>
         <Label Content="Nome do Produto" HorizontalAlignment="Left" Margin="154,86,0,0" VerticalAlignment="Top" Height="30" Width="130" FontSize="14"/>
         <TextBox HorizontalAlignment="Left" Margin="154,121,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="206"/>
@@ -22,5 +22,9 @@
         <TextBox HorizontalAlignment="Left" Margin="154,297,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206"/>
         <TextBox HorizontalAlignment="Left" Margin="542,101,0,0" TextWrapping="Wrap" Text="Imagem do Produto" VerticalAlignment="Top" Width="197" FontSize="14"/>
         <Button Content="Adicionar &#xD;&#xA;uma &#xD;&#xA;imagem &#xD;&#xA;para o&#xD;&#xA;produto" HorizontalAlignment="Left" Margin="542,0,0,0" VerticalAlignment="Center" Height="162" Width="197" FontSize="14" Opacity="0.6"/>
+        <Button Content="Controle de estoque" HorizontalAlignment="Left" Margin="80,406,0,0" VerticalAlignment="Top" Height="29" Width="122"/>
+        <Button Content="Item mais vendido" HorizontalAlignment="Left" Margin="238,406,0,0" VerticalAlignment="Top" Height="29" Width="122" Click="Button_Click"/>
+        <Button Content="Total de Vendas do dia" HorizontalAlignment="Left" Margin="400,406,0,0" VerticalAlignment="Top" Height="29" Width="134" Click="Button_Click_1"/>
+        <Button Content="VOLTAR" Click="Button_Click" Margin="640,384,34,15"/>
     </Grid>
 </Page>
