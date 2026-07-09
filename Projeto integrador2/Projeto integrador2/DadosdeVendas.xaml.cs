@@ -16,7 +16,7 @@ namespace Projeto_integrador2
     /// <summary>
     /// Lógica interna para DadosdeVendas.xaml
     /// </summary>
-    public partial class DadosdeVendas : Window
+    public partial class DadosdeVendas : Page
     {
         public DadosdeVendas()
         {
@@ -31,7 +31,12 @@ namespace Projeto_integrador2
         private void CadastrodeProduto(object sender, RoutedEventArgs e)
         {
             ConnectBD conect = new ConnectBD();
-            //NavigationService.Navigate(new DadosdeVendas()); 
+            NavigationService.Navigate(new CadastroDeProdutos()); 
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
