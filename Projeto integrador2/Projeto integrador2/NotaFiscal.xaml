@@ -9,7 +9,10 @@
       Title="NotaFiscal">
     <Viewbox Stretch="Fill">
 
-        <Canvas Width="800" Height="480" Background="#FF7B4F29">
+        <Canvas Width="800" Height="480">
+            <Canvas.Background>
+                <ImageBrush ImageSource="/bg_notafiscal.png"/>
+            </Canvas.Background>
 
             <TextBlock Text="✔ Pedido Confirmado!"
                        Canvas.Left="20" Canvas.Top="14"

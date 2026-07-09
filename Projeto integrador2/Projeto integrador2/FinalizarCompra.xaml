@@ -9,7 +9,10 @@
       Title="FinalizarCompra">
     <Viewbox Stretch="Fill">
 
-        <Canvas Width="800" Height="480" Background="#FFC8804E">
+        <Canvas Width="800" Height="480">
+            <Canvas.Background>
+                <ImageBrush ImageSource="/bg_finalizarcompra.png"/>
+            </Canvas.Background>
 
             <TextBlock Text="Finalizar Pedido"
                        Canvas.Left="20" Canvas.Top="14"

@@ -18,6 +18,8 @@
     <None Remove="aguabase.webp" />
     <None Remove="Background3.png" />
     <None Remove="bauru-de-forno-5-.avif" />
+    <None Remove="bg_finalizarcompra.png" />
+    <None Remove="bg_notafiscal.png" />
     <None Remove="BtnVoltarDaTelaEscolher.png" />
     <None Remove="BtnVoltarDaTelaEscolher2.png" />
     <None Remove="ChatGPT Image 11 de jun. de 2026, 20_20_00.png" />
@@ -92,6 +94,8 @@
     <Resource Include="agua normal.png" />
     <Resource Include="Background3.png" />
     <Resource Include="bauru-de-forno-5-.avif" />
+    <Resource Include="bg_finalizarcompra.png" />
+    <Resource Include="bg_notafiscal.png" />
     <Resource Include="BtnVoltarDaTelaEscolher.png" />
     <Resource Include="BtnVoltarDaTelaEscolher2.png" />
     <Resource Include="ChatGPT Image 29 de jun. de 2026, 20_00_35.png" />
