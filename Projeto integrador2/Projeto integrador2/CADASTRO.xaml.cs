@@ -80,7 +80,11 @@ namespace Projeto_integrador2
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            if (NavigationService != null && NavigationService.CanGoBack)
+            {
+                NavigationService.GoBack();
 
+            }
         }
     }
 }
