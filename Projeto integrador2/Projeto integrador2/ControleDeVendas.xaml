@@ -5,10 +5,59 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Projeto_integrador2"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="ControleDeVendas">
+      d:DesignHeight="550" d:DesignWidth="800"
+      Title="ControleDeVendas" Loaded="Page_Loaded">
 
     <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="1.1*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
         
+        <Label Grid.Row="0" Content="Controle de Vendas" FontSize="20" FontWeight="Bold"
+               HorizontalAlignment="Center" Margin="0,10,0,0"/>
+
+      
+        <Label Grid.Row="1" Content="Vendas realizadas (clique em uma para ver os itens)"
+               FontSize="13" FontWeight="SemiBold" Margin="20,5,20,0"/>
+
+        <DataGrid x:Name="DgVendas" Grid.Row="2"
+                  AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False"
+                  IsReadOnly="True" Margin="20,0,20,10"
+                  SelectionChanged="DgVendas_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Nº Venda" Binding="{Binding Id}" Width="80"/>
+                <DataGridTextColumn Header="Data/Hora" Binding="{Binding DataHora, StringFormat={}{0:dd/MM/yyyy HH:mm}}" Width="150"/>
+                <DataGridTextColumn Header="Forma de Pagamento" Binding="{Binding FormaPagamento}" Width="*"/>
+                <DataGridTextColumn Header="Total" Binding="{Binding Total, StringFormat={}{0:C2}}" Width="120"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+      
+        <Label Grid.Row="3" Content="Itens da venda selecionada"
+               FontSize="13" FontWeight="SemiBold" Margin="20,0,20,0"/>
+
+        <DataGrid x:Name="DgItensVenda" Grid.Row="4"
+                  AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False"
+                  IsReadOnly="True" Margin="20,0,20,10">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Nome"       Binding="{Binding Nome}"                            Width="*"/>
+                <DataGridTextColumn Header="Tamanho"    Binding="{Binding Tamanho}"                         Width="Auto"/>
+                <DataGridTextColumn Header="Valor Unit" Binding="{Binding Valor, StringFormat={}{0:C2}}"    Width="Auto"/>
+                <DataGridTextColumn Header="Quantidade" Binding="{Binding Quantidade}"                      Width="Auto"/>
+                <DataGridTextColumn Header="Subtotal"   Binding="{Binding Subtotal, StringFormat={}{0:C2}}" Width="Auto"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        
+        <StackPanel Grid.Row="5" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,15">
+            <Button x:Name="BtnAtualizar" Content="Atualizar Lista" Padding="10,5" Margin="5" Click="BtnAtualizar_Click"/>
+            <Button x:Name="BtnVoltar" Content="Voltar" Padding="10,5" Margin="5" Click="BtnVoltar_Click"/>
+        </StackPanel>
     </Grid>
 </Page>
