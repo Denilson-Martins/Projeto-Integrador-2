@@ -30,7 +30,7 @@ namespace Projeto_integrador2
             var lista = ((App)Application.Current).ListaBebidas;
             if (sender is Button btn)
             {
-                var valor = btn.Content.ToString() == "Grande" ? 5.50 : 9.00;
+                var valor = btn.Content.ToString() == "Grande" ? 9.00 : 5.50;
                 lista.Add(new Bebidas(btn.Tag.ToString(), btn.Content.ToString(), valor, 1));
                 NavigationService.Navigate(new Pedido());
             }

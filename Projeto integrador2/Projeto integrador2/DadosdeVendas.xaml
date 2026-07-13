@@ -7,11 +7,11 @@
         mc:Ignorable="d"
         Title="DadosdeVendas" Height="450" Width="800">
     <Grid Background="White">
-        <Button Content="Controle de estoque" HorizontalAlignment="Left" Margin="37,37,0,0" VerticalAlignment="Top" Height="44" Width="122"/>
-        <Button Content="Total de Vendas do dia" HorizontalAlignment="Left" Margin="37,189,0,0" VerticalAlignment="Top" Height="46" Width="134" Click="Button_Click_1"/>
-        <Button Content="Item mais vendido" HorizontalAlignment="Left" Margin="37,107,0,0" VerticalAlignment="Top" Height="44" Width="122" Click="Button_Click"/>
-        <Button Content="VOLTAR" Click="Button_Click" Margin="45,373,629,10"/>
-        <Button Content="Cadastro de Produtos" HorizontalAlignment="Left" Margin="41,286,0,0" VerticalAlignment="Top" Height="29" Width="134" Click="Button_Click_1"/>
+        <Button Content="Controle de estoque" HorizontalAlignment="Left" Margin="10,149,0,0" VerticalAlignment="Top" Height="100" Width="221" Click="BtnEstoque" FontSize="20"/>
+        <Button Content="Controle de Vendas" HorizontalAlignment="Center" Margin="0,149,0,0" VerticalAlignment="Top" Height="100" Width="220" Click="BtnVendas" FontSize="20"/>
+        <Button Content="VOLTAR" Click="BtnVoltar" Margin="10,373,569,10"/>
+        <Button Content="Cadastro de Produtos" HorizontalAlignment="Left" Margin="569,149,0,0" VerticalAlignment="Top" Height="100" Width="221" Click="BtnCadProd" FontSize="20"/>
+        <Label Content="Tela de Administrador" HorizontalAlignment="Center" Margin="0,43,0,0" VerticalAlignment="Top" FontSize="20"/>
 
     </Grid>
 </Page>

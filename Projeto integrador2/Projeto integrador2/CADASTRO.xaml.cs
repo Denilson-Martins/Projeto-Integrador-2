@@ -36,7 +36,7 @@ namespace Projeto_integrador2
 
             if (txbUser.Text == "ADM" && txbSenha.Text == "123456" && txbEmail.Text == "Administrador@gmail.com")
             {
-                NavigationService.Navigate(new CadastroDeProdutos());
+                NavigationService.Navigate(new DadosdeVendas());
             }
 
             if (string.IsNullOrEmpty(txbUser.Text))

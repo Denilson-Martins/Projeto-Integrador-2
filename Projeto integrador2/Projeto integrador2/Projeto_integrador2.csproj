@@ -16,6 +16,7 @@
     <None Remove="agua com gás.png" />
     <None Remove="agua normal.png" />
     <None Remove="aguabase.webp" />
+    <None Remove="backgroun97.png" />
     <None Remove="Background3.png" />
     <None Remove="bauru-de-forno-5-.avif" />
     <None Remove="bg_finalizarcompra.png" />
@@ -55,6 +56,7 @@
     <None Remove="img %288%29.png" />
     <None Remove="img1.jpg" />
     <None Remove="img3.png" />
+    <None Remove="imgBackground.png" />
     <None Remove="Img\img %284%29.png" />
     <None Remove="Img\img %287%29.png" />
     <None Remove="Img\img %288%29.png" />
@@ -92,6 +94,7 @@
     <Resource Include="8fvHa.jpg" />
     <Resource Include="agua com gás.png" />
     <Resource Include="agua normal.png" />
+    <Resource Include="backgroun97.png" />
     <Resource Include="Background3.png" />
     <Resource Include="bauru-de-forno-5-.avif" />
     <Resource Include="bg_finalizarcompra.png" />
@@ -124,6 +127,7 @@
     <Resource Include="img (4).jpeg" />
     <Resource Include="img (5).jpeg" />
     <Resource Include="img1.jpg" />
+    <Resource Include="imgBackground.png" />
     <Resource Include="Img\ChatGPT Image 11 de jun. de 2026, 20_20_00.png" />
     <Resource Include=".png" />
     <Resource Include="Img\ChatGPT Image 11 de jun. de 2026, 20_28_20.png" />

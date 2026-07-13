@@ -11,7 +11,7 @@
 
         <Canvas Width="800" Height="480">
             <Canvas.Background>
-                <ImageBrush ImageSource="/bg_notafiscal.png"/>
+                <ImageBrush ImageSource="/backgroun97.png"/>
             </Canvas.Background>
 
             <TextBlock Text="✔ Pedido Confirmado!"

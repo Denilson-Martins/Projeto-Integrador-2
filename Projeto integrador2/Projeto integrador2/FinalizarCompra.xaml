@@ -11,7 +11,7 @@
 
         <Canvas Width="800" Height="480">
             <Canvas.Background>
-                <ImageBrush ImageSource="/bg_finalizarcompra.png"/>
+                <ImageBrush ImageSource="/imgBackground.png"/>
             </Canvas.Background>
 
             <TextBlock Text="Finalizar Pedido"

@@ -22,21 +22,31 @@ namespace Projeto_integrador2
         {
             InitializeComponent();
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
+                
         private void CadastrodeProduto(object sender, RoutedEventArgs e)
         {
             ConnectBD conect = new ConnectBD();
             NavigationService.Navigate(new CadastroDeProdutos()); 
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void BtnCadProd(object sender, RoutedEventArgs e)
         {
+            NavigationService.Navigate(new CadastroDeProdutos());
+        }
 
+        private void BtnVoltar(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Home());
+        }
+
+        private void BtnEstoque(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new ControleDeEstoque());
+        }
+
+        private void BtnVendas(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new ControleDeVendas());
         }
     }
 }
