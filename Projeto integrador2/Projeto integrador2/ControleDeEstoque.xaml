@@ -5,20 +5,71 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Projeto_integrador2"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="ControleDeEstoque">
+      d:DesignHeight="500" d:DesignWidth="800"
+      Title="ControleDeEstoque" Loaded="Page_Loaded">
 
     <Grid Background="White">
-        <DataGrid x:Name="DgCe"
-          AutoGenerateColumns="False" CanUserDeleteRows="False"
-           Width="780" Height="180"
-           Canvas.Left="20" Canvas.Top="54"
-          HorizontalAlignment="Center" VerticalAlignment="Center" IsReadOnly="True" SelectionChanged="DgCe_SelectionChanged">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Título -->
+        <Label Grid.Row="0" Content="Controle de Estoque" FontSize="20" FontWeight="Bold"
+               HorizontalAlignment="Center" Margin="0,10,0,0"/>
+
+        <!-- Formulário para adicionar ou editar um produto -->
+        <Border Grid.Row="1" BorderBrush="#CCCCCC" BorderThickness="1" Margin="20,10,20,10" Padding="10">
+            <StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <StackPanel Margin="5,0">
+                        <Label Content="Produto"/>
+                        <TextBox x:Name="TxtNomeProduto" Width="160"/>
+                    </StackPanel>
+                    <StackPanel Margin="5,0">
+                        <Label Content="Tamanho"/>
+                        <TextBox x:Name="TxtTamanho" Width="80"/>
+                    </StackPanel>
+                    <StackPanel Margin="5,0">
+                        <Label Content="Preço"/>
+                        <TextBox x:Name="TxtPreco" Width="80"/>
+                    </StackPanel>
+                    <StackPanel Margin="5,0">
+                        <Label Content="Quantidade"/>
+                        <TextBox x:Name="TxtQuantidade" Width="80"/>
+                    </StackPanel>
+                    <Button x:Name="BtnAdicionar" Content="Adicionar Produto"
+                            Margin="10,20,5,0" Padding="8,4" Click="BtnAdicionar_Click"/>
+                    <Button x:Name="BtnAtualizarProduto" Content="Atualizar Produto"
+                            Margin="5,20,5,0" Padding="8,4" Click="BtnAtualizarProduto_Click"/>
+                </StackPanel>
+                <Label Content="Clique em um produto na tabela abaixo para carregar os dados dele aqui e editar"
+                       HorizontalAlignment="Center" FontSize="11" Foreground="Gray" Margin="0,4,0,0"/>
+            </StackPanel>
+        </Border>
+
+        <!-- Grid com os produtos vindos do MySQL -->
+        <DataGrid x:Name="DgCe" Grid.Row="2"
+                  AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False"
+                  Margin="20,0,20,10" IsReadOnly="False"
+                  SelectionChanged="DgCe_SelectionChanged"
+                  CellEditEnding="DgCe_CellEditEnding">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Nome"       Binding="{Binding Nome}"      Width="*"/>
-                <DataGridTextColumn Header="Quantidade" Binding="{Binding Quantidade}" Width="Auto"/>
+                <DataGridTextColumn Header="Id" Binding="{Binding Id}" Width="50" IsReadOnly="True" Visibility="Hidden"/>
+                <DataGridTextColumn Header="Produto" Binding="{Binding Nome}" Width="*" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Tamanho" Binding="{Binding Tamanho}" Width="100" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Preço (R$)" Binding="{Binding Preco, StringFormat={}{0:F2}}" Width="100" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Quantidade" Binding="{Binding Quantidade}" Width="120" IsReadOnly="False"/>
             </DataGrid.Columns>
         </DataGrid>
 
+        <!-- Botões de ação -->
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,15">
+            <Button x:Name="BtnAtualizar" Content="Atualizar Lista" Padding="10,5" Margin="5" Click="BtnAtualizar_Click"/>
+            <Button x:Name="BtnRemover" Content="Remover Selecionado" Padding="10,5" Margin="5" Click="BtnRemover_Click"/>
+            <Button x:Name="BtnVoltar" Content="Voltar" Padding="10,5" Margin="5" Click="BtnVoltar_Click"/>
+        </StackPanel>
     </Grid>
 </Page>

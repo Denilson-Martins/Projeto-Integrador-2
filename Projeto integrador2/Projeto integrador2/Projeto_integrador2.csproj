@@ -10,6 +10,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="CadastroDeProdutos.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="2.png" />
     <None Remove="24449ab69adb8-5 %281%29.webp" />
     <None Remove="8fvHa.jpg" />
@@ -83,6 +87,10 @@
     <None Remove="sonho-chocolate.jpg" />
     <None Remove="pizza-frango.jpg" />
     <None Remove="pizza-chocolate.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Remove="CadastroDeProdutos.xaml" />
   </ItemGroup>
 
   <ItemGroup>

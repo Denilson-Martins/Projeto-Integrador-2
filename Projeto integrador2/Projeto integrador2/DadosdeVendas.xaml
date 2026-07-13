@@ -10,7 +10,6 @@
         <Button Content="Controle de estoque" HorizontalAlignment="Left" Margin="10,149,0,0" VerticalAlignment="Top" Height="100" Width="221" Click="BtnEstoque" FontSize="20"/>
         <Button Content="Controle de Vendas" HorizontalAlignment="Center" Margin="0,149,0,0" VerticalAlignment="Top" Height="100" Width="220" Click="BtnVendas" FontSize="20"/>
         <Button Content="VOLTAR" Click="BtnVoltar" Margin="10,373,569,10"/>
-        <Button Content="Cadastro de Produtos" HorizontalAlignment="Left" Margin="569,149,0,0" VerticalAlignment="Top" Height="100" Width="221" Click="BtnCadProd" FontSize="20"/>
         <Label Content="Tela de Administrador" HorizontalAlignment="Center" Margin="0,43,0,0" VerticalAlignment="Top" FontSize="20"/>
 
     </Grid>

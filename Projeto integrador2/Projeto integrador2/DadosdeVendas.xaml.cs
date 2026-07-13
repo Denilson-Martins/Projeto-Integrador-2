@@ -21,19 +21,10 @@ namespace Projeto_integrador2
         public DadosdeVendas()
         {
             InitializeComponent();
+            ConnectBD conect = new ConnectBD();
         }
                 
-        private void CadastrodeProduto(object sender, RoutedEventArgs e)
-        {
-            ConnectBD conect = new ConnectBD();
-            NavigationService.Navigate(new CadastroDeProdutos()); 
-        }
-
-        private void BtnCadProd(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new CadastroDeProdutos());
-        }
-
+        
         private void BtnVoltar(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new Home());
