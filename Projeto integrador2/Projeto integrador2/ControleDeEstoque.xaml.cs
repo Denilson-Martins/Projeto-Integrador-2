@@ -1,32 +1,206 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.Collections.ObjectModel;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Projeto_integrador2
 {
     /// <summary>
-    /// Interação lógica para ControleDeEstoque.xam
+    /// Interação lógica para ControleDeEstoque.xaml
     /// </summary>
     public partial class ControleDeEstoque : Page
     {
+        private readonly ConnectBD conect = new ConnectBD();
+        private ObservableCollection<Produto> produtos = new ObservableCollection<Produto>();
+        private int? produtoSelecionadoId = null; 
+
         public ControleDeEstoque()
         {
             InitializeComponent();
         }
 
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            CarregarProdutos();
+        }
+
+        
+        private void CarregarProdutos()
+        {
+            try
+            {
+                conect.Conectar(); 
+                produtos = new ObservableCollection<Produto>(conect.ListarProdutos());
+                DgCe.ItemsSource = produtos;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Não foi possível carregar o estoque do banco de dados.\n\n" + ex.Message,
+                                 "Erro de conexão", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        
         private void DgCe_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            ConnectBD conect = new ConnectBD();
+            if (DgCe.SelectedItem is Produto produto)
+            {
+                produtoSelecionadoId = produto.Id;
+                TxtNomeProduto.Text = produto.Nome;
+                TxtTamanho.Text = produto.Tamanho;
+                TxtPreco.Text = produto.Preco.ToString("F2");
+                TxtQuantidade.Text = produto.Quantidade.ToString();
+            }
+        }
 
+       
+        private void DgCe_CellEditEnding(object sender, DataGridCellEditEndingEventArgs e)
+        {
+            if (e.EditAction != DataGridEditAction.Commit)
+                return;
+
+            
+            Dispatcher.BeginInvoke(new Action(() =>
+            {
+                if (e.Row.Item is Produto produto)
+                {
+                    try
+                    {
+                        conect.AtualizarQuantidade(produto.Id, produto.Quantidade);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Não foi possível atualizar a quantidade no banco.\n\n" + ex.Message,
+                                         "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
+                        CarregarProdutos(); 
+                    }
+                }
+            }));
+        }
+
+       
+        private void BtnAdicionar_Click(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(TxtNomeProduto.Text))
+            {
+                MessageBox.Show("Informe o nome do produto.");
+                return;
+            }
+
+            if (!int.TryParse(TxtQuantidade.Text, out int quantidade))
+            {
+                MessageBox.Show("Quantidade inválida. Digite um número inteiro.");
+                return;
+            }
+
+            if (!double.TryParse(TxtPreco.Text, out double preco))
+            {
+                MessageBox.Show("Preço inválido. Use um número, ex: 12.50");
+                return;
+            }
+
+            try
+            {
+                conect.Conectar();
+                conect.InsertProduto(TxtNomeProduto.Text.Trim(), quantidade, TxtTamanho.Text.Trim(), preco);
+                LimparFormulario();
+                CarregarProdutos();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Não foi possível adicionar o produto.\n\n" + ex.Message,
+                                 "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        
+        private void BtnAtualizarProduto_Click(object sender, RoutedEventArgs e)
+        {
+            if (produtoSelecionadoId == null)
+            {
+                MessageBox.Show("Clique em um produto na tabela para selecioná-lo antes de atualizar.");
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(TxtNomeProduto.Text))
+            {
+                MessageBox.Show("Informe o nome do produto.");
+                return;
+            }
+
+            if (!int.TryParse(TxtQuantidade.Text, out int quantidade))
+            {
+                MessageBox.Show("Quantidade inválida. Digite um número inteiro.");
+                return;
+            }
+
+            if (!double.TryParse(TxtPreco.Text, out double preco))
+            {
+                MessageBox.Show("Preço inválido. Use um número, ex: 12.50");
+                return;
+            }
+
+            try
+            {
+                conect.Conectar();
+                conect.AtualizarProduto(produtoSelecionadoId.Value, TxtNomeProduto.Text.Trim(),
+                                         quantidade, TxtTamanho.Text.Trim(), preco);
+                LimparFormulario();
+                CarregarProdutos();
+                MessageBox.Show("Produto atualizado com sucesso!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Não foi possível atualizar o produto.\n\n" + ex.Message,
+                                 "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        
+        private void BtnRemover_Click(object sender, RoutedEventArgs e)
+        {
+            if (DgCe.SelectedItem is Produto produto)
+            {
+                var resultado = MessageBox.Show($"Remover \"{produto.Nome}\" do estoque?",
+                                                 "Confirmar remoção", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (resultado == MessageBoxResult.Yes)
+                {
+                    try
+                    {
+                        conect.Conectar();
+                        conect.ExcluirProduto(produto.Id);
+                        CarregarProdutos();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Não foi possível remover o produto.\n\n" + ex.Message,
+                                         "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Selecione um produto na lista para remover.");
+            }
+        }
+
+        private void BtnAtualizar_Click(object sender, RoutedEventArgs e)
+        {
+            CarregarProdutos();
+        }
+
+        private void BtnVoltar_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService?.Navigate(new DadosdeVendas());
+        }
+
+        private void LimparFormulario()
+        {
+            TxtNomeProduto.Text = "";
+            TxtTamanho.Text = "";
+            TxtPreco.Text = "";
+            TxtQuantidade.Text = "";
+            produtoSelecionadoId = null;
         }
     }
 }

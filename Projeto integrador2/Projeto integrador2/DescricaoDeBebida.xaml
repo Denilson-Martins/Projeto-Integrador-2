@@ -64,12 +64,12 @@
                         <TextBlock Grid.Row="1" Grid.Column="0" Text="R$ 6,00" FontSize="18" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
                         <TextBlock Grid.Row="1" Grid.Column="1" Text="R$ 12,00" FontSize="18" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
 
-                        <Button Grid.Row="2" Grid.Column="0" Style="{StaticResource VoltarButtonStyle}" Tag="Cappuccino" Content="100ml" FontSize="15" Click="BtnCapMl" Height="38" Width="90" Margin="0,8,6,0" HorizontalAlignment="Center" Foreground="White">
+                        <Button Grid.Row="2" Grid.Column="0" Style="{StaticResource VoltarButtonStyle}" Tag="Cappuccino" Content="100ml" FontSize="15" Click="BtnCapMl" Height="38" Width="90" Margin="0,8,6,0" HorizontalAlignment="Center" Foreground="#FFF1D7AC">
                             <Button.Background>
                                 <ImageBrush/>
                             </Button.Background>
                         </Button>
-                        <Button Grid.Row="2" Grid.Column="1" Style="{StaticResource VoltarButtonStyle}" Tag="Cappuccino" Content="200ml" FontSize="15" Click="BtnCapMl" Height="38" Width="90" Margin="6,8,0,0" HorizontalAlignment="Center" Foreground="White">
+                        <Button Grid.Row="2" Grid.Column="1" Style="{StaticResource VoltarButtonStyle}" Tag="Cappuccino" Content="200ml" FontSize="15" Click="BtnCapMl" Height="38" Width="90" Margin="6,8,0,0" HorizontalAlignment="Center" Foreground="#FFF1D7AC">
                             <Button.Background>
                                 <ImageBrush/>
                             </Button.Background>

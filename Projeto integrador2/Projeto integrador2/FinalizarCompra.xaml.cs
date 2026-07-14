@@ -51,7 +51,9 @@ namespace Projeto_integrador2
 
         private void BtnConfirmar(object sender, RoutedEventArgs e)
         {
-            if (((App)Application.Current).ListaBebidas.Count == 0)
+            var itensDoPedido = ((App)Application.Current).ListaBebidas;
+
+            if (itensDoPedido.Count == 0)
             {
                 MessageBox.Show("Não há itens no pedido.", "Atenção", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
@@ -64,15 +66,28 @@ namespace Projeto_integrador2
                 return;
             }
 
+            double total = itensDoPedido.Sum(b => b.Valor * b.Quantidade);
+
             ConnectBD conect = new ConnectBD();
 
-            foreach (var item in ((App)Application.Current).ListaBebidas)
+            try
             {
-                conect.InsertProduto(item.Nome, item.Quantidade, item.Tamanho, item.Valor);
+                conect.Conectar();
+
+                // Grava a venda completa no banco: cabeçalho (data/hora, forma de
+                // pagamento, total) + todos os itens comprados, com os mesmos dados
+                // que serão exibidos na tela NotaFiscal a seguir.
+                conect.InserirVenda(formaPagamentoSelecionada, total, itensDoPedido);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Não foi possível registrar a venda no banco de dados.\n\n" + ex.Message,
+                                 "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
             }
 
             NavigationService.Navigate(new NotaFiscal(
-                ((App)Application.Current).ListaBebidas,
+                itensDoPedido,
                 TxtTotal.Text,
                 formaPagamentoSelecionada));
         }

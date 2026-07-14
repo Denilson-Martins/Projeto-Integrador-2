@@ -9,21 +9,32 @@
       Title="CADASTRO">
 
     <Viewbox Stretch="Fill">
+        <Canvas Width="800" Height="450">
+            <Canvas.Background>
+                <ImageBrush ImageSource="/Background3.png" Stretch="UniformToFill"/>
+            </Canvas.Background>
 
+            <Border Canvas.Left="240" Canvas.Top="40" Width="320" Style="{StaticResource AdminCardStyle}">
+                <StackPanel>
+                    <TextBlock Text="Cadastro de Administrador" Style="{StaticResource AdminTitleStyle}"
+                               FontSize="18" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,18"/>
 
-        <Canvas Width="800" Height="450" Background="#FFF1F1F1">
-            <Label Content="Nome" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="-3.731,-0.413" Canvas.Left="287" Canvas.Top="139"/>
-            <Label Content="Senha" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="287" Canvas.Top="184"/>
-            <Label Content="Email" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.235,0.886" Canvas.Left="287" Canvas.Top="225" Height="34" Width="60"/>
-            <TextBox x:Name="txbUser" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Canvas.Left="357" Canvas.Top="139"/>
-            <TextBox x:Name="txbSenha" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Canvas.Left="357" Canvas.Top="188"/>
-            <TextBox x:Name="txbEmail" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Canvas.Left="357" Canvas.Top="233" TextChanged="txbEmail_TextChanged"/>
-            <Button Click="BtnCadastro" Content="Login" HorizontalAlignment="Left" VerticalAlignment="Top" Height="55" Width="132" Canvas.Left="345" Canvas.Top="287" BorderBrush="#FFFFF8F8"/>
-            <Button Content="Voltar" Canvas.Left="351" Canvas.Top="363" Height="51" Width="126" HorizontalAlignment="Center" VerticalAlignment="Top" Click="Button_Click"/>
+                    <TextBlock Text="Nome" Style="{StaticResource AdminLabelStyle}"/>
+                    <TextBox x:Name="txbUser" Style="{StaticResource AdminTextBoxStyle}" Margin="0,0,0,12"/>
 
+                    <TextBlock Text="Senha" Style="{StaticResource AdminLabelStyle}"/>
+                    <TextBox x:Name="txbSenha" Style="{StaticResource AdminTextBoxStyle}" Margin="0,0,0,12"/>
+
+                    <TextBlock Text="Email" Style="{StaticResource AdminLabelStyle}"/>
+                    <TextBox x:Name="txbEmail" Style="{StaticResource AdminTextBoxStyle}"
+                             TextChanged="txbEmail_TextChanged" Margin="0,0,0,20"/>
+
+                    <Button Content="Cadastrar" Click="BtnCadastro" Style="{StaticResource AdminPrimaryButtonStyle}" Margin="0,0,0,10"/>
+                    <Button Content="Voltar" Click="Button_Click" Style="{StaticResource AdminSecondaryButtonStyle}"/>
+                </StackPanel>
+            </Border>
 
         </Canvas>
     </Viewbox>
-
 
 </Page>
