@@ -6,11 +6,46 @@
         xmlns:local="clr-namespace:Projeto_integrador2"
         mc:Ignorable="d"
         Title="DadosdeVendas" Height="450" Width="800">
-    <Grid Background="White">
-        <Button Content="Controle de estoque" HorizontalAlignment="Left" Margin="10,149,0,0" VerticalAlignment="Top" Height="100" Width="221" Click="BtnEstoque" FontSize="20"/>
-        <Button Content="Controle de Vendas" HorizontalAlignment="Center" Margin="0,149,0,0" VerticalAlignment="Top" Height="100" Width="220" Click="BtnVendas" FontSize="20"/>
-        <Button Content="VOLTAR" Click="BtnVoltar" Margin="10,373,569,10"/>
-        <Label Content="Tela de Administrador" HorizontalAlignment="Center" Margin="0,43,0,0" VerticalAlignment="Top" FontSize="20"/>
+    <Viewbox Stretch="Fill">
+        <Grid Width="800" Height="450">
+            <Grid.Background>
+                <ImageBrush ImageSource="/Background3.png" Stretch="UniformToFill"/>
+            </Grid.Background>
 
-    </Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Border Grid.Row="0" Style="{StaticResource AdminCardStyle}" HorizontalAlignment="Center"
+            Margin="0,30,0,0" Padding="26,12">
+                <TextBlock Text="Painel do Administrador" Style="{StaticResource AdminTitleStyle}"/>
+            </Border>
+
+            <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+
+                <Button Click="BtnEstoque" Style="{StaticResource AdminPrimaryButtonStyle}" Width="220" Height="140" Margin="15">
+                    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <TextBlock Text="📦" FontSize="34" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+                        <TextBlock Text="Controle de Estoque" FontSize="15" FontWeight="SemiBold"
+                           HorizontalAlignment="Center" TextAlignment="Center" TextWrapping="Wrap" Foreground="White"/>
+                    </StackPanel>
+                </Button>
+
+                <Button Click="BtnVendas" Style="{StaticResource AdminPrimaryButtonStyle}" Width="220" Height="140" Margin="15">
+                    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <TextBlock Text="🧾" FontSize="34" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+                        <TextBlock Text="Controle de Vendas" FontSize="15" FontWeight="SemiBold"
+                           HorizontalAlignment="Center" TextAlignment="Center" TextWrapping="Wrap" Foreground="White"/>
+                    </StackPanel>
+                </Button>
+
+            </StackPanel>
+
+            <Button Grid.Row="2" Content="Voltar" Click="BtnVoltar" Style="{StaticResource AdminSecondaryButtonStyle}"
+            HorizontalAlignment="Center" Width="140" Margin="0,0,0,25"/>
+        </Grid>
+    </Viewbox>
+    
 </Page>

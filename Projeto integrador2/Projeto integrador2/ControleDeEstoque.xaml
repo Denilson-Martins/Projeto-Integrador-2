@@ -8,68 +8,77 @@
       d:DesignHeight="500" d:DesignWidth="800"
       Title="ControleDeEstoque" Loaded="Page_Loaded">
 
-    <Grid Background="White">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
+    <Viewbox Stretch="Fill">
+        <Grid Width="800" Height="500">
+            <Grid.Background>
+                <ImageBrush ImageSource="/Background3.png" Stretch="UniformToFill"/>
+            </Grid.Background>
 
-        
-        <Label Grid.Row="0" Content="Controle de Estoque" FontSize="20" FontWeight="Bold"
-               HorizontalAlignment="Center" Margin="0,10,0,0"/>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
 
-       
-        <Border Grid.Row="1" BorderBrush="#CCCCCC" BorderThickness="1" Margin="20,10,20,10" Padding="10">
-            <StackPanel>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                    <StackPanel Margin="5,0">
-                        <Label Content="Produto"/>
-                        <TextBox x:Name="TxtNomeProduto" Width="160"/>
+            <Border Grid.Row="0" Style="{StaticResource AdminCardStyle}" HorizontalAlignment="Center"
+            Margin="0,18,0,12" Padding="26,10">
+                <TextBlock Text="Controle de Estoque" Style="{StaticResource AdminTitleStyle}"/>
+            </Border>
+
+            <Border Grid.Row="1" Style="{StaticResource AdminCardStyle}" Margin="30,0,30,12">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <StackPanel Margin="8,0" Width="180">
+                            <TextBlock Text="Produto" Style="{StaticResource AdminLabelStyle}"/>
+                            <TextBox x:Name="TxtNomeProduto" Style="{StaticResource AdminTextBoxStyle}"/>
+                        </StackPanel>
+                        <StackPanel Margin="8,0" Width="90">
+                            <TextBlock Text="Tamanho" Style="{StaticResource AdminLabelStyle}"/>
+                            <TextBox x:Name="TxtTamanho" Style="{StaticResource AdminTextBoxStyle}"/>
+                        </StackPanel>
+                        <StackPanel Margin="8,0" Width="90">
+                            <TextBlock Text="Preço" Style="{StaticResource AdminLabelStyle}"/>
+                            <TextBox x:Name="TxtPreco" Style="{StaticResource AdminTextBoxStyle}"/>
+                        </StackPanel>
+                        <StackPanel Margin="8,0" Width="100">
+                            <TextBlock Text="Quantidade" Style="{StaticResource AdminLabelStyle}"/>
+                            <TextBox x:Name="TxtQuantidade" Style="{StaticResource AdminTextBoxStyle}"/>
+                        </StackPanel>
+                        <Button x:Name="BtnAdicionar" Content="Adicionar" Style="{StaticResource AdminPrimaryButtonStyle}"
+                        Margin="8,20,4,0" Click="BtnAdicionar_Click"/>
+                        <Button x:Name="BtnAtualizarProduto" Content="Atualizar" Style="{StaticResource AdminSecondaryButtonStyle}"
+                        Margin="4,20,8,0" Click="BtnAtualizarProduto_Click"/>
                     </StackPanel>
-                    <StackPanel Margin="5,0">
-                        <Label Content="Tamanho"/>
-                        <TextBox x:Name="TxtTamanho" Width="80"/>
-                    </StackPanel>
-                    <StackPanel Margin="5,0">
-                        <Label Content="Preço"/>
-                        <TextBox x:Name="TxtPreco" Width="80"/>
-                    </StackPanel>
-                    <StackPanel Margin="5,0">
-                        <Label Content="Quantidade"/>
-                        <TextBox x:Name="TxtQuantidade" Width="80"/>
-                    </StackPanel>
-                    <Button x:Name="BtnAdicionar" Content="Adicionar Produto"
-                            Margin="10,20,5,0" Padding="8,4" Click="BtnAdicionar_Click"/>
-                    <Button x:Name="BtnAtualizarProduto" Content="Atualizar Produto"
-                            Margin="5,20,5,0" Padding="8,4" Click="BtnAtualizarProduto_Click"/>
+                    <TextBlock Text="Clique em um produto na tabela abaixo para carregar os dados dele aqui e editar"
+                       HorizontalAlignment="Center" FontSize="11" Foreground="#888888" Margin="0,10,0,0"/>
                 </StackPanel>
-                <Label Content="Clique em um produto na tabela abaixo para carregar os dados dele aqui e editar"
-                       HorizontalAlignment="Center" FontSize="11" Foreground="Gray" Margin="0,4,0,0"/>
-            </StackPanel>
-        </Border>
+            </Border>
 
-       
-        <DataGrid x:Name="DgCe" Grid.Row="2"
+            <Border Grid.Row="2" Style="{StaticResource AdminCardStyle}" Margin="30,0,30,12" Padding="14">
+                <DataGrid x:Name="DgCe"
+                  Style="{StaticResource AdminDataGridStyle}"
+                  ColumnHeaderStyle="{StaticResource AdminDataGridColumnHeaderStyle}"
                   AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False"
-                  Margin="20,0,20,10" IsReadOnly="False"
+                  IsReadOnly="False"
                   SelectionChanged="DgCe_SelectionChanged"
                   CellEditEnding="DgCe_CellEditEnding">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="Id" Binding="{Binding Id}" Width="50" IsReadOnly="True" Visibility="Hidden"/>
-                <DataGridTextColumn Header="Produto" Binding="{Binding Nome}" Width="*" IsReadOnly="True"/>
-                <DataGridTextColumn Header="Tamanho" Binding="{Binding Tamanho}" Width="100" IsReadOnly="True"/>
-                <DataGridTextColumn Header="Preço (R$)" Binding="{Binding Preco, StringFormat={}{0:F2}}" Width="100" IsReadOnly="True"/>
-                <DataGridTextColumn Header="Quantidade" Binding="{Binding Quantidade}" Width="120" IsReadOnly="False"/>
-            </DataGrid.Columns>
-        </DataGrid>
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Id" Binding="{Binding Id}" Width="50" IsReadOnly="True" Visibility="Hidden"/>
+                        <DataGridTextColumn Header="Produto" Binding="{Binding Nome}" Width="*" IsReadOnly="True"/>
+                        <DataGridTextColumn Header="Tamanho" Binding="{Binding Tamanho}" Width="100" IsReadOnly="True"/>
+                        <DataGridTextColumn Header="Preço (R$)" Binding="{Binding Preco, StringFormat={}{0:F2}}" Width="100" IsReadOnly="True"/>
+                        <DataGridTextColumn Header="Quantidade" Binding="{Binding Quantidade}" Width="120" IsReadOnly="False"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Border>
 
-       
-        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,15">
-            <Button x:Name="BtnAtualizar" Content="Atualizar Lista" Padding="10,5" Margin="5" Click="BtnAtualizar_Click"/>
-            <Button x:Name="BtnRemover" Content="Remover Selecionado" Padding="10,5" Margin="5" Click="BtnRemover_Click"/>
-            <Button x:Name="BtnVoltar" Content="Voltar" Padding="10,5" Margin="5" Click="BtnVoltar_Click"/>
-        </StackPanel>
-    </Grid>
+            <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,18">
+                <Button x:Name="BtnAtualizar" Content="Atualizar Lista" Style="{StaticResource AdminSecondaryButtonStyle}" Margin="6" Click="BtnAtualizar_Click"/>
+                <Button x:Name="BtnRemover" Content="Remover Selecionado" Style="{StaticResource AdminDangerButtonStyle}" Margin="6" Click="BtnRemover_Click"/>
+                <Button x:Name="BtnVoltar" Content="Voltar" Style="{StaticResource AdminSecondaryButtonStyle}" Margin="6" Click="BtnVoltar_Click"/>
+            </StackPanel>
+        </Grid>
+    </Viewbox>
+    
 </Page>
