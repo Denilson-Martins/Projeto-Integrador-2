@@ -90,14 +90,10 @@
   </ItemGroup>
 
   <ItemGroup>
-<<<<<<< HEAD
-    <PackageReference Include="BCrypt.Net-Next" Version="4.2.0" />
-=======
     <Page Remove="CadastroDeProdutos.xaml" />
   </ItemGroup>
 
   <ItemGroup>
->>>>>>> be5e21a5a3f2ffe9e6a523fc8f658b28d2bb1ee8
     <PackageReference Include="MySql.Data" Version="9.7.0" />
   </ItemGroup>
 
