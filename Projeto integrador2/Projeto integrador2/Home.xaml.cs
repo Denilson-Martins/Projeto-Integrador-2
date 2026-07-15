@@ -25,7 +25,7 @@ namespace Projeto_integrador2
 
         private void BtnLogAdm(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new CADASTRO());
+            NavigationService.Navigate(new Login());
         }
 
         private void btnEntrar_CLick(object sender, RoutedEventArgs e)

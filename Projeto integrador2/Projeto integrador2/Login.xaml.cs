@@ -16,9 +16,9 @@ namespace Projeto_integrador2
     /// <summary>
     /// Interação lógica para CADASTRO.xam
     /// </summary> 
-    public partial class CADASTRO : Page
+    public partial class Login : Page
     {
-        public CADASTRO()
+        public Login()
         {
             InitializeComponent();
         }

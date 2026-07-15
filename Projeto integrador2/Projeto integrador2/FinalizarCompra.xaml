@@ -25,7 +25,8 @@
                       IsReadOnly="True"
                       Width="760" Height="180"
                       Canvas.Left="20" Canvas.Top="54"
-                      HorizontalAlignment="Left" VerticalAlignment="Top">
+                      HorizontalAlignment="Left" VerticalAlignment="Top" Style="{StaticResource AdminDataGridStyle}"
+ColumnHeaderStyle="{StaticResource AdminDataGridColumnHeaderStyle}">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Nome"       Binding="{Binding Nome}"      Width="*"/>
                     <DataGridTextColumn Header="Tamanho"    Binding="{Binding Tamanho}"   Width="Auto"/>
