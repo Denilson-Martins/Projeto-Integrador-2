@@ -8,6 +8,24 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Home">
 
+    <Page.Resources>
+        <!-- Estilo para botões que possuem apenas uma imagem, sem o realce azul padrão ao passar o mouse -->
+        <Style x:Key="ImageButtonStyle" TargetType="Button">
+            <Setter Property="OverridesDefaultStyle" Value="True"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+
     <Viewbox Stretch="Fill">
         <Canvas Width="800" Height="450">
             <Canvas.Background>
@@ -18,7 +36,7 @@
             <Button Style="{StaticResource VoltarButtonStyle}" Content="ENTRAR" HorizontalAlignment="Left" VerticalAlignment="Center" Height="56" Width="148" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="#FFF1D7AC" Background="White" Click="btnEntrar_CLick" Canvas.Left="326" Canvas.Top="384"/>
 
             <Image Source="Img/img (8).png" Stretch="Fill" Canvas.Left="563" Height="191" Width="237" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-            <Button Content="" HorizontalAlignment="Center" VerticalAlignment="Top" Height="164" Width="186" Click="BtnLogAdm" BorderThickness="0,0,0,0" Canvas.Top="8">
+            <Button Style="{StaticResource ImageButtonStyle}" Content="" HorizontalAlignment="Center" VerticalAlignment="Top" Height="164" Width="186" Click="BtnLogAdm" BorderThickness="0,0,0,0" Canvas.Top="8" >
                 <Button.Background>
                     <ImageBrush ImageSource="Img/img (7).png"/>
                 </Button.Background>

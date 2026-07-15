@@ -7,6 +7,23 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Escolher">
+    <Page.Resources>
+        <!-- Estilo para botões que possuem apenas uma imagem, sem o realce azul padrão ao passar o mouse -->
+        <Style x:Key="ImageButtonStyle" TargetType="Button">
+            <Setter Property="OverridesDefaultStyle" Value="True"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
     <Viewbox Stretch="Fill">
         <Canvas Width="800" Height="450">
             <Canvas.Background>
@@ -14,7 +31,7 @@
             </Canvas.Background>
             <Button Style="{StaticResource VoltarButtonStyle}" Content="Selecionar Bebida" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" Click="BtnBebidas" Canvas.Left="73" Canvas.Top="312" Height="40" Width="180"  />
             <Button Style="{StaticResource VoltarButtonStyle}" Content="Selecionar Lanche" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" Click="BtnLanches" Canvas.Left="564" Canvas.Top="312" Height="40" Width="180"  />
-            <Button Content="" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" Click="BtnVoltar" RenderTransformOrigin="4.854,1.074" Canvas.Left="318" Height="175" Width="186" BorderBrush="{x:Null}">
+            <Button Style="{StaticResource ImageButtonStyle}" Content="" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" Click="BtnVoltar" RenderTransformOrigin="4.854,1.074" Canvas.Left="318" Height="175" Width="186" BorderBrush="{x:Null}">
                 <Button.Background>
                     <ImageBrush  ImageSource="/ChatGPT Image 29 de jun. de 2026, 20_00_35.png"/>
                 </Button.Background>
