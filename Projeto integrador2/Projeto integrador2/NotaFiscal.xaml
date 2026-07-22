@@ -99,8 +99,7 @@ ColumnHeaderStyle="{StaticResource AdminDataGridColumnHeaderStyle}">
                     Width="760" Height="50"
                     FontSize="17" FontWeight="Bold"
                     FontFamily="Segoe UI"
-                    Background="#FF1565C0" Foreground="#FFF1D7AC"
-                    BorderBrush="#FF0D47A1" Style="{StaticResource VoltarButtonStyle}"/>
+                     Style="{StaticResource VoltarButtonStyle}"/>
 
         </Canvas>
     </Viewbox>

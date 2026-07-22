@@ -35,7 +35,7 @@ namespace Projeto_integrador2
 
         private void BtnVoltar(object sender, RoutedEventArgs e)
         {
-            NavigationService.GoBack();
+            NavigationService.Navigate(new Home());
         }
     }
 }

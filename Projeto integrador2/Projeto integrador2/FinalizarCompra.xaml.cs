@@ -30,7 +30,6 @@ namespace Projeto_integrador2
 
         private void AtualizarTotal()
         {
-
             double total = ((App)Application.Current).ListaBebidas.Sum(b => b.Valor * b.Quantidade);
             TxtTotal.Text = total.ToString("C2");
         }
@@ -74,9 +73,7 @@ namespace Projeto_integrador2
             {
                 conect.Conectar();
 
-                // Grava a venda completa no banco: cabeçalho (data/hora, forma de
-                // pagamento, total) + todos os itens comprados, com os mesmos dados
-                // que serão exibidos na tela NotaFiscal a seguir.
+                
                 conect.InserirVenda(formaPagamentoSelecionada, total, itensDoPedido);
             }
             catch (Exception ex)

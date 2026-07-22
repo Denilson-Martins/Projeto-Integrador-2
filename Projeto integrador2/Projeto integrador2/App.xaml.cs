@@ -1,4 +1,5 @@
-﻿using System.Configuration;
+﻿using System.Collections.ObjectModel;
+using System.Configuration;
 using System.Data;
 using System.Windows;
 
@@ -9,7 +10,7 @@ namespace Projeto_integrador2
     /// </summary>
     public partial class App : Application
     {
-        public List<Bebidas> ListaBebidas = new List <Bebidas> ();
+        public ObservableCollection<Bebidas> ListaBebidas { get; set; } = new ObservableCollection<Bebidas>();
     }
 
 }

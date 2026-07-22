@@ -1,8 +1,11 @@
 ﻿using MySql.Data.MySqlClient;
+using Mysqlx.Crud;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
+using System.Windows;
 
 namespace Projeto_integrador2
 {
@@ -12,7 +15,7 @@ namespace Projeto_integrador2
 
         public void Conectar()
         {
-            //Abrir conexão
+            
             try
             {
                 if (Conexao == null || Conexao.State == System.Data.ConnectionState.Closed)
@@ -25,7 +28,7 @@ namespace Projeto_integrador2
             {
                 Conexao = null;
                 Console.WriteLine(ex.ToString());
-                throw; // repassa o erro para quem chamou poder avisar o usuário
+                throw; 
             }
         }
 
@@ -37,7 +40,7 @@ namespace Projeto_integrador2
             cmd.Parameters.AddWithValue("@nome", nome);
             cmd.Parameters.AddWithValue("@senha", senha);
             cmd.Parameters.AddWithValue("@email", email);
-            cmd.ExecuteNonQuery();//Usado para comandos que não retornam resultados(INSERT, UPDATE, DELETE).
+            cmd.ExecuteNonQuery();
         }
 
         public void InsertProduto(string produto, int quantidade, string tamanho, double preco)
@@ -49,13 +52,10 @@ namespace Projeto_integrador2
             cmd.Parameters.AddWithValue("@quantidade", quantidade);
             cmd.Parameters.AddWithValue("@tamanho", tamanho);
             cmd.Parameters.AddWithValue("@preco", preco);
-            cmd.ExecuteNonQuery();//Usado para comandos que não retornam resultados(INSERT, UPDATE, DELETE).
+            cmd.ExecuteNonQuery();
         }
 
-        // ---------- Métodos do Controle de Estoque ----------
-
-        // Busca todos os produtos do banco e devolve como lista de objetos Produto,
-        // prontos para virar a fonte de dados (ItemsSource) do DataGrid.
+        
         public List<Produto> ListarProdutos()
         {
             var lista = new List<Produto>();
@@ -81,8 +81,7 @@ namespace Projeto_integrador2
             return lista;
         }
 
-        // Atualiza somente a quantidade em estoque de um produto (usado ao editar
-        // a célula "Quantidade" direto no DataGrid).
+        
         public void AtualizarQuantidade(int id, int novaQuantidade)
         {
             string sql = "UPDATE produtos SET quantidade = @quantidade WHERE id = @id";
@@ -93,8 +92,7 @@ namespace Projeto_integrador2
             cmd.ExecuteNonQuery();
         }
 
-        // Atualiza todos os dados de um produto já cadastrado (nome, tamanho, preço e quantidade).
-        // Usado pelo botão "Atualizar Produto" da tela de Controle de Estoque.
+        
         public void AtualizarProduto(int id, string produto, int quantidade, string tamanho, double preco)
         {
             string sql = "UPDATE produtos SET produto = @produto, quantidade = @quantidade, " +
@@ -109,7 +107,7 @@ namespace Projeto_integrador2
             cmd.ExecuteNonQuery();
         }
 
-        // Remove um produto do estoque.
+        
         public void ExcluirProduto(int id)
         {
             string sql = "DELETE FROM produtos WHERE id = @id";
@@ -119,12 +117,8 @@ namespace Projeto_integrador2
             cmd.ExecuteNonQuery();
         }
 
-        // ---------- Métodos do Controle de Vendas ----------
-
-        // Grava uma venda finalizada: primeiro o cabeçalho (data/hora, forma de pagamento,
-        // total) na tabela vendas, depois cada item comprado na tabela venda_itens.
-        // Devolve o id gerado para a venda.
-        public int InserirVenda(string formaPagamento, double total, List<Bebidas> itens)
+        
+        public int InserirVenda(string formaPagamento, double total, ObservableCollection<Bebidas> itens)
         {
             string sqlVenda = "INSERT INTO vendas (data_hora, forma_pagamento, total) " +
                                "VALUES (@dataHora, @formaPagamento, @total)";
@@ -150,13 +144,22 @@ namespace Projeto_integrador2
                 cmdItem.Parameters.AddWithValue("@quantidade", item.Quantidade);
                 cmdItem.Parameters.AddWithValue("@subtotal", item.Subtotal);
                 cmdItem.ExecuteNonQuery();
+
+                string sqlprod = @"UPDATE produtos SET quantidade = quantidade - @qnt WHERE produto = @nome AND tamanho = @tamanho";
+
+                MySqlCommand cmdProd = new MySqlCommand(sqlprod, Conexao);
+                cmdProd.Parameters.AddWithValue("@qnt", item.Quantidade);
+                cmdProd.Parameters.AddWithValue("@nome", item.Nome);
+                cmdProd.Parameters.AddWithValue("@tamanho", item.Tamanho);
+
+                cmdProd.ExecuteNonQuery();
             }
+
 
             return vendaId;
         }
 
-        // Busca o cabeçalho de todas as vendas já realizadas (mais recente primeiro),
-        // para preencher a lista principal da tela de Controle de Vendas.
+        
         public List<Venda> ListarVendas()
         {
             var lista = new List<Venda>();
@@ -181,8 +184,7 @@ namespace Projeto_integrador2
             return lista;
         }
 
-        // Busca os itens de uma venda específica (os mesmos dados exibidos na NotaFiscal:
-        // nome, tamanho, valor unitário, quantidade e subtotal de cada produto vendido).
+       
         public List<VendaItem> ListarItensDaVenda(int vendaId)
         {
             var lista = new List<VendaItem>();
@@ -211,6 +213,28 @@ namespace Projeto_integrador2
             }
 
             return lista;
+        }
+
+        public int CheckQuantidade(string nome, string tamanho)
+        {
+            string sql = @"SELECT quantidade
+                   FROM produtos
+                   WHERE produto = @nome
+                   AND tamanho = @tamanho";
+
+            MySqlCommand cmd = new MySqlCommand(sql, Conexao);
+
+            cmd.Parameters.AddWithValue("@nome", nome);
+            cmd.Parameters.AddWithValue("@tamanho", tamanho);
+
+            object resultado = cmd.ExecuteScalar();
+
+            if (resultado != null)
+            {
+                return Convert.ToInt32(resultado);
+            }
+
+            return -1; 
         }
     }
 }

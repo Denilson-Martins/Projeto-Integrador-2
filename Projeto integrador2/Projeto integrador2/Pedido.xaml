@@ -36,34 +36,30 @@ ColumnHeaderStyle="{StaticResource AdminDataGridColumnHeaderStyle}">
                     Click="BtnDiminuir"
                     Canvas.Left="20" Canvas.Top="256"
                     Width="170" Height="44" FontSize="17"
-                    Background="#FFE84242" Foreground="#FFF1D7AC"
-                    BorderBrush="#FFCC0000" FontWeight="SemiBold" Style="{StaticResource VoltarButtonStyle}" />
+                    FontWeight="SemiBold" Style="{StaticResource VoltarButtonStyle}" />
 
             <Button Content="Adicionar  +"
                     Click="BtnAdicionar"
                     Canvas.Left="205" Canvas.Top="256"
-                    Width="170" Height="44" FontSize="17" Foreground="#FFF1D7AC" FontWeight="SemiBold" Style="{StaticResource VoltarButtonStyle}"/>
+                    Width="170" Height="44" FontSize="17"  FontWeight="SemiBold" Style="{StaticResource VoltarButtonStyle}"/>
 
             <Button Content="Remover Item"
                     Click="BtnRemove"
                     Canvas.Left="20" Canvas.Top="316"
                     Width="355" Height="44" FontSize="17"
-                    Background="#FFE84242" Foreground="#FFF1D7AC"
-                    BorderBrush="#FFCC0000" FontWeight="SemiBold" Style="{StaticResource VoltarButtonStyle}"/>
+                     FontWeight="SemiBold" Style="{StaticResource VoltarButtonStyle}"/>
 
             <Button Content="← Voltar"
                     Click="BtnVoltar"
                     Canvas.Left="20" Canvas.Top="376"
                     Width="355" Height="44" FontSize="17"
-                    Foreground="#FFF1D7AC" BorderBrush="White" FontWeight="Bold" Style="{StaticResource VoltarButtonStyle}">
-                <Button.Background>
-                    <SolidColorBrush Color="White"/>
-                </Button.Background>
+                    FontWeight="Bold" Style="{StaticResource VoltarButtonStyle}">
+
             </Button>
 
             <Rectangle Canvas.Left="395" Canvas.Top="244"
                        Width="1" Height="208"
-                       Fill="#FFCCCCCC"/>
+                       />
 
             <Border Canvas.Left="410" Canvas.Top="256"
                     Width="370" Height="44"
@@ -89,15 +85,13 @@ ColumnHeaderStyle="{StaticResource AdminDataGridColumnHeaderStyle}">
                     Click="BtnFinalizar"
                     Canvas.Left="410" Canvas.Top="316"
                     Width="370" Height="44" FontSize="17"
-                    Background="#FF1565C0" Foreground="#FFF1D7AC"
-                    BorderBrush="#FF0D47A1" FontWeight="SemiBold" Style="{StaticResource VoltarButtonStyle}"/>
+                   FontWeight="SemiBold" Style="{StaticResource VoltarButtonStyle}"/>
 
             <Button Content="← Voltar para a tela de Escolha"
                     Click="BtnEscolherBebida"
                     Canvas.Left="410" Canvas.Top="376"
                     Width="370" Height="44" FontSize="15"
-                    Background="White" Foreground="#FFF1D7AC"
-                    BorderBrush="White" FontWeight="SemiBold" Style="{StaticResource VoltarButtonStyle}"/>
+                    FontWeight="SemiBold" Style="{StaticResource VoltarButtonStyle}"/>
 
         </Canvas>
     </Viewbox>

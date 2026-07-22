@@ -32,5 +32,10 @@ namespace Projeto_integrador2
         {
             NavigationService.Navigate(new Escolher());
         }
+
+        private void TelaAdm(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new DadosdeVendas());
+        }
     }
 }

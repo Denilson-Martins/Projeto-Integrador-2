@@ -170,6 +170,8 @@ namespace Projeto_integrador2
                         conect.Conectar();
                         conect.ExcluirProduto(produto.Id);
                         CarregarProdutos();
+                        LimparFormulario();
+
                     }
                     catch (Exception ex)
                     {

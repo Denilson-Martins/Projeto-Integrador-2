@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -16,7 +17,7 @@ namespace Projeto_integrador2
 
     public partial class NotaFiscal : Page
     {
-        public NotaFiscal(List<Bebidas> itens, string total, string formaPagamento)
+        public NotaFiscal(ObservableCollection<Bebidas> itens, string total, string formaPagamento)
         {
             InitializeComponent();
 

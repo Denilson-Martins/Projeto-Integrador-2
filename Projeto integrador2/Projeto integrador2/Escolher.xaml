@@ -8,7 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Escolher">
     <Page.Resources>
-        <!-- Estilo para botões que possuem apenas uma imagem, sem o realce azul padrão ao passar o mouse -->
+        
         <Style x:Key="ImageButtonStyle" TargetType="Button">
             <Setter Property="OverridesDefaultStyle" Value="True"/>
             <Setter Property="Template">

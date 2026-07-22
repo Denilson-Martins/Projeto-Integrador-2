@@ -118,14 +118,13 @@ ColumnHeaderStyle="{StaticResource AdminDataGridColumnHeaderStyle}">
                     Click="BtnVoltar"
                     Canvas.Left="20" Canvas.Top="434"
                     Width="370" Height="44" FontSize="17"
-                    Foreground="#FFF1D7AC" FontWeight="Bold" Style="{StaticResource VoltarButtonStyle}"/>
+                    FontWeight="Bold" Style="{StaticResource VoltarButtonStyle}"/>
 
             <Button Content="Confirmar Pedido ✔"
                     Click="BtnConfirmar"
                     Canvas.Left="410" Canvas.Top="434"
                     Width="370" Height="44" FontSize="17"
-                    Background="#FF1565C0" Foreground="#FFF1D7AC"
-                    BorderBrush="#FF0D47A1" FontWeight="SemiBold" Style="{StaticResource VoltarButtonStyle}"/>
+                    FontWeight="SemiBold" Style="{StaticResource VoltarButtonStyle}"/>
 
         </Canvas>
     </Viewbox>

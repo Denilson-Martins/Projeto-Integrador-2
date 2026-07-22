@@ -1,5 +1,8 @@
+using Microsoft.VisualBasic;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Windows;
@@ -17,6 +20,8 @@ namespace Projeto_integrador2
 
     public partial class Pedido : Page
     {
+        private readonly ConnectBD conect = new ConnectBD();
+
         public Pedido()
         {
             InitializeComponent();
@@ -26,7 +31,6 @@ namespace Projeto_integrador2
 
         private void AtualizarSubtotal()
         {
-
             double subtotal = ((App)Application.Current).ListaBebidas.Sum(b => b.Valor * b.Quantidade);
             TxtSubtotal.Text = subtotal.ToString("C2");
         }
@@ -38,14 +42,16 @@ namespace Projeto_integrador2
 
         private void BtnRemove(object sender, RoutedEventArgs e)
         {
-            int index = DgPedido.SelectedIndex;
-
-            if (index >= 0 && index < ((App)Application.Current).ListaBebidas.Count)
+            if (DgPedido.SelectedItem is Bebidas item)
             {
-                ((App)Application.Current).ListaBebidas.RemoveAt(index);
-                DgPedido.Items.Refresh();
-                AtualizarSubtotal();
+                ((App)Application.Current).ListaBebidas.Remove(item);
             }
+            else
+            {
+                MessageBox.Show("Selecione um item na lista antes de remover.", "Atenção", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+            AtualizarSubtotal();
         }
 
         private void BtnFinalizar(object sender, RoutedEventArgs e)
@@ -64,6 +70,24 @@ namespace Projeto_integrador2
                 return;
             }
 
+            var prodDisponivel = true;
+            string msg = "Não foi possivel realizar o pedido. Estoque disponivel:\n";
+            foreach (var itm in itens)
+            {
+                var qnt = conect.CheckQuantidade(itm.Nome, itm.Tamanho);
+                if (qnt <= itm.Quantidade)
+                {
+                    prodDisponivel = false;
+                    msg += $"{itm.Nome} {itm.Tamanho} = {qnt}" + Environment.NewLine;
+                }
+            }
+
+            if (!prodDisponivel)
+            {
+                MessageBox.Show(msg);
+                return;
+            }
+
             NavigationService.Navigate(new FinalizarCompra());
         }
 
@@ -74,36 +98,27 @@ namespace Projeto_integrador2
 
         private void BtnAdicionar(object sender, RoutedEventArgs e)
         {
-            int index = DgPedido.SelectedIndex;
-
-            if (index < 0 || index >= ((App)Application.Current).ListaBebidas.Count)
+            if (!(DgPedido.SelectedItem is Bebidas item))
             {
                 MessageBox.Show("Selecione um item na lista antes de adicionar.", "Atenção", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
-            ((App)Application.Current).ListaBebidas[index].Quantidade++;
-            DgPedido.Items.Refresh();
+            item.Quantidade++;
             AtualizarSubtotal();
         }
 
         private void BtnDiminuir(object sender, RoutedEventArgs e)
         {
-            int index = DgPedido.SelectedIndex;
-
-            if (index < 0 || index >= ((App)Application.Current).ListaBebidas.Count)
+            if (!(DgPedido.SelectedItem is Bebidas item))
             {
                 MessageBox.Show("Selecione um item na lista antes de remover.", "Atenção", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
-            var item = ((App)Application.Current).ListaBebidas[index];
-
             if (item.Quantidade > 1)
             {
                 item.Quantidade--;
-                DgPedido.Items.Refresh();
-                AtualizarSubtotal();
             }
             else
             {
@@ -116,11 +131,15 @@ namespace Projeto_integrador2
 
                 if (resultado == MessageBoxResult.Yes)
                 {
-                    ((App)Application.Current).ListaBebidas.RemoveAt(index);
-                    DgPedido.Items.Refresh();
-                    AtualizarSubtotal();
+                    ((App)Application.Current).ListaBebidas.Remove(item);
                 }
             }
+            AtualizarSubtotal();
+        }
+
+        private void DgPedido_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }
