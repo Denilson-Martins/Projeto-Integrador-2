@@ -39,7 +39,7 @@
                     <ImageBrush ImageSource="Img/img (7).png"/>
                 </Button.Background>
             </Button>
-            <Button Click="TelaAdm" Style="{StaticResource ImageButtonStyle}" Content="Button" Canvas.Left="584" Height="172" Width="216" BorderBrush="{x:Null}">
+            <Button Click="TelaAdm" Style="{StaticResource ImageButtonStyle}" Content="" Canvas.Left="584" Height="172" Width="216" BorderBrush="{x:Null}">
                 <Button.Background>
                     <ImageBrush ImageSource="/ChatGPT Image 11 de jun. de 2026, 20_28_20.png"/>
                 </Button.Background>

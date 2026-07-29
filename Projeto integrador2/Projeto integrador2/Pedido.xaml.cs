@@ -150,6 +150,7 @@ namespace Projeto_integrador2
 
             DgPedido.ItemsSource = null;
             DgPedido.ItemsSource = ((App)Application.Current).ListaBebidas;
+            AtualizarSubtotal();
         }
     }
 }
