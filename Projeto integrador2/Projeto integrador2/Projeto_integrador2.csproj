@@ -27,8 +27,10 @@
     <None Remove="bg_notafiscal.png" />
     <None Remove="BtnVoltarDaTelaEscolher.png" />
     <None Remove="BtnVoltarDaTelaEscolher2.png" />
+    <None Remove="Cappuccino.png" />
     <None Remove="ChatGPT Image 11 de jun. de 2026, 20_20_00.png" />
     <None Remove="ChatGPT Image 11 de jun. de 2026, 20_28_20.png" />
+    <None Remove="ChatGPT Image 29 de jul. de 2026, 20_37_39.png" />
     <None Remove="ChatGPT Image 29 de jun. de 2026, 20_00_35.png" />
     <None Remove="ChatGPT Image 6 de jul. de 2026, 20_37_21.png" />
     <None Remove="ChatGPT Image 7 de jul. de 2026, 20_27_15.png" />
@@ -109,7 +111,9 @@
     <Resource Include="bg_notafiscal.png" />
     <Resource Include="BtnVoltarDaTelaEscolher.png" />
     <Resource Include="BtnVoltarDaTelaEscolher2.png" />
+    <Resource Include="Cappuccino.png" />
     <Resource Include="ChatGPT Image 11 de jun. de 2026, 20_28_20.png" />
+    <Resource Include="ChatGPT Image 29 de jul. de 2026, 20_37_39.png" />
     <Resource Include="ChatGPT Image 29 de jun. de 2026, 20_00_35.png" />
     <Resource Include="ChatGPT Image 6 de jul. de 2026, 20_37_21.png" />
     <Resource Include="ChatGPT Image 7 de jul. de 2026, 20_27_15.png" />

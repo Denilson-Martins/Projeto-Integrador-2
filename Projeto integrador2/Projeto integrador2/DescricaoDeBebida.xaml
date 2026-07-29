@@ -30,7 +30,10 @@
             </Canvas.Background>
 
             <StackPanel Canvas.Left="40" Canvas.Top="40" Width="320" Orientation="Vertical">
-                <Border Width="320" Height="180" CornerRadius="18" Background="#B3161616">
+                <Border Width="320" Height="180" CornerRadius="18">
+                    <Border.Background>
+                        <ImageBrush ImageSource="/ChatGPT Image 29 de jul. de 2026, 20_37_39.png"/>
+                    </Border.Background>
                     <Border.Effect>
                         <DropShadowEffect Color="Black" BlurRadius="20" ShadowDepth="5" Opacity="0.5"/>
                     </Border.Effect>
@@ -41,7 +44,6 @@
                             </VisualBrush.Visual>
                         </VisualBrush>
                     </Border.OpacityMask>
-                    <Image Source="/img (2).jpeg" Stretch="Uniform"/>
                 </Border>
 
                 <Border Width="320" CornerRadius="14" Background="#B3161616" BorderBrush="#26FFFFFF" BorderThickness="1" Margin="0,16,0,0">
