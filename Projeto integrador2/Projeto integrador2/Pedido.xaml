@@ -46,8 +46,8 @@ ColumnHeaderStyle="{StaticResource AdminDataGridColumnHeaderStyle}">
             <Button Content="Remover Item"
                     Click="BtnRemove"
                     Canvas.Left="20" Canvas.Top="316"
-                    Width="355" Height="44" FontSize="17"
-                     FontWeight="SemiBold" Style="{StaticResource VoltarButtonStyle}"/>
+                    Width="170" Height="44" FontSize="17"
+                     FontWeight="SemiBold" Style="{StaticResource VoltarButtonStyle}" HorizontalAlignment="Left" VerticalAlignment="Center"/>
 
             <Button Content="← Voltar"
                     Click="BtnVoltar"
@@ -92,6 +92,11 @@ ColumnHeaderStyle="{StaticResource AdminDataGridColumnHeaderStyle}">
                     Canvas.Left="410" Canvas.Top="376"
                     Width="370" Height="44" FontSize="15"
                     FontWeight="SemiBold" Style="{StaticResource VoltarButtonStyle}"/>
+            <Button Content="Remover Tudo"
+                Click="BtnRemoveAll"
+                Canvas.Left="205" Canvas.Top="316"
+                Width="170" Height="44" FontSize="17"
+                FontWeight="SemiBold" Style="{StaticResource VoltarButtonStyle}" HorizontalAlignment="Left" VerticalAlignment="Center"/>
 
         </Canvas>
     </Viewbox>

@@ -143,5 +143,13 @@ namespace Projeto_integrador2
         {
 
         }
+
+        private void BtnRemoveAll(object sender, RoutedEventArgs e)
+        {
+            ((App)Application.Current).ListaBebidas.Clear();
+
+            DgPedido.ItemsSource = null;
+            DgPedido.ItemsSource = ((App)Application.Current).ListaBebidas;
+        }
     }
 }
