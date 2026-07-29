@@ -38,6 +38,8 @@ namespace Projeto_integrador2
         private void BtnVoltar(object sender, RoutedEventArgs e)
         {
             NavigationService.GoBack();
+            
+
         }
 
         private void BtnRemove(object sender, RoutedEventArgs e)

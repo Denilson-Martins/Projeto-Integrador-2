@@ -33,6 +33,9 @@ namespace Projeto_integrador2
         private void BtnVoltar(object sender, RoutedEventArgs e)
         {
             NavigationService.GoBack();
+            ((App)Application.Current).ListaBebidas.Clear();
+
+            
         }
     }
 }
