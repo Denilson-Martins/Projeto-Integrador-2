@@ -40,10 +40,10 @@ ColumnHeaderStyle="{StaticResource AdminDataGridColumnHeaderStyle}">
                        Width="760" Height="1"
                        Fill="#FFCCCCCC"/>
 
-            <Border Canvas.Left="20" Canvas.Top="256"
+            <Border Canvas.Left="20" Canvas.Top="250"
                     Width="760" Height="44"
                     BorderBrush="#FFCCCCCC" BorderThickness="1"
-                    CornerRadius="4" Background="#FFF9F9F9">
+                    CornerRadius="4" Background="#FFF9F9F9" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <StackPanel Orientation="Horizontal"
                             HorizontalAlignment="Right"
                             VerticalAlignment="Center"
@@ -62,50 +62,50 @@ ColumnHeaderStyle="{StaticResource AdminDataGridColumnHeaderStyle}">
             </Border>
 
             <TextBlock Text="Forma de Pagamento"
-                       Canvas.Left="20" Canvas.Top="312"
+                       Canvas.Left="315" Canvas.Top="299"
                        FontSize="16" FontWeight="Bold"
                        FontFamily="Segoe UI"
-                       Foreground="#FF333333"/>
+                       Foreground="#FF0000" HorizontalAlignment="Center" Height="31" VerticalAlignment="Top"/>
 
             <RadioButton x:Name="RbPix" Content="PIX"
                          GroupName="Pagamento"
                          Checked="PagamentoSelecionado"
-                         Canvas.Left="20" Canvas.Top="338"
-                         Width="370" Height="36"
-                         FontSize="15" FontWeight="SemiBold"
-                         Foreground="#FF333333"
+                         Canvas.Left="220" Canvas.Top="330"
+                         Width="159" Height="51"
+                         FontSize="15" FontWeight="Heavy"
+                         Foreground="#000000"
                          HorizontalContentAlignment="Center"
-                         VerticalContentAlignment="Center"/>
+                         VerticalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top"/>
 
             <RadioButton x:Name="RbCredito" Content="Cartão de Crédito"
                          GroupName="Pagamento"
                          Checked="PagamentoSelecionado"
-                         Canvas.Left="410" Canvas.Top="338"
-                         Width="370" Height="36"
-                         FontSize="15" FontWeight="SemiBold"
-                         Foreground="#FF333333"
+                         Canvas.Left="405" Canvas.Top="325"
+                         Width="155" Height="51"
+                         FontSize="15" FontWeight="Heavy"
+                         Foreground="#000000"
                          HorizontalContentAlignment="Center"
-                         VerticalContentAlignment="Center"/>
+                         VerticalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center"/>
 
             <RadioButton x:Name="RbDebito" Content="Cartão de Débito"
                          GroupName="Pagamento"
                          Checked="PagamentoSelecionado"
-                         Canvas.Left="20" Canvas.Top="380"
-                         Width="370" Height="36"
-                         FontSize="15" FontWeight="SemiBold"
-                         Foreground="#FF333333"
+                         Canvas.Left="220" Canvas.Top="376"
+                         Width="185" Height="53"
+                         FontSize="15" FontWeight="Heavy"
+                         Foreground="#000000"
                          HorizontalContentAlignment="Center"
-                         VerticalContentAlignment="Center"/>
+                         VerticalContentAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Top"/>
 
             <RadioButton x:Name="RbDinheiro" Content="Dinheiro"
                          GroupName="Pagamento"
                          Checked="PagamentoSelecionado"
-                         Canvas.Left="410" Canvas.Top="380"
-                         Width="370" Height="36"
-                         FontSize="15" FontWeight="SemiBold"
-                         Foreground="#FF333333"
+                         Canvas.Left="405" Canvas.Top="386"
+                         Width="159" Height="33"
+                         FontSize="15" FontWeight="Heavy"
+                         Foreground="#000000"
                          HorizontalContentAlignment="Center"
-                         VerticalContentAlignment="Center"/>
+                         VerticalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center"/>
 
             <TextBlock x:Name="TxtAvisoPagamento"
                        Text="Selecione uma forma de pagamento para continuar."

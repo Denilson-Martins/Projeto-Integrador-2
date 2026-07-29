@@ -23,11 +23,13 @@ DROP TABLE IF EXISTS `produtos`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `produtos` (
+  `id` int NOT NULL AUTO_INCREMENT,
   `produto` varchar(100) DEFAULT NULL,
   `quantidade` int DEFAULT NULL,
   `tamanho` varchar(10) DEFAULT NULL,
-  `preco` double DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `preco` double DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -36,7 +38,7 @@ CREATE TABLE `produtos` (
 
 LOCK TABLES `produtos` WRITE;
 /*!40000 ALTER TABLE `produtos` DISABLE KEYS */;
-INSERT INTO `produtos` VALUES ('Cappuccino',10,'200ml',12),('Coxinha',1,'Grande',5.5);
+INSERT INTO `produtos` VALUES (1,'Cappuccino',30,'200ml',12),(2,'Coxinha',30,'Grande',9),(4,'Cappuccino',30,'100ml',6),(5,'Coxinha',30,'Média',5.5);
 /*!40000 ALTER TABLE `produtos` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -49,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-08 20:51:24
+-- Dump completed on 2026-07-15 19:36:36
