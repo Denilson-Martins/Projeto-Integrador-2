@@ -35,7 +35,7 @@ CREATE TABLE `adm` (
 
 LOCK TABLES `adm` WRITE;
 /*!40000 ALTER TABLE `adm` DISABLE KEYS */;
-INSERT INTO `adm` VALUES ('luciano','123',''),('dfsdf','12561','sdfsdds');
+INSERT INTO `adm` VALUES ('luciano','123',''),('dfsdf','12561','sdfsdds'),('ADM','123456','Administrador@gmail.com'),('ADM','123456','Administrador@gmail.com'),('ADM','123456','Administrador@gmail.com'),('ADM','123456','Administrador@gmail.com'),('ADM','123456','Administrador@gmail.com'),('ADM','123456','Administrador@gmail.com'),('ADM','123456','Administrador@gmail.com'),('ADM','123456','Administrador@gmail.com'),('ADM','123456','Administrador@gmail.com'),('ADM','123456','Administrador@gmail.com'),('ADM','123456','Administrador@gmail.com'),('ADM','123456','Administrador@gmail.com'),('ADM','123456','Administrador@gmail.com'),('ADM','123456','Administrador@gmail.com');
 /*!40000 ALTER TABLE `adm` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -48,4 +48,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-08 20:51:24
+-- Dump completed on 2026-07-15 19:36:36

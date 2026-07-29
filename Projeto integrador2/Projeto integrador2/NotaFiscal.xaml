@@ -15,10 +15,10 @@
             </Canvas.Background>
 
             <TextBlock Text="✔ Pedido Confirmado!"
-                       Canvas.Left="20" Canvas.Top="14"
+                       Canvas.Left="259" Canvas.Top="10"
                        FontSize="22" FontWeight="Bold"
                        FontFamily="Segoe UI"
-                       Foreground="#FF228B22"/>
+                       Foreground="#FF161716" Height="53" Width="249"/>
 
             <TextBlock Text="Nota Fiscal"
                        Canvas.Left="20" Canvas.Top="44"
