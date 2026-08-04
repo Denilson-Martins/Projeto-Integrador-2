@@ -17,14 +17,14 @@
                 </LinearGradientBrush>
             </Canvas.Background>
 
-            
+
             <Rectangle Canvas.Left="0" Canvas.Top="0" Width="320" Height="450">
                 <Rectangle.Fill>
                     <ImageBrush ImageSource="/img (1).png" Stretch="UniformToFill" AlignmentX="Left"/>
                 </Rectangle.Fill>
             </Rectangle>
 
-          
+
             <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="446" Canvas.Top="15" Width="105" Height="105" HorizontalAlignment="Left" VerticalAlignment="Center">
                 <Button.Background>
                     <ImageBrush ImageSource="/sonho-chocolate.jpg" Stretch="UniformToFill"/>
@@ -61,7 +61,7 @@
             <TextBlock Text="Empada" Style="{StaticResource TileNameStyle}" Canvas.Left="680" Canvas.Top="126" Width="105"/>
             <TextBlock Text="◆" Style="{StaticResource TileFlourishStyle}" Canvas.Left="680" Canvas.Top="147" Width="105"/>
 
-           
+
             <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="329" Canvas.Top="158" Width="105" Height="105">
                 <Button.Background>
                     <ImageBrush ImageSource="/pizza.jpg" Stretch="UniformToFill"/>
@@ -71,7 +71,7 @@
             <TextBlock Text="Pizza " Style="{StaticResource TileNameStyle}" Canvas.Left="329" Canvas.Top="269" Width="105" FontSize="11"/>
             <TextBlock Text="◆" Style="{StaticResource TileFlourishStyle}" Canvas.Left="329" Canvas.Top="290" Width="105"/>
 
-           
+
             <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="446" Canvas.Top="158" Width="105" Height="105">
                 <Button.Background>
                     <ImageBrush ImageSource="/sanduiche.jpeg" Stretch="UniformToFill"/>
@@ -99,7 +99,7 @@
             <TextBlock Text="X-Burguer" Style="{StaticResource TileNameStyle}" Canvas.Left="680" Canvas.Top="269" Width="105"/>
             <TextBlock Text="◆" Style="{StaticResource TileFlourishStyle}" Canvas.Left="680" Canvas.Top="290" Width="105"/>
 
-           
+
             <Button Style="{StaticResource TileButtonStyle}" Canvas.Left="329" Canvas.Top="301" Width="105" Height="105">
                 <Button.Background>
                     <ImageBrush ImageSource="/Pizza Doce.jpg" Stretch="UniformToFill"/>
