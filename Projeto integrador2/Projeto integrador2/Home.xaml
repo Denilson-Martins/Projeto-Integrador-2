@@ -44,7 +44,7 @@
                     <ImageBrush ImageSource="/ChatGPT Image 11 de jun. de 2026, 20_28_20.png"/>
                 </Button.Background>
             </Button>
-            <Button Style="{StaticResource VoltarButtonStyle}" Content="🔔" Height="54" Width="46" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI Black"   Canvas.Left="754" Canvas.Top="-5" RenderTransformOrigin="1.146,0.671" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button Style="{StaticResource VoltarButtonStyle}" Content="🔔" Height="54" Width="46" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI Black"   Canvas.Left="754" Canvas.Top="0" RenderTransformOrigin="1.146,0.671" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
         </Canvas>
 
